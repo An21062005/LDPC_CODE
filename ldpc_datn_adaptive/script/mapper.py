@@ -25,7 +25,6 @@ issue + 2, 1 evaluation clock; 18 iterations), not from the code degrees.
 import argparse
 from collections import defaultdict
 import json
-import math
 from pathlib import Path
 import sys
 
@@ -143,17 +142,27 @@ def make_map(t, code, p_act, c_act, vsched=None, csched=None):
     if (nz.sum(0) > t["dvs"]).any():
         issues.append("column degree > VN unit slots")
     # Round-robin assignment (the policy the routing was built for).
-    vsteps, csteps = math.ceil(nb / p_act), math.ceil(mb / c_act)
     if vsched is None:                                 # (unit, step) -> block column
         vsched = {(c % p_act, c // p_act): c for c in range(nb)}
     if csched is None:                                 # (unit, step) -> block row
         csched = {(r % c_act, r // c_act): r for r in range(mb)}
+    # The RTL issues steps 0 .. steps-1 only, so the step registers written to
+    # the core come from the schedule itself (= ceil(24/P), ceil(12/C) for
+    # round-robin), and every (unit, step) must exist in the hardware tables.
+    vsteps = max(k for _, k in vsched) + 1
+    csteps = max(k for _, k in csched) + 1
     for (p, k), c in vsched.items():
-        if c not in t["vcand"][p]:
+        if not (0 <= p < t["pv"] and 0 <= k < t["kv"]):
+            issues.append(f"VN (unit {p}, step {k}) outside the {t['pv']}x{t['kv']} schedule table")
+        elif c not in t["vcand"][p]:
             issues.append(f"VN unit {p} cannot reach column {c}")
     for (q, k), r in csched.items():
-        if r not in t["ccand"][q]:
+        if not (0 <= q < t["pc"] and 0 <= k < t["kc"]):
+            issues.append(f"CN (unit {q}, step {k}) outside the {t['pc']}x{t['kc']} schedule table")
+        elif r not in t["ccand"][q]:
             issues.append(f"CN unit {q} cannot reach row {r}")
+    if issues:
+        return dict(code=code, p_act=p_act, c_act=c_act, ok=False, issues=issues)
     # Cycle replay.
     h = build_h(cfg)
     edges = {(int(m_), int(n_)) for m_, n_ in zip(*np.nonzero(h))}
@@ -261,6 +270,7 @@ def selftest(t):
         "column outside routing": ({**{k: v for k, v in good_v.items() if v != 5}, (5, 3): 4,
                                      (4, 3): 5}, good_c),
         "two rows in one step": ({**good_v}, {**good_c, (0, 0): 0, (1, 0): 0}),
+        "step beyond table": ({**{k: v for k, v in good_v.items() if v != 23}, (5, t["kv"]): 23}, good_c),
     }
     ok = make_map(t, code, p, c)["ok"]
     out = {"reference map accepted": ok}

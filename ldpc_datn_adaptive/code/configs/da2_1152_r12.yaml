@@ -1,0 +1,20 @@
+# Mã (1152,580) của ldpc_da2: (3,6)-regular, H tường minh (Zhang-Parhi, PI_1/PI_2/PI_3).
+format: ldpc-code/1
+name: da2_1152_r12
+n: 1152
+k: 580                      # rank(H) = 572 nên k = 1152 - 572, không phải 576
+structure:
+  type: explicit            # explicit | qc
+  h_file: code/data/H_np_array.npy
+  bit_order: "bit n = cột n của H = mẫu đầu vào thứ n"
+degrees:                    # khai báo để kiểm tra chéo với H
+  vn: [3]
+  cn: [6]
+  edges: 3456
+arithmetic:                 # giữ nguyên ldpc_da2
+  algorithm: da2_phi_lut     # sum-product, phi qua LUT.v
+  llr_bits: 5                # bù 2, 2.2, bão hòa +-3.75
+  message_bits: 5            # dấu-độ lớn CN->VN; VN->CN thêm 1 bit quyết định
+  iterations: 18
+  stop: freeze_on_zero_syndrome   # luôn chạy đủ vòng, quyết định đóng băng
+schedule: flooding

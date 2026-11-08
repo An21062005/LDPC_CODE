@@ -1,0 +1,24 @@
+# IEEE 802.11n (648,324), rate 1/2, Z = 27.
+# Ma trận cơ sở: code/data/base_matrices/648_12.txt (bản sao từ
+# github.com/simgunz/802.11n-ldpc, commit 615b594, protoH/648_12).
+format: ldpc-code/1
+name: wifi_648_r12
+n: 648
+k: 324
+structure:
+  type: qc
+  z: 27
+  base_matrix_file: code/data/base_matrices/648_12.txt
+  shift: right_cyclic        # H[r*Z+i, c*Z+(i+s) mod Z] = 1; s < 0: khối 0
+  bit_order: "bit n = cột n của H; bit 0..k-1 là thông tin (mã hệ thống)"
+degrees:
+  vn: [2, 3, 12]
+  cn: [7, 8]
+  edges: 2376
+arithmetic:
+  algorithm: da2_phi_lut
+  llr_bits: 5
+  message_bits: 5
+  iterations: 18
+  stop: freeze_on_zero_syndrome
+schedule: flooding

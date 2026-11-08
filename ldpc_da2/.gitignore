@@ -1,0 +1,8 @@
+build/
+artifacts/
+.Xil/
+NA/
+__pycache__/
+script/.deps/
+outfeed/
+*.pyc

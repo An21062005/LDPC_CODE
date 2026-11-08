@@ -1,0 +1,23 @@
+# IEEE 802.11n (1296,648), rate 1/2, Z = 54. Ví dụ cấu hình hợp lệ để khảo
+# sát; chưa có decoder RTL cho mã này.
+format: ldpc-code/1
+name: wifi_1296_r12
+n: 1296
+k: 648
+structure:
+  type: qc
+  z: 54
+  base_matrix_file: code/data/base_matrices/1296_12.txt
+  shift: right_cyclic
+  bit_order: "bit n = cột n của H; bit 0..k-1 là thông tin (mã hệ thống)"
+degrees:
+  vn: [2, 3, 4, 11]
+  cn: [7, 8]
+  edges: 4644
+arithmetic:
+  algorithm: da2_phi_lut
+  llr_bits: 5
+  message_bits: 5
+  iterations: 18
+  stop: freeze_on_zero_syndrome
+schedule: flooding

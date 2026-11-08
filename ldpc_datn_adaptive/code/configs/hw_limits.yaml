@@ -1,0 +1,28 @@
+# Physical description of the adaptive decoder that is SYNTHESISED (fixed before
+# synthesis). Codes, active VN units (P_act) and active CN units (C_act) are
+# chosen at run time inside these limits. script/mapper.py generates the RTL
+# package code/rtl/generated/adaptive_hw_pkg.sv from this file.
+format: ldpc-hw-limits/2
+target:
+  board: PYNQ-Z2
+  part: xc7z020clg400-1
+  decoder_clock_mhz: 30          # same core clock as ldpc_da2
+qc_grid:                         # block grid shared by every QC code in hardware
+  block_rows: 12
+  block_cols: 24
+  z_supported: [27, 54]          # load/decision address split supports these Z
+  z_max: 54                      # message bank depth
+# Union of the non-zero block positions of these codes = shared message banks.
+# A code whose positions are not all in this union cannot run on the hardware.
+codes_in_hardware: [wifi_648_r12, wifi_1296_r12]
+pe_cluster:
+  vn_units: 24                   # P_phys: one per block column is the useful maximum
+  cn_units: 12                   # C_phys: one per block row
+  vn_unit_slots: 12              # one input per block row (degree <= 12)
+  cn_active_degree_max: 8        # 7-bit phi sum of da2 stays exact up to 8 inputs
+  allowed_p_act: [1, 2, 3, 4, 6, 8, 12, 24]   # routing candidates built for these
+  allowed_c_act: [1, 2, 3, 4, 6, 12]
+memory:
+  message_bits: 6                # {hd, sign, phi} as in da2
+  intrinsic_banks: 2
+  decision_banks: 2
