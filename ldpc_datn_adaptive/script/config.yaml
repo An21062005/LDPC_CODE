@@ -1,0 +1,32 @@
+vivado:
+  bin: D:/vivado/2026.1/Vivado/bin
+  part: xc7z020clg400-1
+
+# Noisy data from code/data/eye.png (same flow as ldpc_da2), one per code.
+datasets:
+  wifi648_snr3:  {code: wifi_648_r12,  snr: 3.0, seed: 42}
+  wifi1296_snr3: {code: wifi_1296_r12, snr: 3.0, seed: 42}
+
+# A plan = segments run one after another on ONE adaptive_core instance.
+# frames includes the two transactions discarded after each reconfiguration.
+plans:
+  qc648:
+    segments:
+      - {code: wifi_648_r12, p: 24, c: 12, dataset: wifi648_snr3, frames: 22}
+      - {code: wifi_648_r12, p: 8,  c: 4,  dataset: wifi648_snr3, frames: 22}
+      - {code: wifi_648_r12, p: 6,  c: 3,  dataset: wifi648_snr3, frames: 22}
+      - {code: wifi_648_r12, p: 3,  c: 2,  dataset: wifi648_snr3, frames: 22}
+      - {code: wifi_648_r12, p: 1,  c: 1,  dataset: wifi648_snr3, frames: 22}
+  qc1296:
+    segments:
+      - {code: wifi_1296_r12, p: 24, c: 12, dataset: wifi1296_snr3, frames: 22}
+      - {code: wifi_1296_r12, p: 12, c: 6,  dataset: wifi1296_snr3, frames: 22}
+      - {code: wifi_1296_r12, p: 4,  c: 4,  dataset: wifi1296_snr3, frames: 22}
+      - {code: wifi_1296_r12, p: 2,  c: 1,  dataset: wifi1296_snr3, frames: 22}
+  mixed:                         # code and P/C change at run time, same hardware
+    segments:
+      - {code: wifi_648_r12,  p: 24, c: 12, dataset: wifi648_snr3,  frames: 8}
+      - {code: wifi_1296_r12, p: 6,  c: 3,  dataset: wifi1296_snr3, frames: 8}
+      - {code: wifi_648_r12,  p: 4,  c: 6,  dataset: wifi648_snr3,  frames: 8}
+      - {code: wifi_1296_r12, p: 24, c: 12, dataset: wifi1296_snr3, frames: 8}
+      - {code: wifi_648_r12,  p: 12, c: 1,  dataset: wifi648_snr3,  frames: 8}

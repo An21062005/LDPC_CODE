@@ -1,0 +1,78 @@
+version: 1
+vivado:
+  # CLI --vivado-bin, then VIVADO_BIN, then this value, then PATH.
+  bin: D:/vivado/2026.1/Vivado/bin
+  part: xc7z020clg400-1
+  threads: 2
+  jobs: 1
+  rtl_filelist: script/filelists/rtl.f
+
+defaults:
+  test: regression
+  waves: overview
+
+data:
+  input: code/data/input.txt
+  expected: code/data/expected_codeword.txt
+  raw: code/data/recorded_board_raw.txt
+
+tests:
+  smoke:
+    description: "3 transaction, 1 codeword; kiem tra nhanh khoi dong va AXI"
+    mode: full
+    filelist: script/filelists/full.f
+    top: tb_da2
+    frames: 3
+  regression:
+    description: "5 transaction, 3 codeword; hien tai tai hien loi lap frame thu 3"
+    mode: full
+    filelist: script/filelists/full.f
+    top: tb_da2
+    frames: 5
+  full:
+    description: "698 transaction, giai ma that 696 codeword; chay lau"
+    mode: full
+    filelist: script/filelists/full.f
+    top: tb_da2
+    frames: 698
+  order:
+    description: "Doc AXI 696 frame raw da luu; chi kiem tra thu tu ngo ra"
+    mode: order
+    filelist: script/filelists/order.f
+    top: tb_pynq_codeword_order
+
+waveforms:
+  # overview is always recorded when a named profile is selected. Other
+  # profiles add buses/core signals. 'none' skips WDB for fast regressions.
+  overview:
+    - name: Clock_Reset
+      radix: binary
+      signals: ["/{top}/clk", "/{top}/aresetn"]
+    - name: Frame_Result
+      radix: unsigned
+      signals: ["/{top}/frame", "/{top}/output_frame", "/{top}/dut/completed_frames_axi", "/{top}/frame_errors", "/{top}/total_errors", "/{top}/first_error_bit", "/{top}/compared_bits", "/{top}/compare_done"]
+    - name: Codeword_First16
+      radix: binary
+      signals: ["/{top}/decoded_first16", "/{top}/expected_first16", "/{top}/difference_first16"]
+    - name: Sequencer
+      radix: unsigned
+      signals: ["/{top}/dut/controller_state", "/{top}/dut/transfer_count", "/{top}/dut/busy_decoder", "/{top}/dut/f_id_core", "/{top}/dut/decoder_enable", "/{top}/dut/decoder_ext_reset"]
+  axi:
+    - name: AXI_Write
+      radix: hex
+      signals: ["/{top}/awaddr", "/{top}/awvalid", "/{top}/awready", "/{top}/wdata", "/{top}/wvalid", "/{top}/wready", "/{top}/bvalid", "/{top}/bready"]
+    - name: AXI_Read
+      radix: hex
+      signals: ["/{top}/araddr", "/{top}/arvalid", "/{top}/arready", "/{top}/rdata", "/{top}/rvalid", "/{top}/rready"]
+    - name: Codeword_1152
+      radix: hex
+      signals: ["/{top}/decoded_view", "/{top}/expected_view", "/{top}/difference_view"]
+  pe:
+    - name: Core_Control
+      radix: hex
+      signals: ["/{top}/dut/decoder_clk", "/{top}/dut/decoder_clk_df", "/{top}/dut/decoder_core/freeze_decisions", "/{top}/dut/decoder_core/syndrome_error", "/{top}/dut/decoder_core/cnu_active", "/{top}/dut/relay_core"]
+    - name: "PE_{row}_{col}"
+      radix: unsigned
+      # XSim uses an escaped generate-instance identifier (leading backslash,
+      # trailing space). These wildcards match that spelling without changing RTL.
+      signals: ["/{top}/dut/decoder_core/*genblk7[{row}].genblk1[{col}].pe_block */itr_count", "/{top}/dut/decoder_core/*genblk7[{row}].genblk1[{col}].pe_block */vnu_en", "/{top}/dut/decoder_core/*genblk7[{row}].genblk1[{col}].pe_block */rs"]

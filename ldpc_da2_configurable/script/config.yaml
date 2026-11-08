@@ -1,0 +1,140 @@
+version: 1
+vivado:
+  # --vivado-bin, then VIVADO_BIN, then this value, then PATH.
+  bin: D:/vivado/2026.1/Vivado/bin
+  part: xc7z020clg400-1
+  threads: 2
+  jobs: 1
+
+# Second simulator. The XSim licence on this machine (BASIC tier) refuses
+# designs with more than 50000 instances; the Fully-Parallel core has ~146000.
+questa:
+  bin: C:/questasim64_10.7c/win64
+
+# Code size and decoder clock used by 'report' (throughput, latency).
+code:
+  n: 1152
+  k: 580
+  clock_mhz: 30
+
+# Architecture is selected BEFORE synthesis: each one has its own filelist and
+# is built separately. Nothing here changes H, the algorithm, the word widths,
+# the iteration count or the decoder clock (30 MHz for all three).
+architectures:
+  serial:
+    description: "1 VNU + 1 CNU; message RAM 3456x6, 1 read + 1 write per clock"
+    filelist: script/filelists/serial.f
+    core_instance: core
+    txn_cycles_max: 124850      # decoder clocks per transaction (core_monitor); sizes the AXI test timeouts
+  partly_parallel:
+    description: "ldpc_da2 unchanged: 36 PE (36 VNU) + 18 CNU, 32 addresses per phase"
+    filelist: script/filelists/partly_parallel.f
+    core_instance: decoder_core
+    txn_cycles_max: 1406      # decoder clocks per transaction (core_monitor); sizes the AXI test timeouts
+    define: ARCH_PP            # core_monitor: da2 decode window
+  fully_parallel:
+    description: "1152 VNU + 576 CNU hard-wired by H; 4 clocks per iteration"
+    filelist: script/filelists/fully_parallel.f
+    core_instance: core
+    txn_cycles_max: 1155      # decoder clocks per transaction (core_monitor); sizes the AXI test timeouts
+    simulator: questa
+
+datasets:
+  reference:                    # ldpc_da2/code/data, SNR 20 dB, seed 42
+    input: code/data/input.txt
+    expected: code/data/expected_codeword.txt
+  noisy_snr3:                   # same image and flow, SNR 3 dB, seed 42
+    generate: {snr: 3.0, seed: 42}
+
+tests:
+  smoke:
+    description: "AXI: 3 transactions, 1 codeword"
+    kind: axi
+    dataset: reference
+    frames: 3
+  regression:
+    description: "AXI: 5 transactions, 3 codewords (da2 regression)"
+    kind: axi
+    dataset: reference
+    frames: 5
+  noisy:
+    description: "AXI: 22 transactions, 20 noisy codewords (8% raw BER), bit-exact vs model"
+    kind: axi
+    dataset: noisy_snr3
+    frames: 22
+    model_check: true
+  full:
+    description: "AXI: 698 transactions, all 696 reference codewords; long"
+    kind: axi
+    dataset: reference
+    frames: 698
+  core:
+    description: "Core only (no AXI): 22 transactions of noisy data, decode cycles"
+    kind: core
+    dataset: noisy_snr3
+    frames: 22
+    model_check: true
+    architectures: [serial, fully_parallel]
+  order:
+    description: "da2 output-order test: 696 recorded raw frames read through AXI"
+    kind: order
+    architectures: [partly_parallel]
+
+defaults:
+  architecture: partly_parallel
+  test: regression
+  waves: overview
+
+# Wave groups. {top} is the testbench top; {core} is dut/core (AXI test) or
+# core (core test). A group with 'architectures' is
+# recorded only for those architectures.
+waveforms:
+  overview:
+    - name: Clock_Reset
+      radix: binary
+      signals: ["/{top}/clk", "/{top}/aresetn", "/{top}/rst"]
+    - name: Frame_Result
+      radix: unsigned
+      signals: ["/{top}/frame", "/{top}/t", "/{top}/output_frame", "/{top}/frame_errors", "/{top}/total_errors", "/{top}/first_error_bit", "/{top}/compared_bits", "/{top}/compare_done"]
+    - name: Codeword_First16
+      radix: binary
+      signals: ["/{top}/decoded_first16", "/{top}/expected_first16", "/{top}/difference_first16"]
+    - name: Sequencer
+      radix: unsigned
+      architectures: [partly_parallel]
+      signals: ["/{top}/dut/controller_state", "/{top}/dut/transfer_count", "/{top}/dut/busy_decoder", "/{top}/dut/f_id_core", "/{top}/dut/decoder_enable", "/{top}/dut/decoder_ext_reset"]
+    - name: Sequencer
+      radix: unsigned
+      architectures: [serial, fully_parallel]
+      signals: ["/{top}/dut/qstate", "/{top}/dut/k", "/{top}/dut/busy_reg", "/{top}/dut/core_busy", "/{top}/{core}/state", "/{top}/{core}/iter", "/{top}/{core}/frozen", "/{top}/{core}/rs", "/{top}/busy", "/{top}/start", "/{top}/swap"]
+  axi:
+    - name: AXI_Write
+      radix: hex
+      signals: ["/{top}/awaddr", "/{top}/awvalid", "/{top}/awready", "/{top}/wdata", "/{top}/wvalid", "/{top}/wready", "/{top}/bvalid", "/{top}/bready"]
+    - name: AXI_Read
+      radix: hex
+      signals: ["/{top}/araddr", "/{top}/arvalid", "/{top}/arready", "/{top}/rdata", "/{top}/rvalid", "/{top}/rready"]
+    - name: Codeword_Full
+      radix: hex
+      signals: ["/{top}/decoded_view", "/{top}/expected_view", "/{top}/difference_view"]
+  core:
+    - name: Serial_Pipeline
+      radix: unsigned
+      architectures: [serial]
+      signals: ["/{top}/{core}/phase", "/{top}/{core}/rptr", "/{top}/{core}/wptr", "/{top}/{core}/fire", "/{top}/{core}/push", "/{top}/{core}/pop", "/{top}/{core}/stall", "/{top}/{core}/fifo_cnt", "/{top}/{core}/syndrome"]
+    - name: Serial_Units
+      radix: hex
+      architectures: [serial]
+      signals: ["/{top}/{core}/vx_q", "/{top}/{core}/vz_q", "/{top}/{core}/vy", "/{top}/{core}/vhd", "/{top}/{core}/cx_q", "/{top}/{core}/cy", "/{top}/{core}/cpar"]
+    - name: FP_Control
+      radix: unsigned
+      architectures: [fully_parallel]
+      signals: ["/{top}/{core}/state", "/{top}/{core}/iter", "/{top}/{core}/frozen", "/{top}/{core}/vn_en", "/{top}/{core}/cn_en"]
+    - name: FP_Node0
+      radix: hex
+      architectures: [fully_parallel]
+      signals: ["/{top}/{core}/g_vn[0]/u/x", "/{top}/{core}/g_vn[0]/u/z", "/{top}/{core}/g_vn[0]/u/y", "/{top}/{core}/g_vn[0]/u/hd", "/{top}/{core}/g_cn[0]/u/x", "/{top}/{core}/g_cn[0]/u/y", "/{top}/{core}/g_cn[0]/u/parity"]
+    - name: PP_Core_Control
+      radix: hex
+      architectures: [partly_parallel]
+      signals: ["/{top}/dut/decoder_clk", "/{top}/dut/decoder_clk_df", "/{top}/dut/decoder_core/freeze_decisions", "/{top}/dut/decoder_core/syndrome_error", "/{top}/dut/decoder_core/cnu_active", "/{top}/dut/relay_core"]

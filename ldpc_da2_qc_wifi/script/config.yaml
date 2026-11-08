@@ -1,0 +1,135 @@
+version: 1
+vivado:
+  # --vivado-bin, then VIVADO_BIN, then this value, then PATH.
+  bin: D:/vivado/2026.1/Vivado/bin
+  part: xc7z020clg400-1
+  threads: 2
+  jobs: 1
+
+# Second simulator, used where the XSim BASIC tier (50000-instance limit)
+# refuses a design. Select per architecture with 'simulator', or --sim.
+questa:
+  bin: C:/questasim64_10.7c/win64
+
+# Code size and decoder clock used by 'report' (throughput, latency).
+code:
+  n: 648
+  k: 324
+  clock_mhz: 30
+
+# IEEE 802.11n QC-LDPC (648,324), rate 1/2, Z = 27 (code/data/base_matrices/648_12.txt).
+# Architectures are chosen before synthesis; same H, algorithm, word widths,
+# 18 iterations and 30 MHz decoder clock in all three.
+architectures:
+  serial:
+    description: "1 VN unit (deg 12) + 1 CN unit (deg 8); message RAM 2376x6, 1 read + 1 write per clock"
+    filelist: script/filelists/serial.f
+    core_instance: core
+    txn_cycles_max: 86348      # decoder clocks per transaction (core_monitor); sizes the AXI test timeouts
+  partly_parallel:
+    description: "QC: 24 PE (VN unit per block column) + 12 CN units, 27 addresses per phase"
+    filelist: script/filelists/partly_parallel.f
+    core_instance: core
+    txn_cycles_max: 1082      # decoder clocks per transaction (core_monitor); sizes the AXI test timeouts
+  fully_parallel:
+    description: "648 VN units + 324 CN units hard-wired by H; 4 clocks per iteration"
+    filelist: script/filelists/fully_parallel.f
+    core_instance: core
+    txn_cycles_max: 651      # decoder clocks per transaction (core_monitor); sizes the AXI test timeouts
+
+datasets:
+  reference:                    # eye.png, Wi-Fi encoding, SNR 20 dB, seed 42 (as ldpc_da2)
+    generate: {snr: 20.0, seed: 42}
+  noisy_snr3:                   # same image and flow, SNR 3 dB, seed 42
+    generate: {snr: 3.0, seed: 42}
+
+tests:
+  units:
+    description: "VNU_G(3)/CNU_G(6) equal da2 VNU.v/CNU.v cycle by cycle (random)"
+    kind: units
+    filelist: script/filelists/units_equiv.f
+    vectors: 200000
+  smoke:
+    description: "AXI: 3 transactions, 1 codeword"
+    kind: axi
+    dataset: reference
+    frames: 3
+  regression:
+    description: "AXI: 5 transactions, 3 codewords"
+    kind: axi
+    dataset: reference
+    frames: 5
+  noisy:
+    description: "AXI: 22 transactions, 20 noisy codewords (8% raw BER), bit-exact vs model"
+    kind: axi
+    dataset: noisy_snr3
+    frames: 22
+    model_check: true
+  full:
+    description: "AXI: 1247 transactions, all 1245 reference codewords; long"
+    kind: axi
+    dataset: reference
+    frames: 1247
+  core:
+    description: "Core only (no AXI): 22 transactions of noisy data, decode cycles"
+    kind: core
+    dataset: noisy_snr3
+    frames: 22
+    model_check: true
+
+defaults:
+  architecture: partly_parallel
+  test: regression
+  waves: overview
+
+# Wave groups. {top} is the testbench top; {core} is dut/core (AXI test) or
+# core (core test). A group with 'architectures' is recorded only for those.
+waveforms:
+  overview:
+    - name: Clock_Reset
+      radix: binary
+      signals: ["/{top}/clk", "/{top}/aresetn", "/{top}/rst"]
+    - name: Frame_Result
+      radix: unsigned
+      signals: ["/{top}/frame", "/{top}/t", "/{top}/output_frame", "/{top}/frame_errors", "/{top}/total_errors", "/{top}/first_error_bit", "/{top}/compared_bits", "/{top}/compare_done"]
+    - name: Codeword_First16
+      radix: binary
+      signals: ["/{top}/decoded_first16", "/{top}/expected_first16", "/{top}/difference_first16"]
+    - name: Sequencer
+      radix: unsigned
+      signals: ["/{top}/dut/qstate", "/{top}/dut/k", "/{top}/dut/busy_reg", "/{top}/dut/core_busy", "/{top}/{core}/state", "/{top}/{core}/iter", "/{top}/{core}/frozen", "/{top}/{core}/rs", "/{top}/busy", "/{top}/start", "/{top}/swap"]
+  axi:
+    - name: AXI_Write
+      radix: hex
+      signals: ["/{top}/awaddr", "/{top}/awvalid", "/{top}/awready", "/{top}/wdata", "/{top}/wvalid", "/{top}/wready", "/{top}/bvalid", "/{top}/bready"]
+    - name: AXI_Read
+      radix: hex
+      signals: ["/{top}/araddr", "/{top}/arvalid", "/{top}/arready", "/{top}/rdata", "/{top}/rvalid", "/{top}/rready"]
+    - name: Codeword_Full
+      radix: hex
+      signals: ["/{top}/decoded_view", "/{top}/expected_view", "/{top}/difference_view"]
+  core:
+    - name: Serial_Pipeline
+      radix: unsigned
+      architectures: [serial]
+      signals: ["/{top}/{core}/phase", "/{top}/{core}/rptr", "/{top}/{core}/wptr", "/{top}/{core}/fire", "/{top}/{core}/push", "/{top}/{core}/pop", "/{top}/{core}/stall", "/{top}/{core}/fifo_cnt", "/{top}/{core}/syndrome"]
+    - name: Serial_Units
+      radix: hex
+      architectures: [serial]
+      signals: ["/{top}/{core}/vx_q", "/{top}/{core}/vz_q", "/{top}/{core}/vy", "/{top}/{core}/vhd", "/{top}/{core}/cx_q", "/{top}/{core}/cy", "/{top}/{core}/cpar"]
+    - name: QC_Control
+      radix: unsigned
+      architectures: [partly_parallel]
+      signals: ["/{top}/{core}/state", "/{top}/{core}/t", "/{top}/{core}/iter", "/{top}/{core}/frozen", "/{top}/{core}/syndrome", "/{top}/{core}/v_write", "/{top}/{core}/c_write"]
+    - name: QC_PE0_Block0
+      radix: hex
+      architectures: [partly_parallel]
+      signals: ["/{top}/{core}/g_pe[0]/zq", "/{top}/{core}/g_pe[0]/x", "/{top}/{core}/g_pe[0]/y", "/{top}/{core}/vhd", "/{top}/{core}/g_blk[0]/ag", "/{top}/{core}/g_blk[0]/q", "/{top}/{core}/cpar"]
+    - name: FP_Control
+      radix: unsigned
+      architectures: [fully_parallel]
+      signals: ["/{top}/{core}/state", "/{top}/{core}/iter", "/{top}/{core}/frozen", "/{top}/{core}/vn_en", "/{top}/{core}/cn_en"]
+    - name: FP_Node0
+      radix: hex
+      architectures: [fully_parallel]
+      signals: ["/{top}/{core}/g_vn[0]/u/x", "/{top}/{core}/g_vn[0]/u/z", "/{top}/{core}/g_vn[0]/u/y", "/{top}/{core}/g_vn[0]/u/hd", "/{top}/{core}/g_cn[0]/u/x", "/{top}/{core}/g_cn[0]/u/y", "/{top}/{core}/g_cn[0]/u/parity"]
