@@ -1,0 +1,3485 @@
+Time resolution is 1 ps
+Payload frame number: 1
+Payload frame number: 2
+Payload frame number: 3
+Ordered decoder output valid: corrected_count=0, corrected_position=0
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000111101101
+Difference bits 1..16 = 0000000000000000
+Payload frame number: 4
+Ordered decoder output valid: corrected_count=262, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001111000000000
+Difference bits 1..16 = 1100111111101101
+Payload frame number: 5
+Ordered decoder output valid: corrected_count=264, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001101000100
+Difference bits 1..16 = 1001001010101001
+Payload frame number: 6
+Ordered decoder output valid: corrected_count=274, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010001000101100
+Difference bits 1..16 = 1111001111000001
+Payload frame number: 7
+Ordered decoder output valid: corrected_count=286, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101001001010
+Difference bits 1..16 = 1000101110100111
+Payload frame number: 8
+Ordered decoder output valid: corrected_count=300, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111000001011001
+Difference bits 1..16 = 1010000110110100
+Payload frame number: 9
+Ordered decoder output valid: corrected_count=286, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011010101000
+Difference bits 1..16 = 0001011101000101
+Payload frame number: 10
+Ordered decoder output valid: corrected_count=300, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010110001110100
+Difference bits 1..16 = 1111110110011001
+Payload frame number: 11
+Ordered decoder output valid: corrected_count=320, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001000110100001
+Difference bits 1..16 = 1100000001001100
+Payload frame number: 12
+Ordered decoder output valid: corrected_count=316, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000011110111110
+Difference bits 1..16 = 0101011001010011
+Payload frame number: 13
+Ordered decoder output valid: corrected_count=270, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010001110111011
+Difference bits 1..16 = 1111001001010110
+Payload frame number: 14
+Ordered decoder output valid: corrected_count=330, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010001101001011
+Difference bits 1..16 = 1111001010100110
+Payload frame number: 15
+Ordered decoder output valid: corrected_count=288, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000101111111101
+Difference bits 1..16 = 1101101000010000
+Payload frame number: 16
+Ordered decoder output valid: corrected_count=292, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001000100001100
+Difference bits 1..16 = 0100000011100001
+Payload frame number: 17
+Ordered decoder output valid: corrected_count=330, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011101000001010
+Difference bits 1..16 = 0110101111100111
+Payload frame number: 18
+Ordered decoder output valid: corrected_count=304, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001010110100111
+Difference bits 1..16 = 1100010001001010
+Payload frame number: 19
+Ordered decoder output valid: corrected_count=324, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000111101111
+Difference bits 1..16 = 0111000000000010
+Payload frame number: 20
+Ordered decoder output valid: corrected_count=368, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000110011111010
+Difference bits 1..16 = 1101110100010111
+Payload frame number: 21
+Ordered decoder output valid: corrected_count=322, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100111100111
+Difference bits 1..16 = 1110100000001010
+Payload frame number: 22
+Ordered decoder output valid: corrected_count=344, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000110011101
+Difference bits 1..16 = 0111000001110000
+Payload frame number: 23
+Ordered decoder output valid: corrected_count=338, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000111100100000
+Difference bits 1..16 = 0101111011001101
+Payload frame number: 24
+Ordered decoder output valid: corrected_count=352, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011001000011101
+Difference bits 1..16 = 0110001111110000
+Payload frame number: 25
+Ordered decoder output valid: corrected_count=356, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001010001110000
+Difference bits 1..16 = 1100010110011101
+Payload frame number: 26
+Ordered decoder output valid: corrected_count=346, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010100001101101
+Difference bits 1..16 = 1111100110000000
+Payload frame number: 27
+Ordered decoder output valid: corrected_count=382, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010100001001000
+Difference bits 1..16 = 0111100110100101
+Payload frame number: 28
+Ordered decoder output valid: corrected_count=370, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000001111011110
+Difference bits 1..16 = 1101001000110011
+Payload frame number: 29
+Ordered decoder output valid: corrected_count=350, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011011111110101
+Difference bits 1..16 = 0110011000011000
+Payload frame number: 30
+Ordered decoder output valid: corrected_count=366, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010111001001010
+Difference bits 1..16 = 0111111110100111
+Payload frame number: 31
+Ordered decoder output valid: corrected_count=374, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011011010000000
+Difference bits 1..16 = 0110011101101101
+Payload frame number: 32
+Ordered decoder output valid: corrected_count=362, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011100100010001
+Difference bits 1..16 = 0110100011111100
+Payload frame number: 33
+Ordered decoder output valid: corrected_count=350, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011111101001111
+Difference bits 1..16 = 0110111010100010
+Payload frame number: 34
+Ordered decoder output valid: corrected_count=360, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000111101101001
+Difference bits 1..16 = 1101111010000100
+Payload frame number: 35
+Ordered decoder output valid: corrected_count=358, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001001110001011
+Difference bits 1..16 = 0100001001100110
+Payload frame number: 36
+Ordered decoder output valid: corrected_count=344, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001001000101111
+Difference bits 1..16 = 0100001111000010
+Payload frame number: 37
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000010011100
+Difference bits 1..16 = 1101000101110001
+Payload frame number: 38
+Ordered decoder output valid: corrected_count=348, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000000101110001
+Difference bits 1..16 = 0101000010011100
+Payload frame number: 39
+Ordered decoder output valid: corrected_count=368, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001000100000010
+Difference bits 1..16 = 0100000011101111
+Payload frame number: 40
+Ordered decoder output valid: corrected_count=374, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000000110100100
+Difference bits 1..16 = 0101000001001001
+Payload frame number: 41
+Ordered decoder output valid: corrected_count=354, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000111100011
+Difference bits 1..16 = 1101000000001110
+Payload frame number: 42
+Ordered decoder output valid: corrected_count=370, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000001110100001
+Difference bits 1..16 = 1101001001001100
+Payload frame number: 43
+Ordered decoder output valid: corrected_count=328, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100011100100
+Difference bits 1..16 = 1110100100001001
+Payload frame number: 44
+Ordered decoder output valid: corrected_count=372, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010011000110100
+Difference bits 1..16 = 0111011111011001
+Payload frame number: 45
+Ordered decoder output valid: corrected_count=356, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000110011000110
+Difference bits 1..16 = 0101110100101011
+Payload frame number: 46
+Ordered decoder output valid: corrected_count=344, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010101001100010
+Difference bits 1..16 = 0111101110001111
+Payload frame number: 47
+Ordered decoder output valid: corrected_count=354, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011011111110110
+Difference bits 1..16 = 1110011000011011
+Payload frame number: 48
+Ordered decoder output valid: corrected_count=334, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001010110101110
+Difference bits 1..16 = 1100010001000011
+Payload frame number: 49
+Ordered decoder output valid: corrected_count=354, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001100010101100
+Difference bits 1..16 = 1100100101000001
+Payload frame number: 50
+Ordered decoder output valid: corrected_count=366, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000111010100000
+Difference bits 1..16 = 1101111101001101
+Payload frame number: 51
+Ordered decoder output valid: corrected_count=362, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011110100000001
+Difference bits 1..16 = 0110110011101100
+Payload frame number: 52
+Ordered decoder output valid: corrected_count=364, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010010100111011
+Difference bits 1..16 = 0111010011010110
+Payload frame number: 53
+Ordered decoder output valid: corrected_count=364, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011101101001100
+Difference bits 1..16 = 1110101010100001
+Payload frame number: 54
+Ordered decoder output valid: corrected_count=354, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011101011010011
+Difference bits 1..16 = 1110101100111110
+Payload frame number: 55
+Ordered decoder output valid: corrected_count=374, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000101001111011
+Difference bits 1..16 = 1101101110010110
+Payload frame number: 56
+Ordered decoder output valid: corrected_count=346, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010011110100100
+Difference bits 1..16 = 1111011001001001
+Payload frame number: 57
+Ordered decoder output valid: corrected_count=390, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011011001010001
+Difference bits 1..16 = 1110011110111100
+Payload frame number: 58
+Ordered decoder output valid: corrected_count=390, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001111001001000
+Difference bits 1..16 = 0100111110100101
+Payload frame number: 59
+Ordered decoder output valid: corrected_count=370, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100011000111011
+Difference bits 1..16 = 1001011111010110
+Payload frame number: 60
+Ordered decoder output valid: corrected_count=372, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100011111001000
+Difference bits 1..16 = 1001011000100101
+Payload frame number: 61
+Ordered decoder output valid: corrected_count=378, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110010111110
+Difference bits 1..16 = 0001110101010011
+Payload frame number: 62
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100001111100
+Difference bits 1..16 = 1000100110010001
+Payload frame number: 63
+Ordered decoder output valid: corrected_count=368, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110110101101
+Difference bits 1..16 = 0011110001000000
+Payload frame number: 64
+Ordered decoder output valid: corrected_count=358, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001110011010
+Difference bits 1..16 = 0000001001110111
+Payload frame number: 65
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100010001101
+Difference bits 1..16 = 1011100101100000
+Payload frame number: 66
+Ordered decoder output valid: corrected_count=378, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001010001001
+Difference bits 1..16 = 0001001101100100
+Payload frame number: 67
+Ordered decoder output valid: corrected_count=362, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110000011111
+Difference bits 1..16 = 1011110111110010
+Payload frame number: 68
+Ordered decoder output valid: corrected_count=370, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001101001011
+Difference bits 1..16 = 0000001010100110
+Payload frame number: 69
+Ordered decoder output valid: corrected_count=350, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100110010010
+Difference bits 1..16 = 1010100001111111
+Payload frame number: 70
+Ordered decoder output valid: corrected_count=352, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111101000010
+Difference bits 1..16 = 1001111010101111
+Payload frame number: 71
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101101001000
+Difference bits 1..16 = 0010101010100101
+Payload frame number: 72
+Ordered decoder output valid: corrected_count=368, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110010011011
+Difference bits 1..16 = 0011110101110110
+Payload frame number: 73
+Ordered decoder output valid: corrected_count=362, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110010110001011
+Difference bits 1..16 = 1011010001100110
+Payload frame number: 74
+Ordered decoder output valid: corrected_count=364, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100010101111011
+Difference bits 1..16 = 1001010010010110
+Payload frame number: 75
+Ordered decoder output valid: corrected_count=356, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110110000101
+Difference bits 1..16 = 1000110001101000
+Payload frame number: 76
+Ordered decoder output valid: corrected_count=366, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111010111101
+Difference bits 1..16 = 0010111101010000
+Payload frame number: 77
+Ordered decoder output valid: corrected_count=356, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011000101001
+Difference bits 1..16 = 0010011111000100
+Payload frame number: 78
+Ordered decoder output valid: corrected_count=360, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001001001101
+Difference bits 1..16 = 1001001110100000
+Payload frame number: 79
+Ordered decoder output valid: corrected_count=366, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101001001101001
+Difference bits 1..16 = 1000001110000100
+Payload frame number: 80
+Ordered decoder output valid: corrected_count=368, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001100011011
+Difference bits 1..16 = 0011001011110110
+Payload frame number: 81
+Ordered decoder output valid: corrected_count=358, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111001111011
+Difference bits 1..16 = 1000111110010110
+Payload frame number: 82
+Ordered decoder output valid: corrected_count=342, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000110110101
+Difference bits 1..16 = 1000000001011000
+Payload frame number: 83
+Ordered decoder output valid: corrected_count=374, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010110110111
+Difference bits 1..16 = 1010010001011010
+Payload frame number: 84
+Ordered decoder output valid: corrected_count=382, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100010101
+Difference bits 1..16 = 1011011011111000
+Payload frame number: 85
+Ordered decoder output valid: corrected_count=362, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100110110101
+Difference bits 1..16 = 1011100001011000
+Payload frame number: 86
+Ordered decoder output valid: corrected_count=388, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110100010011
+Difference bits 1..16 = 0010110011111110
+Payload frame number: 87
+Ordered decoder output valid: corrected_count=396, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111100011000011
+Difference bits 1..16 = 0010100100101110
+Payload frame number: 88
+Ordered decoder output valid: corrected_count=386, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100001000111
+Difference bits 1..16 = 1010100110101010
+Payload frame number: 89
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111111100001
+Difference bits 1..16 = 1011111000001100
+Payload frame number: 90
+Ordered decoder output valid: corrected_count=358, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101110110111
+Difference bits 1..16 = 1010101001011010
+Payload frame number: 91
+Ordered decoder output valid: corrected_count=354, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001000111101011
+Difference bits 1..16 = 1100000000000110
+Payload frame number: 92
+Ordered decoder output valid: corrected_count=378, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111100110111
+Difference bits 1..16 = 0010111011011010
+Payload frame number: 93
+Ordered decoder output valid: corrected_count=384, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001100110111
+Difference bits 1..16 = 0011001011011010
+Payload frame number: 94
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001001110100011
+Difference bits 1..16 = 1100001001001110
+Payload frame number: 95
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001000111101
+Difference bits 1..16 = 1011001111010000
+Payload frame number: 96
+Ordered decoder output valid: corrected_count=382, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100011101111
+Difference bits 1..16 = 1010100100000010
+Payload frame number: 97
+Ordered decoder output valid: corrected_count=346, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011000111111111
+Difference bits 1..16 = 1110000000010010
+Payload frame number: 98
+Ordered decoder output valid: corrected_count=338, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011111101010111
+Difference bits 1..16 = 1110111010111010
+Payload frame number: 99
+Ordered decoder output valid: corrected_count=386, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011101011010011
+Difference bits 1..16 = 0110101100111110
+Payload frame number: 100
+Ordered decoder output valid: corrected_count=390, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000001110101
+Difference bits 1..16 = 1000000110011000
+Payload frame number: 101
+Ordered decoder output valid: corrected_count=372, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011010101010000
+Difference bits 1..16 = 1110010010111101
+Payload frame number: 102
+Ordered decoder output valid: corrected_count=390, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001110100001000
+Difference bits 1..16 = 0100110011100101
+Payload frame number: 103
+Ordered decoder output valid: corrected_count=368, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111101100010
+Difference bits 1..16 = 1001111010001111
+Payload frame number: 104
+Ordered decoder output valid: corrected_count=372, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110110011101
+Difference bits 1..16 = 1010110001110000
+Payload frame number: 105
+Ordered decoder output valid: corrected_count=420, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010011011100011
+Difference bits 1..16 = 0111011100001110
+Payload frame number: 106
+Ordered decoder output valid: corrected_count=378, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010110101101011
+Difference bits 1..16 = 0111110010000110
+Payload frame number: 107
+Ordered decoder output valid: corrected_count=376, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111010111011010
+Difference bits 1..16 = 0010010000110111
+Payload frame number: 108
+Ordered decoder output valid: corrected_count=370, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010111111010
+Difference bits 1..16 = 0011010000010111
+Payload frame number: 109
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100010000110
+Difference bits 1..16 = 1000100101101011
+Payload frame number: 110
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001101000010
+Difference bits 1..16 = 1001001010101111
+Payload frame number: 111
+Ordered decoder output valid: corrected_count=392, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011101011100
+Difference bits 1..16 = 0011011010110001
+Payload frame number: 112
+Ordered decoder output valid: corrected_count=382, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110001101100
+Difference bits 1..16 = 1000110110000001
+Payload frame number: 113
+Ordered decoder output valid: corrected_count=402, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111100011000
+Difference bits 1..16 = 0010111011110101
+Payload frame number: 114
+Ordered decoder output valid: corrected_count=384, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100101110100
+Difference bits 1..16 = 1001100010011001
+Payload frame number: 115
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000011101000
+Difference bits 1..16 = 1001000100000101
+Payload frame number: 116
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101011001101
+Difference bits 1..16 = 0010101100100000
+Payload frame number: 117
+Ordered decoder output valid: corrected_count=392, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110011110000
+Difference bits 1..16 = 0010110100011101
+Payload frame number: 118
+Ordered decoder output valid: corrected_count=400, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110111011010100
+Difference bits 1..16 = 0011111100111001
+Payload frame number: 119
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100011100110100
+Difference bits 1..16 = 1001011011011001
+Payload frame number: 120
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101010101011111
+Difference bits 1..16 = 1000010010110010
+Payload frame number: 121
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111000000101
+Difference bits 1..16 = 0010111111101000
+Payload frame number: 122
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100011011010
+Difference bits 1..16 = 0011100100110111
+Payload frame number: 123
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100101110000
+Difference bits 1..16 = 1011100010011101
+Payload frame number: 124
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110010010010
+Difference bits 1..16 = 0010110101111111
+Payload frame number: 125
+Ordered decoder output valid: corrected_count=406, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011111000101
+Difference bits 1..16 = 0001011000101000
+Payload frame number: 126
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110010100011
+Difference bits 1..16 = 1011110101001110
+Payload frame number: 127
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101001110000110
+Difference bits 1..16 = 1000001001101011
+Payload frame number: 128
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100010100100000
+Difference bits 1..16 = 1001010011001101
+Payload frame number: 129
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101101000011
+Difference bits 1..16 = 1011101010101110
+Payload frame number: 130
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100010111010110
+Difference bits 1..16 = 1001010000111011
+Payload frame number: 131
+Ordered decoder output valid: corrected_count=398, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101011000111011
+Difference bits 1..16 = 0000011111010110
+Payload frame number: 132
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110010111110
+Difference bits 1..16 = 1011110101010011
+Payload frame number: 133
+Ordered decoder output valid: corrected_count=380, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001011111111
+Difference bits 1..16 = 1010001100010010
+Payload frame number: 134
+Ordered decoder output valid: corrected_count=394, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101101101000
+Difference bits 1..16 = 0011101010000101
+Payload frame number: 135
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100001000
+Difference bits 1..16 = 1011011011100101
+Payload frame number: 136
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100000001010
+Difference bits 1..16 = 1011100111100111
+Payload frame number: 137
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110010011001
+Difference bits 1..16 = 0010110101110100
+Payload frame number: 138
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100010010111011
+Difference bits 1..16 = 1001010101010110
+Payload frame number: 139
+Ordered decoder output valid: corrected_count=394, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010100111011
+Difference bits 1..16 = 0000010011010110
+Payload frame number: 140
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011000111110
+Difference bits 1..16 = 1011011111010011
+Payload frame number: 141
+Ordered decoder output valid: corrected_count=390, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000010111011
+Difference bits 1..16 = 0010000101010110
+Payload frame number: 142
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111011001100100
+Difference bits 1..16 = 1010011110001001
+Payload frame number: 143
+Ordered decoder output valid: corrected_count=388, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101101001101
+Difference bits 1..16 = 0010101010100000
+Payload frame number: 144
+Ordered decoder output valid: corrected_count=382, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100011111001010
+Difference bits 1..16 = 1001011000100111
+Payload frame number: 145
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101001100000
+Difference bits 1..16 = 1011101110001101
+Payload frame number: 146
+Ordered decoder output valid: corrected_count=380, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101001001110
+Difference bits 1..16 = 1000101110100011
+Payload frame number: 147
+Ordered decoder output valid: corrected_count=380, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001110001100
+Difference bits 1..16 = 0011001001100001
+Payload frame number: 148
+Ordered decoder output valid: corrected_count=378, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111000010001000
+Difference bits 1..16 = 1010000101100101
+Payload frame number: 149
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100000110011
+Difference bits 1..16 = 1001100111011110
+Payload frame number: 150
+Ordered decoder output valid: corrected_count=388, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101001011000
+Difference bits 1..16 = 0000101110110101
+Payload frame number: 151
+Ordered decoder output valid: corrected_count=386, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110011011010
+Difference bits 1..16 = 1010110100110111
+Payload frame number: 152
+Ordered decoder output valid: corrected_count=390, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100111110110
+Difference bits 1..16 = 1000100000011011
+Payload frame number: 153
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110010010111
+Difference bits 1..16 = 0011110101111010
+Payload frame number: 154
+Ordered decoder output valid: corrected_count=384, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001100011011
+Difference bits 1..16 = 0001001011110110
+Payload frame number: 155
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010101111011
+Difference bits 1..16 = 0011010010010110
+Payload frame number: 156
+Ordered decoder output valid: corrected_count=382, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011010100111
+Difference bits 1..16 = 0010011101001010
+Payload frame number: 157
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110101010011
+Difference bits 1..16 = 1010110010111110
+Payload frame number: 158
+Ordered decoder output valid: corrected_count=386, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001111011001
+Difference bits 1..16 = 1010001000110100
+Payload frame number: 159
+Ordered decoder output valid: corrected_count=386, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000001111101
+Difference bits 1..16 = 0011000110010000
+Payload frame number: 160
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000101011110
+Difference bits 1..16 = 1011000010110011
+Payload frame number: 161
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101001011010
+Difference bits 1..16 = 0010101110110111
+Payload frame number: 162
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100010100011
+Difference bits 1..16 = 0011100101001110
+Payload frame number: 163
+Ordered decoder output valid: corrected_count=366, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011100011101
+Difference bits 1..16 = 0001011011110000
+Payload frame number: 164
+Ordered decoder output valid: corrected_count=390, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110111110111
+Difference bits 1..16 = 0001110000011010
+Payload frame number: 165
+Ordered decoder output valid: corrected_count=366, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110010100101101
+Difference bits 1..16 = 1011010011000000
+Payload frame number: 166
+Ordered decoder output valid: corrected_count=364, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110100101111
+Difference bits 1..16 = 0001110011000010
+Payload frame number: 167
+Ordered decoder output valid: corrected_count=396, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011010111111
+Difference bits 1..16 = 0010011101010010
+Payload frame number: 168
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110010111110111
+Difference bits 1..16 = 1011010000011010
+Payload frame number: 169
+Ordered decoder output valid: corrected_count=390, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110101000101
+Difference bits 1..16 = 1000110010101000
+Payload frame number: 170
+Ordered decoder output valid: corrected_count=380, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110111100111111
+Difference bits 1..16 = 0011111011010010
+Payload frame number: 171
+Ordered decoder output valid: corrected_count=360, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110011101001
+Difference bits 1..16 = 0001110100000100
+Payload frame number: 172
+Ordered decoder output valid: corrected_count=394, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000111010101
+Difference bits 1..16 = 0010000000111000
+Payload frame number: 173
+Ordered decoder output valid: corrected_count=372, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100011101
+Difference bits 1..16 = 1011011011110000
+Payload frame number: 174
+Ordered decoder output valid: corrected_count=388, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001000011011
+Difference bits 1..16 = 0011001111110110
+Payload frame number: 175
+Ordered decoder output valid: corrected_count=388, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110000000011
+Difference bits 1..16 = 0001110111101110
+Payload frame number: 176
+Ordered decoder output valid: corrected_count=402, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000101111011
+Difference bits 1..16 = 0011000010010110
+Payload frame number: 177
+Ordered decoder output valid: corrected_count=394, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001101100101
+Difference bits 1..16 = 0000001010001000
+Payload frame number: 178
+Ordered decoder output valid: corrected_count=412, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101100111111
+Difference bits 1..16 = 0000101011010010
+Payload frame number: 179
+Ordered decoder output valid: corrected_count=396, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000011100001
+Difference bits 1..16 = 0011000100001100
+Payload frame number: 180
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100101100000
+Difference bits 1..16 = 1000100010001101
+Payload frame number: 181
+Ordered decoder output valid: corrected_count=388, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101110100000
+Difference bits 1..16 = 0011101001001101
+Payload frame number: 182
+Ordered decoder output valid: corrected_count=410, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000011010100
+Difference bits 1..16 = 0011000100111001
+Payload frame number: 183
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111100111000010
+Difference bits 1..16 = 0010100000101111
+Payload frame number: 184
+Ordered decoder output valid: corrected_count=438, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011010100001
+Difference bits 1..16 = 0011011101001100
+Payload frame number: 185
+Ordered decoder output valid: corrected_count=410, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101101110001
+Difference bits 1..16 = 0010101010011100
+Payload frame number: 186
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101001110001
+Difference bits 1..16 = 1001101110011100
+Payload frame number: 187
+Ordered decoder output valid: corrected_count=384, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100110011110001
+Difference bits 1..16 = 1001110100011100
+Payload frame number: 188
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110010110001011
+Difference bits 1..16 = 1011010001100110
+Payload frame number: 189
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101001101001
+Difference bits 1..16 = 1001101110000100
+Payload frame number: 190
+Ordered decoder output valid: corrected_count=396, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101111111101
+Difference bits 1..16 = 0011101000010000
+Payload frame number: 191
+Ordered decoder output valid: corrected_count=404, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100000110011100
+Difference bits 1..16 = 0001000001110001
+Payload frame number: 192
+Ordered decoder output valid: corrected_count=406, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100000001001000
+Difference bits 1..16 = 0001000110100101
+Payload frame number: 193
+Ordered decoder output valid: corrected_count=418, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000011010101
+Difference bits 1..16 = 0010000100111000
+Payload frame number: 194
+Ordered decoder output valid: corrected_count=392, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001101100110
+Difference bits 1..16 = 0010001010001011
+Payload frame number: 195
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101010100000
+Difference bits 1..16 = 1000101101001101
+Payload frame number: 196
+Ordered decoder output valid: corrected_count=426, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001001111110
+Difference bits 1..16 = 0000001110010011
+Payload frame number: 197
+Ordered decoder output valid: corrected_count=382, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000101110100
+Difference bits 1..16 = 1000000010011001
+Payload frame number: 198
+Ordered decoder output valid: corrected_count=402, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101111000000
+Difference bits 1..16 = 0000101000101101
+Payload frame number: 199
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101110000110
+Difference bits 1..16 = 1001101001101011
+Payload frame number: 200
+Ordered decoder output valid: corrected_count=376, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010010011100
+Difference bits 1..16 = 0000010101110001
+Payload frame number: 201
+Ordered decoder output valid: corrected_count=408, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010001011100
+Difference bits 1..16 = 0011010110110001
+Payload frame number: 202
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001000000010
+Difference bits 1..16 = 1010001111101111
+Payload frame number: 203
+Ordered decoder output valid: corrected_count=388, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110111100110
+Difference bits 1..16 = 0011110000001011
+Payload frame number: 204
+Ordered decoder output valid: corrected_count=402, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000100110001
+Difference bits 1..16 = 0011000011011100
+Payload frame number: 205
+Ordered decoder output valid: corrected_count=430, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101100000010011
+Difference bits 1..16 = 0000100111111110
+Payload frame number: 206
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000011001000
+Difference bits 1..16 = 1011000100100101
+Payload frame number: 207
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111100100000100
+Difference bits 1..16 = 0010100011101001
+Payload frame number: 208
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101000101101
+Difference bits 1..16 = 1001101111000000
+Payload frame number: 209
+Ordered decoder output valid: corrected_count=408, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001110001111
+Difference bits 1..16 = 0001001001100010
+Payload frame number: 210
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101011100101101
+Difference bits 1..16 = 1000011011000000
+Payload frame number: 211
+Ordered decoder output valid: corrected_count=380, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010101110001
+Difference bits 1..16 = 0000010010011100
+Payload frame number: 212
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100010000110
+Difference bits 1..16 = 1011100101101011
+Payload frame number: 213
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000011110000
+Difference bits 1..16 = 1011000100011101
+Payload frame number: 214
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100100100000
+Difference bits 1..16 = 1010100011001101
+Payload frame number: 215
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110010010010
+Difference bits 1..16 = 1000110101111111
+Payload frame number: 216
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110111000010001
+Difference bits 1..16 = 0011111111111100
+Payload frame number: 217
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101101100010
+Difference bits 1..16 = 1010101010001111
+Payload frame number: 218
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110110010011
+Difference bits 1..16 = 1010110001111110
+Payload frame number: 219
+Ordered decoder output valid: corrected_count=408, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101111111110001
+Difference bits 1..16 = 0000111000011100
+Payload frame number: 220
+Ordered decoder output valid: corrected_count=400, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001010101110
+Difference bits 1..16 = 0000001101000011
+Payload frame number: 221
+Ordered decoder output valid: corrected_count=416, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100111011110110
+Difference bits 1..16 = 0001111100011011
+Payload frame number: 222
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111110110010
+Difference bits 1..16 = 1000111001011111
+Payload frame number: 223
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111111011111
+Difference bits 1..16 = 1001111000110010
+Payload frame number: 224
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101001010100111
+Difference bits 1..16 = 1000001101001010
+Payload frame number: 225
+Ordered decoder output valid: corrected_count=420, corrected_position=10
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000110101110
+Difference bits 1..16 = 0000000001000011
+Payload frame number: 226
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001011010011
+Difference bits 1..16 = 1001001100111110
+Payload frame number: 227
+Ordered decoder output valid: corrected_count=394, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001110101101
+Difference bits 1..16 = 0011001001000000
+Payload frame number: 228
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100010101010
+Difference bits 1..16 = 1000100101000111
+Payload frame number: 229
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101101101100
+Difference bits 1..16 = 1001101010000001
+Payload frame number: 230
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011111001001
+Difference bits 1..16 = 0011011000100100
+Payload frame number: 231
+Ordered decoder output valid: corrected_count=422, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100000000111110
+Difference bits 1..16 = 0001000111010011
+Payload frame number: 232
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001011111100
+Difference bits 1..16 = 1010001100010001
+Payload frame number: 233
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111111001001
+Difference bits 1..16 = 1000111000100100
+Payload frame number: 234
+Ordered decoder output valid: corrected_count=410, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101011100001111
+Difference bits 1..16 = 0000011011100010
+Payload frame number: 235
+Ordered decoder output valid: corrected_count=400, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100000001101000
+Difference bits 1..16 = 0001000110000101
+Payload frame number: 236
+Ordered decoder output valid: corrected_count=380, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100100000011010
+Difference bits 1..16 = 0001100111110111
+Payload frame number: 237
+Ordered decoder output valid: corrected_count=378, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001010011001
+Difference bits 1..16 = 1001001101110100
+Payload frame number: 238
+Ordered decoder output valid: corrected_count=388, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100011100001100
+Difference bits 1..16 = 1001011011100001
+Payload frame number: 239
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000100111110
+Difference bits 1..16 = 1001000011010011
+Payload frame number: 240
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110001101110
+Difference bits 1..16 = 1000110110000011
+Payload frame number: 241
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100010111100
+Difference bits 1..16 = 1001100101010001
+Payload frame number: 242
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101011101001011
+Difference bits 1..16 = 1000011010100110
+Payload frame number: 243
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101001010001100
+Difference bits 1..16 = 1000001101100001
+Payload frame number: 244
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100010110000
+Difference bits 1..16 = 1011100101011101
+Payload frame number: 245
+Ordered decoder output valid: corrected_count=404, corrected_position=8
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000011111100
+Difference bits 1..16 = 0000000100010001
+Payload frame number: 246
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110100101010
+Difference bits 1..16 = 0010110011000111
+Payload frame number: 247
+Ordered decoder output valid: corrected_count=420, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110001111101
+Difference bits 1..16 = 0001110110010000
+Payload frame number: 248
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000101001000
+Difference bits 1..16 = 1001000010100101
+Payload frame number: 249
+Ordered decoder output valid: corrected_count=416, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001100111011
+Difference bits 1..16 = 0011001011010110
+Payload frame number: 250
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101011110111
+Difference bits 1..16 = 1000101100011010
+Payload frame number: 251
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110101010010
+Difference bits 1..16 = 1011110010111111
+Payload frame number: 252
+Ordered decoder output valid: corrected_count=426, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101000000110
+Difference bits 1..16 = 0010101111101011
+Payload frame number: 253
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111110000101
+Difference bits 1..16 = 1011111001101000
+Payload frame number: 254
+Ordered decoder output valid: corrected_count=412, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011110000100
+Difference bits 1..16 = 0001011001101001
+Payload frame number: 255
+Ordered decoder output valid: corrected_count=406, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001011110110
+Difference bits 1..16 = 0010001100011011
+Payload frame number: 256
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110010000000
+Difference bits 1..16 = 1010110101101101
+Payload frame number: 257
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101001010110
+Difference bits 1..16 = 1001101110111011
+Payload frame number: 258
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010111010001
+Difference bits 1..16 = 1010010000111100
+Payload frame number: 259
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100101111110
+Difference bits 1..16 = 1010100010010011
+Payload frame number: 260
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101100000001
+Difference bits 1..16 = 1010101011101100
+Payload frame number: 261
+Ordered decoder output valid: corrected_count=408, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000010101011
+Difference bits 1..16 = 0010000101000110
+Payload frame number: 262
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111010110101100
+Difference bits 1..16 = 0010010001000001
+Payload frame number: 263
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010000000011
+Difference bits 1..16 = 1010010111101110
+Payload frame number: 264
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001101111011
+Difference bits 1..16 = 1010001010010110
+Payload frame number: 265
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100001110000
+Difference bits 1..16 = 0011100110011101
+Payload frame number: 266
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110010000101111
+Difference bits 1..16 = 1011010111000010
+Payload frame number: 267
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111000001111
+Difference bits 1..16 = 1000111111100010
+Payload frame number: 268
+Ordered decoder output valid: corrected_count=374, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101110011000
+Difference bits 1..16 = 1010101001110101
+Payload frame number: 269
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110010010101100
+Difference bits 1..16 = 1011010101000001
+Payload frame number: 270
+Ordered decoder output valid: corrected_count=384, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000010101000
+Difference bits 1..16 = 1011000101000101
+Payload frame number: 271
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000110011011
+Difference bits 1..16 = 1011000001110110
+Payload frame number: 272
+Ordered decoder output valid: corrected_count=382, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001000001101
+Difference bits 1..16 = 0000001111100000
+Payload frame number: 273
+Ordered decoder output valid: corrected_count=408, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101100111100
+Difference bits 1..16 = 0000101011010001
+Payload frame number: 274
+Ordered decoder output valid: corrected_count=418, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001111111110
+Difference bits 1..16 = 0001001000010011
+Payload frame number: 275
+Ordered decoder output valid: corrected_count=380, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001011101000
+Difference bits 1..16 = 0011001100000101
+Payload frame number: 276
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100001011111
+Difference bits 1..16 = 1000100110110010
+Payload frame number: 277
+Ordered decoder output valid: corrected_count=398, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101111100101000
+Difference bits 1..16 = 0000111011000101
+Payload frame number: 278
+Ordered decoder output valid: corrected_count=394, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101111001011100
+Difference bits 1..16 = 0000111110110001
+Payload frame number: 279
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100011111100
+Difference bits 1..16 = 1011100100010001
+Payload frame number: 280
+Ordered decoder output valid: corrected_count=402, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001011011101
+Difference bits 1..16 = 0010001100110000
+Payload frame number: 281
+Ordered decoder output valid: corrected_count=410, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000000101011
+Difference bits 1..16 = 0010000111000110
+Payload frame number: 282
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110000111010
+Difference bits 1..16 = 1000110111010111
+Payload frame number: 283
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001100011010
+Difference bits 1..16 = 1010001011110111
+Payload frame number: 284
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100010011000
+Difference bits 1..16 = 1001100101110101
+Payload frame number: 285
+Ordered decoder output valid: corrected_count=378, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001111110100
+Difference bits 1..16 = 1011001000011001
+Payload frame number: 286
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111011111100
+Difference bits 1..16 = 1000111100010001
+Payload frame number: 287
+Ordered decoder output valid: corrected_count=374, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101100000001
+Difference bits 1..16 = 0011101011101100
+Payload frame number: 288
+Ordered decoder output valid: corrected_count=394, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001011100011
+Difference bits 1..16 = 0001001100001110
+Payload frame number: 289
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111011101101
+Difference bits 1..16 = 0010111100000000
+Payload frame number: 290
+Ordered decoder output valid: corrected_count=384, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101011100011000
+Difference bits 1..16 = 0000011011110101
+Payload frame number: 291
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000001111100
+Difference bits 1..16 = 1000000110010001
+Payload frame number: 292
+Ordered decoder output valid: corrected_count=414, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101110010011
+Difference bits 1..16 = 0011101001111110
+Payload frame number: 293
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001001011110
+Difference bits 1..16 = 0011001110110011
+Payload frame number: 294
+Ordered decoder output valid: corrected_count=400, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110000001111
+Difference bits 1..16 = 0010110111100010
+Payload frame number: 295
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101011001010101
+Difference bits 1..16 = 1000011110111000
+Payload frame number: 296
+Ordered decoder output valid: corrected_count=424, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101000000011
+Difference bits 1..16 = 1011101111101110
+Payload frame number: 297
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000111000111
+Difference bits 1..16 = 1000000000101010
+Payload frame number: 298
+Ordered decoder output valid: corrected_count=432, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001000011011
+Difference bits 1..16 = 0000001111110110
+Payload frame number: 299
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100011001110010
+Difference bits 1..16 = 1001011110011111
+Payload frame number: 300
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110010100001
+Difference bits 1..16 = 1010110101001100
+Payload frame number: 301
+Ordered decoder output valid: corrected_count=386, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100010011000111
+Difference bits 1..16 = 0001010100101010
+Payload frame number: 302
+Ordered decoder output valid: corrected_count=400, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110101010111
+Difference bits 1..16 = 0010110010111010
+Payload frame number: 303
+Ordered decoder output valid: corrected_count=424, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101110000111
+Difference bits 1..16 = 0011101001101010
+Payload frame number: 304
+Ordered decoder output valid: corrected_count=426, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110000010010
+Difference bits 1..16 = 0010110111111111
+Payload frame number: 305
+Ordered decoder output valid: corrected_count=424, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000010110011
+Difference bits 1..16 = 1001000101011110
+Payload frame number: 306
+Ordered decoder output valid: corrected_count=388, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010011100000
+Difference bits 1..16 = 0011010100001101
+Payload frame number: 307
+Ordered decoder output valid: corrected_count=394, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001101010111
+Difference bits 1..16 = 0001001010111010
+Payload frame number: 308
+Ordered decoder output valid: corrected_count=408, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100111011101100
+Difference bits 1..16 = 0001111100000001
+Payload frame number: 309
+Ordered decoder output valid: corrected_count=386, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111011000101001
+Difference bits 1..16 = 1010011111000100
+Payload frame number: 310
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000010000101
+Difference bits 1..16 = 1011000101101000
+Payload frame number: 311
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100110001100
+Difference bits 1..16 = 0011100001100001
+Payload frame number: 312
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101000000100
+Difference bits 1..16 = 1000101111101001
+Payload frame number: 313
+Ordered decoder output valid: corrected_count=424, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011100010110
+Difference bits 1..16 = 0011011011111011
+Payload frame number: 314
+Ordered decoder output valid: corrected_count=394, corrected_position=11
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000111000110
+Difference bits 1..16 = 0000000000101011
+Payload frame number: 315
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000110110111
+Difference bits 1..16 = 0011000001011010
+Payload frame number: 316
+Ordered decoder output valid: corrected_count=426, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011010001001
+Difference bits 1..16 = 0001011101100100
+Payload frame number: 317
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101000110001
+Difference bits 1..16 = 0011101111011100
+Payload frame number: 318
+Ordered decoder output valid: corrected_count=402, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001101110111
+Difference bits 1..16 = 0000001010011010
+Payload frame number: 319
+Ordered decoder output valid: corrected_count=406, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010101110001
+Difference bits 1..16 = 0000010010011100
+Payload frame number: 320
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110101011101
+Difference bits 1..16 = 1000110010110000
+Payload frame number: 321
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001110000101
+Difference bits 1..16 = 1011001001101000
+Payload frame number: 322
+Ordered decoder output valid: corrected_count=422, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100111100100001
+Difference bits 1..16 = 0001111011001100
+Payload frame number: 323
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100110010100100
+Difference bits 1..16 = 1001110101001001
+Payload frame number: 324
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000001101010
+Difference bits 1..16 = 1001000110000111
+Payload frame number: 325
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101111111000
+Difference bits 1..16 = 1011101000010101
+Payload frame number: 326
+Ordered decoder output valid: corrected_count=410, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001001110010
+Difference bits 1..16 = 0010001110011111
+Payload frame number: 327
+Ordered decoder output valid: corrected_count=420, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001110110010
+Difference bits 1..16 = 0000001001011111
+Payload frame number: 328
+Ordered decoder output valid: corrected_count=408, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010111000100
+Difference bits 1..16 = 0011010000101001
+Payload frame number: 329
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101000011101
+Difference bits 1..16 = 1011101111110000
+Payload frame number: 330
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100101110
+Difference bits 1..16 = 1011011011000011
+Payload frame number: 331
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101010000000
+Difference bits 1..16 = 1001101101101101
+Payload frame number: 332
+Ordered decoder output valid: corrected_count=396, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111100101100
+Difference bits 1..16 = 0010111011000001
+Payload frame number: 333
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001010010001
+Difference bits 1..16 = 1001001101111100
+Payload frame number: 334
+Ordered decoder output valid: corrected_count=398, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001011011110
+Difference bits 1..16 = 0010001100110011
+Payload frame number: 335
+Ordered decoder output valid: corrected_count=386, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111010110101111
+Difference bits 1..16 = 0010010001000010
+Payload frame number: 336
+Ordered decoder output valid: corrected_count=378, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101111111110
+Difference bits 1..16 = 0000101000010011
+Payload frame number: 337
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011110100100
+Difference bits 1..16 = 1011011001001001
+Payload frame number: 338
+Ordered decoder output valid: corrected_count=428, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010001110111
+Difference bits 1..16 = 0011010110011010
+Payload frame number: 339
+Ordered decoder output valid: corrected_count=396, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100111011000110
+Difference bits 1..16 = 0001111100101011
+Payload frame number: 340
+Ordered decoder output valid: corrected_count=406, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011101011010
+Difference bits 1..16 = 0001011010110111
+Payload frame number: 341
+Ordered decoder output valid: corrected_count=400, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101110000000110
+Difference bits 1..16 = 0000110111101011
+Payload frame number: 342
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111100110100
+Difference bits 1..16 = 1011111011011001
+Payload frame number: 343
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011111010110
+Difference bits 1..16 = 1011011000111011
+Payload frame number: 344
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110111000110
+Difference bits 1..16 = 1011110000101011
+Payload frame number: 345
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111010011010
+Difference bits 1..16 = 1000111101110111
+Payload frame number: 346
+Ordered decoder output valid: corrected_count=410, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010001101000
+Difference bits 1..16 = 0000010110000101
+Payload frame number: 347
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111100011110
+Difference bits 1..16 = 1011111011110011
+Payload frame number: 348
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101001101001
+Difference bits 1..16 = 1001101110000100
+Payload frame number: 349
+Ordered decoder output valid: corrected_count=386, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110111101110
+Difference bits 1..16 = 0011110000000011
+Payload frame number: 350
+Ordered decoder output valid: corrected_count=388, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100101110100000
+Difference bits 1..16 = 0001101001001101
+Payload frame number: 351
+Ordered decoder output valid: corrected_count=408, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100100111110011
+Difference bits 1..16 = 0001100000011110
+Payload frame number: 352
+Ordered decoder output valid: corrected_count=402, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101111011110
+Difference bits 1..16 = 0010101000110011
+Payload frame number: 353
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011110010101
+Difference bits 1..16 = 0011011001111000
+Payload frame number: 354
+Ordered decoder output valid: corrected_count=416, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110111100100000
+Difference bits 1..16 = 0011111011001101
+Payload frame number: 355
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101001010010
+Difference bits 1..16 = 1011101110111111
+Payload frame number: 356
+Ordered decoder output valid: corrected_count=390, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110111011111
+Difference bits 1..16 = 0011110000110010
+Payload frame number: 357
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000111100000
+Difference bits 1..16 = 1011000000001101
+Payload frame number: 358
+Ordered decoder output valid: corrected_count=384, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110111100011110
+Difference bits 1..16 = 0011111011110011
+Payload frame number: 359
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110110011100
+Difference bits 1..16 = 1011110001110001
+Payload frame number: 360
+Ordered decoder output valid: corrected_count=410, corrected_position=8
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000011000010
+Difference bits 1..16 = 0000000100101111
+Payload frame number: 361
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101001111001
+Difference bits 1..16 = 1010101110010100
+Payload frame number: 362
+Ordered decoder output valid: corrected_count=396, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101100001010110
+Difference bits 1..16 = 0000100110111011
+Payload frame number: 363
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110000101001
+Difference bits 1..16 = 1011110111000100
+Payload frame number: 364
+Ordered decoder output valid: corrected_count=388, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011101011110
+Difference bits 1..16 = 1011011010110011
+Payload frame number: 365
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110000001111101
+Difference bits 1..16 = 1011000110010000
+Payload frame number: 366
+Ordered decoder output valid: corrected_count=414, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011110001101
+Difference bits 1..16 = 0011011001100000
+Payload frame number: 367
+Ordered decoder output valid: corrected_count=376, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111111111111111
+Difference bits 1..16 = 1010111000010010
+Payload frame number: 368
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100011010
+Difference bits 1..16 = 1011011011110111
+Payload frame number: 369
+Ordered decoder output valid: corrected_count=402, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011111101001
+Difference bits 1..16 = 0010011000000100
+Payload frame number: 370
+Ordered decoder output valid: corrected_count=380, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111000011001100
+Difference bits 1..16 = 1010000100100001
+Payload frame number: 371
+Ordered decoder output valid: corrected_count=366, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100011101
+Difference bits 1..16 = 1011011011110000
+Payload frame number: 372
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111001010000
+Difference bits 1..16 = 1001111110111101
+Payload frame number: 373
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100001100111001
+Difference bits 1..16 = 1001001011010100
+Payload frame number: 374
+Ordered decoder output valid: corrected_count=382, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111100101000
+Difference bits 1..16 = 1001111011000101
+Payload frame number: 375
+Ordered decoder output valid: corrected_count=370, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100110101001
+Difference bits 1..16 = 1001100001000100
+Payload frame number: 376
+Ordered decoder output valid: corrected_count=390, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001100011010
+Difference bits 1..16 = 0011001011110111
+Payload frame number: 377
+Ordered decoder output valid: corrected_count=412, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011100011010
+Difference bits 1..16 = 0001011011110111
+Payload frame number: 378
+Ordered decoder output valid: corrected_count=378, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000111110100
+Difference bits 1..16 = 1000000000011001
+Payload frame number: 379
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011100100101
+Difference bits 1..16 = 1011011011001000
+Payload frame number: 380
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110011110101
+Difference bits 1..16 = 1011110100011000
+Payload frame number: 381
+Ordered decoder output valid: corrected_count=424, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101100010110
+Difference bits 1..16 = 0011101011111011
+Payload frame number: 382
+Ordered decoder output valid: corrected_count=406, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011110100000
+Difference bits 1..16 = 0010011001001101
+Payload frame number: 383
+Ordered decoder output valid: corrected_count=444, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010011000011
+Difference bits 1..16 = 1010010100101110
+Payload frame number: 384
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001101110010
+Difference bits 1..16 = 1011001010011111
+Payload frame number: 385
+Ordered decoder output valid: corrected_count=430, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101001010101
+Difference bits 1..16 = 0011101110111000
+Payload frame number: 386
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100001010011
+Difference bits 1..16 = 1010100110111110
+Payload frame number: 387
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110101100001
+Difference bits 1..16 = 1000110010001100
+Payload frame number: 388
+Ordered decoder output valid: corrected_count=416, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000011010010
+Difference bits 1..16 = 0011000100111111
+Payload frame number: 389
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101000011011001
+Difference bits 1..16 = 1000000100110100
+Payload frame number: 390
+Ordered decoder output valid: corrected_count=406, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101011000010
+Difference bits 1..16 = 0010101100101111
+Payload frame number: 391
+Ordered decoder output valid: corrected_count=400, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010111100101
+Difference bits 1..16 = 0011010000001000
+Payload frame number: 392
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100011101110
+Difference bits 1..16 = 1001100100000011
+Payload frame number: 393
+Ordered decoder output valid: corrected_count=422, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110111101000101
+Difference bits 1..16 = 0011111010101000
+Payload frame number: 394
+Ordered decoder output valid: corrected_count=404, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111001010000
+Difference bits 1..16 = 0010111110111101
+Payload frame number: 395
+Ordered decoder output valid: corrected_count=378, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110011010110
+Difference bits 1..16 = 0010110100111011
+Payload frame number: 396
+Ordered decoder output valid: corrected_count=386, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011000011111110
+Difference bits 1..16 = 0110000100010011
+Payload frame number: 397
+Ordered decoder output valid: corrected_count=396, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011000011110010
+Difference bits 1..16 = 0110000100011111
+Payload frame number: 398
+Ordered decoder output valid: corrected_count=386, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101001011010
+Difference bits 1..16 = 1010101110110111
+Payload frame number: 399
+Ordered decoder output valid: corrected_count=390, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011110101110
+Difference bits 1..16 = 0010011001000011
+Payload frame number: 400
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101100010110
+Difference bits 1..16 = 1000101011111011
+Payload frame number: 401
+Ordered decoder output valid: corrected_count=400, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011110100000110
+Difference bits 1..16 = 0110110011101011
+Payload frame number: 402
+Ordered decoder output valid: corrected_count=408, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011111110001000
+Difference bits 1..16 = 0110111001100101
+Payload frame number: 403
+Ordered decoder output valid: corrected_count=404, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001111111110011
+Difference bits 1..16 = 0100111000011110
+Payload frame number: 404
+Ordered decoder output valid: corrected_count=396, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011101011111100
+Difference bits 1..16 = 0110101100010001
+Payload frame number: 405
+Ordered decoder output valid: corrected_count=378, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010101110100101
+Difference bits 1..16 = 0111101001001000
+Payload frame number: 406
+Ordered decoder output valid: corrected_count=410, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011100101011101
+Difference bits 1..16 = 0110100010110000
+Payload frame number: 407
+Ordered decoder output valid: corrected_count=412, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011001100100000
+Difference bits 1..16 = 0110001011001101
+Payload frame number: 408
+Ordered decoder output valid: corrected_count=402, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010011111011011
+Difference bits 1..16 = 0111011000110110
+Payload frame number: 409
+Ordered decoder output valid: corrected_count=424, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011111101110010
+Difference bits 1..16 = 1110111010011111
+Payload frame number: 410
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011110110000111
+Difference bits 1..16 = 1110110001101010
+Payload frame number: 411
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101001010001000
+Difference bits 1..16 = 1000001101100101
+Payload frame number: 412
+Ordered decoder output valid: corrected_count=396, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001000011100110
+Difference bits 1..16 = 0100000100001011
+Payload frame number: 413
+Ordered decoder output valid: corrected_count=404, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001000010011111
+Difference bits 1..16 = 0100000101110010
+Payload frame number: 414
+Ordered decoder output valid: corrected_count=398, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010001001001
+Difference bits 1..16 = 0000010110100100
+Payload frame number: 415
+Ordered decoder output valid: corrected_count=430, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000010001111000
+Difference bits 1..16 = 0101010110010101
+Payload frame number: 416
+Ordered decoder output valid: corrected_count=436, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001100001010110
+Difference bits 1..16 = 0100100110111011
+Payload frame number: 417
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111010100111
+Difference bits 1..16 = 1000111101001010
+Payload frame number: 418
+Ordered decoder output valid: corrected_count=408, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001010001010001
+Difference bits 1..16 = 0100010110111100
+Payload frame number: 419
+Ordered decoder output valid: corrected_count=430, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010011011101
+Difference bits 1..16 = 0011010100110000
+Payload frame number: 420
+Ordered decoder output valid: corrected_count=414, corrected_position=8
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000011100111
+Difference bits 1..16 = 0000000100001010
+Payload frame number: 421
+Ordered decoder output valid: corrected_count=424, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011110010111
+Difference bits 1..16 = 1011011001111010
+Payload frame number: 422
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011010111011
+Difference bits 1..16 = 1011011101010110
+Payload frame number: 423
+Ordered decoder output valid: corrected_count=406, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101011101010101
+Difference bits 1..16 = 0000011010111000
+Payload frame number: 424
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001100111101
+Difference bits 1..16 = 1011001011010000
+Payload frame number: 425
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101011101111
+Difference bits 1..16 = 1000101100000010
+Payload frame number: 426
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010000111111
+Difference bits 1..16 = 1010010111010010
+Payload frame number: 427
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111000001111
+Difference bits 1..16 = 1011111111100010
+Payload frame number: 428
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111001110110111
+Difference bits 1..16 = 1010001001011010
+Payload frame number: 429
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100010000000
+Difference bits 1..16 = 1010100101101101
+Payload frame number: 430
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100111011000
+Difference bits 1..16 = 0011100000110101
+Payload frame number: 431
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100001110000
+Difference bits 1..16 = 1010100110011101
+Payload frame number: 432
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111111010111000
+Difference bits 1..16 = 1010111101010101
+Payload frame number: 433
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110011010000
+Difference bits 1..16 = 1011110100111101
+Payload frame number: 434
+Ordered decoder output valid: corrected_count=422, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011110000101
+Difference bits 1..16 = 0011011001101000
+Payload frame number: 435
+Ordered decoder output valid: corrected_count=434, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000111001110
+Difference bits 1..16 = 0010000000100011
+Payload frame number: 436
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111101111100000
+Difference bits 1..16 = 1010101000001101
+Payload frame number: 437
+Ordered decoder output valid: corrected_count=432, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100110011011
+Difference bits 1..16 = 1110100001110110
+Payload frame number: 438
+Ordered decoder output valid: corrected_count=436, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100111000110011
+Difference bits 1..16 = 0001111111011110
+Payload frame number: 439
+Ordered decoder output valid: corrected_count=448, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000110010011
+Difference bits 1..16 = 1001000001111110
+Payload frame number: 440
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010110000111111
+Difference bits 1..16 = 1111110111010010
+Payload frame number: 441
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000010011101001
+Difference bits 1..16 = 1101010100000100
+Payload frame number: 442
+Ordered decoder output valid: corrected_count=440, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001110110010001
+Difference bits 1..16 = 0100110001111100
+Payload frame number: 443
+Ordered decoder output valid: corrected_count=420, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010111110111101
+Difference bits 1..16 = 0111111001010000
+Payload frame number: 444
+Ordered decoder output valid: corrected_count=428, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011100111001101
+Difference bits 1..16 = 0110100000100000
+Payload frame number: 445
+Ordered decoder output valid: corrected_count=418, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001101110110101
+Difference bits 1..16 = 0100101001011000
+Payload frame number: 446
+Ordered decoder output valid: corrected_count=418, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001111011100110
+Difference bits 1..16 = 0100111100001011
+Payload frame number: 447
+Ordered decoder output valid: corrected_count=426, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011101111101011
+Difference bits 1..16 = 0110101000000110
+Payload frame number: 448
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000001101101
+Difference bits 1..16 = 1101000110000000
+Payload frame number: 449
+Ordered decoder output valid: corrected_count=452, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001111110010100
+Difference bits 1..16 = 0100111001111001
+Payload frame number: 450
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001000111001010
+Difference bits 1..16 = 1100000000100111
+Payload frame number: 451
+Ordered decoder output valid: corrected_count=410, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011011110101111
+Difference bits 1..16 = 0110011001000010
+Payload frame number: 452
+Ordered decoder output valid: corrected_count=430, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001001001001011
+Difference bits 1..16 = 0100001110100110
+Payload frame number: 453
+Ordered decoder output valid: corrected_count=418, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000001101001111
+Difference bits 1..16 = 0101001010100010
+Payload frame number: 454
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100001001101
+Difference bits 1..16 = 1110100110100000
+Payload frame number: 455
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010101000001001
+Difference bits 1..16 = 0111101111100100
+Payload frame number: 456
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100001011001
+Difference bits 1..16 = 1110100110110100
+Payload frame number: 457
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000001110011111
+Difference bits 1..16 = 1101001001110010
+Payload frame number: 458
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000101000011111
+Difference bits 1..16 = 1101101111110010
+Payload frame number: 459
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111010101110
+Difference bits 1..16 = 1001111101000011
+Payload frame number: 460
+Ordered decoder output valid: corrected_count=424, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010001011001111
+Difference bits 1..16 = 0111001100100010
+Payload frame number: 461
+Ordered decoder output valid: corrected_count=434, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000010101000
+Difference bits 1..16 = 0111000101000101
+Payload frame number: 462
+Ordered decoder output valid: corrected_count=400, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011001111011101
+Difference bits 1..16 = 0110001000110000
+Payload frame number: 463
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010000111011001
+Difference bits 1..16 = 1111000000110100
+Payload frame number: 464
+Ordered decoder output valid: corrected_count=436, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011000001100
+Difference bits 1..16 = 0001011111100001
+Payload frame number: 465
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011001000011101
+Difference bits 1..16 = 1110001111110000
+Payload frame number: 466
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101101001100
+Difference bits 1..16 = 1000101010100001
+Payload frame number: 467
+Ordered decoder output valid: corrected_count=426, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000111010011010
+Difference bits 1..16 = 0101111101110111
+Payload frame number: 468
+Ordered decoder output valid: corrected_count=418, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001001111010
+Difference bits 1..16 = 0010001110010111
+Payload frame number: 469
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011111100001001
+Difference bits 1..16 = 1110111011100100
+Payload frame number: 470
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010001111111111
+Difference bits 1..16 = 1111001000010010
+Payload frame number: 471
+Ordered decoder output valid: corrected_count=410, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000100011011
+Difference bits 1..16 = 0010000011110110
+Payload frame number: 472
+Ordered decoder output valid: corrected_count=424, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100100111111110
+Difference bits 1..16 = 0001100000010011
+Payload frame number: 473
+Ordered decoder output valid: corrected_count=428, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000101111010
+Difference bits 1..16 = 0111000010010111
+Payload frame number: 474
+Ordered decoder output valid: corrected_count=412, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000100111001010
+Difference bits 1..16 = 0101100000100111
+Payload frame number: 475
+Ordered decoder output valid: corrected_count=406, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010110101100001
+Difference bits 1..16 = 1111110010001100
+Payload frame number: 476
+Ordered decoder output valid: corrected_count=394, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000100000101111
+Difference bits 1..16 = 1101100111000010
+Payload frame number: 477
+Ordered decoder output valid: corrected_count=402, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000100110011111
+Difference bits 1..16 = 1101100001110010
+Payload frame number: 478
+Ordered decoder output valid: corrected_count=396, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000010010110101
+Difference bits 1..16 = 0101010101011000
+Payload frame number: 479
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011110001001011
+Difference bits 1..16 = 1110110110100110
+Payload frame number: 480
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000001100000001
+Difference bits 1..16 = 0101001011101100
+Payload frame number: 481
+Ordered decoder output valid: corrected_count=424, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000001110011
+Difference bits 1..16 = 0111000110011110
+Payload frame number: 482
+Ordered decoder output valid: corrected_count=438, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010100101101011
+Difference bits 1..16 = 0111100010000110
+Payload frame number: 483
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111011000001010
+Difference bits 1..16 = 1010011111100111
+Payload frame number: 484
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101001001101001
+Difference bits 1..16 = 1000001110000100
+Payload frame number: 485
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001100001101001
+Difference bits 1..16 = 1100100110000100
+Payload frame number: 486
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000011101101100
+Difference bits 1..16 = 1101011010000001
+Payload frame number: 487
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011110010101110
+Difference bits 1..16 = 1110110101000011
+Payload frame number: 488
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111011101000
+Difference bits 1..16 = 1000111100000101
+Payload frame number: 489
+Ordered decoder output valid: corrected_count=444, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010111111101111
+Difference bits 1..16 = 1111111000000010
+Payload frame number: 490
+Ordered decoder output valid: corrected_count=414, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000011101101
+Difference bits 1..16 = 0010000100000000
+Payload frame number: 491
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110001111110
+Difference bits 1..16 = 1011110110010011
+Payload frame number: 492
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011111000100111
+Difference bits 1..16 = 0110111111001010
+Payload frame number: 493
+Ordered decoder output valid: corrected_count=400, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001001101111111
+Difference bits 1..16 = 1100001010010010
+Payload frame number: 494
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011111000110110
+Difference bits 1..16 = 1110111111011011
+Payload frame number: 495
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111000001111
+Difference bits 1..16 = 1011111111100010
+Payload frame number: 496
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011000110000000
+Difference bits 1..16 = 1110000001101101
+Payload frame number: 497
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101100001111000
+Difference bits 1..16 = 1000100110010101
+Payload frame number: 498
+Ordered decoder output valid: corrected_count=416, corrected_position=7
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101001101100110
+Difference bits 1..16 = 0000001010001011
+Payload frame number: 499
+Ordered decoder output valid: corrected_count=414, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001101101100
+Difference bits 1..16 = 0011001010000001
+Payload frame number: 500
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111111001000001
+Difference bits 1..16 = 1010111110101100
+Payload frame number: 501
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101010100100
+Difference bits 1..16 = 1011101101001001
+Payload frame number: 502
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100000011000
+Difference bits 1..16 = 1010100111110101
+Payload frame number: 503
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111101111010
+Difference bits 1..16 = 1011111010010111
+Payload frame number: 504
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111000010100000
+Difference bits 1..16 = 1010000101001101
+Payload frame number: 505
+Ordered decoder output valid: corrected_count=422, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000100010011
+Difference bits 1..16 = 0011000011111110
+Payload frame number: 506
+Ordered decoder output valid: corrected_count=422, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011111101111
+Difference bits 1..16 = 0010011000000010
+Payload frame number: 507
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010110101101
+Difference bits 1..16 = 1010010001000000
+Payload frame number: 508
+Ordered decoder output valid: corrected_count=430, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001011100011
+Difference bits 1..16 = 0010001100001110
+Payload frame number: 509
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001011000011
+Difference bits 1..16 = 1011001100101110
+Payload frame number: 510
+Ordered decoder output valid: corrected_count=434, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001101101001
+Difference bits 1..16 = 0010001010000100
+Payload frame number: 511
+Ordered decoder output valid: corrected_count=446, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111000001111101
+Difference bits 1..16 = 1010000110010000
+Payload frame number: 512
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101111100111
+Difference bits 1..16 = 1011101000001010
+Payload frame number: 513
+Ordered decoder output valid: corrected_count=436, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000111110001
+Difference bits 1..16 = 0011000000011100
+Payload frame number: 514
+Ordered decoder output valid: corrected_count=436, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110110100111
+Difference bits 1..16 = 0010110001001010
+Payload frame number: 515
+Ordered decoder output valid: corrected_count=454, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011101001111110
+Difference bits 1..16 = 1110101110010011
+Payload frame number: 516
+Ordered decoder output valid: corrected_count=430, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010111011110000
+Difference bits 1..16 = 0111111100011101
+Payload frame number: 517
+Ordered decoder output valid: corrected_count=422, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001100100001
+Difference bits 1..16 = 0011001011001100
+Payload frame number: 518
+Ordered decoder output valid: corrected_count=426, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010111111001100
+Difference bits 1..16 = 0111111000100001
+Payload frame number: 519
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110110111000
+Difference bits 1..16 = 1010110001010101
+Payload frame number: 520
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011011100010100
+Difference bits 1..16 = 1110011011111001
+Payload frame number: 521
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111111001000001
+Difference bits 1..16 = 1010111110101100
+Payload frame number: 522
+Ordered decoder output valid: corrected_count=414, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100010010101
+Difference bits 1..16 = 0011100101111000
+Payload frame number: 523
+Ordered decoder output valid: corrected_count=420, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000011000010
+Difference bits 1..16 = 0111000100101111
+Payload frame number: 524
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010010011111101
+Difference bits 1..16 = 0111010100010000
+Payload frame number: 525
+Ordered decoder output valid: corrected_count=440, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011010100100101
+Difference bits 1..16 = 0110010011001000
+Payload frame number: 526
+Ordered decoder output valid: corrected_count=452, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000000011111
+Difference bits 1..16 = 1101000111110010
+Payload frame number: 527
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000101101101
+Difference bits 1..16 = 1101000010000000
+Payload frame number: 528
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000111101101111
+Difference bits 1..16 = 1101111010000010
+Payload frame number: 529
+Ordered decoder output valid: corrected_count=448, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011100000110111
+Difference bits 1..16 = 0110100111011010
+Payload frame number: 530
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001000000000011
+Difference bits 1..16 = 1100000111101110
+Payload frame number: 531
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010101110100101
+Difference bits 1..16 = 0111101001001000
+Payload frame number: 532
+Ordered decoder output valid: corrected_count=426, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001100001111111
+Difference bits 1..16 = 0100100110010010
+Payload frame number: 533
+Ordered decoder output valid: corrected_count=434, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011100010010000
+Difference bits 1..16 = 0110100101111101
+Payload frame number: 534
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010110011010001
+Difference bits 1..16 = 1111110100111100
+Payload frame number: 535
+Ordered decoder output valid: corrected_count=440, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010111010011010
+Difference bits 1..16 = 0111111101110111
+Payload frame number: 536
+Ordered decoder output valid: corrected_count=432, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001100000010011
+Difference bits 1..16 = 1100100111111110
+Payload frame number: 537
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010000011110010
+Difference bits 1..16 = 1111000100011111
+Payload frame number: 538
+Ordered decoder output valid: corrected_count=444, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010001010101101
+Difference bits 1..16 = 0111001101000000
+Payload frame number: 539
+Ordered decoder output valid: corrected_count=402, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011111100100100
+Difference bits 1..16 = 0110111011001001
+Payload frame number: 540
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000010101111
+Difference bits 1..16 = 1101000101000010
+Payload frame number: 541
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000011110000
+Difference bits 1..16 = 1101000100011101
+Payload frame number: 542
+Ordered decoder output valid: corrected_count=446, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011011111100000
+Difference bits 1..16 = 1110011000001101
+Payload frame number: 543
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101101011001
+Difference bits 1..16 = 1000101010110100
+Payload frame number: 544
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001101111101010
+Difference bits 1..16 = 1100101000000111
+Payload frame number: 545
+Ordered decoder output valid: corrected_count=432, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000001101111
+Difference bits 1..16 = 1101000110000010
+Payload frame number: 546
+Ordered decoder output valid: corrected_count=434, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111111000001111
+Difference bits 1..16 = 0010111111100010
+Payload frame number: 547
+Ordered decoder output valid: corrected_count=428, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000101000100
+Difference bits 1..16 = 0111000010101001
+Payload frame number: 548
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011111111110101
+Difference bits 1..16 = 0110111000011000
+Payload frame number: 549
+Ordered decoder output valid: corrected_count=430, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110010011001101
+Difference bits 1..16 = 0011010100100000
+Payload frame number: 550
+Ordered decoder output valid: corrected_count=442, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101100000100110
+Difference bits 1..16 = 0000100111001011
+Payload frame number: 551
+Ordered decoder output valid: corrected_count=422, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011001001011101
+Difference bits 1..16 = 0110001110110000
+Payload frame number: 552
+Ordered decoder output valid: corrected_count=446, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010001110101111
+Difference bits 1..16 = 1111001001000010
+Payload frame number: 553
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101011000111011
+Difference bits 1..16 = 1000011111010110
+Payload frame number: 554
+Ordered decoder output valid: corrected_count=436, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001100001000100
+Difference bits 1..16 = 0100100110101001
+Payload frame number: 555
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010101000011111
+Difference bits 1..16 = 0111101111110010
+Payload frame number: 556
+Ordered decoder output valid: corrected_count=436, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001010100111
+Difference bits 1..16 = 0011001101001010
+Payload frame number: 557
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101101000000110
+Difference bits 1..16 = 1000101111101011
+Payload frame number: 558
+Ordered decoder output valid: corrected_count=444, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000100011001100
+Difference bits 1..16 = 0101100100100001
+Payload frame number: 559
+Ordered decoder output valid: corrected_count=444, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111100100000010
+Difference bits 1..16 = 0010100011101111
+Payload frame number: 560
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100011011111
+Difference bits 1..16 = 1110100100110010
+Payload frame number: 561
+Ordered decoder output valid: corrected_count=428, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000100110111011
+Difference bits 1..16 = 0101100001010110
+Payload frame number: 562
+Ordered decoder output valid: corrected_count=414, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000101010101
+Difference bits 1..16 = 0111000010111000
+Payload frame number: 563
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000001011010000
+Difference bits 1..16 = 1101001100111101
+Payload frame number: 564
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001101101010101
+Difference bits 1..16 = 1100101010111000
+Payload frame number: 565
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111110100111000
+Difference bits 1..16 = 1010110011010101
+Payload frame number: 566
+Ordered decoder output valid: corrected_count=418, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000100111011111
+Difference bits 1..16 = 0101100000110010
+Payload frame number: 567
+Ordered decoder output valid: corrected_count=442, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010001100011010
+Difference bits 1..16 = 0111001011110111
+Payload frame number: 568
+Ordered decoder output valid: corrected_count=424, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110001000111
+Difference bits 1..16 = 1000110110101010
+Payload frame number: 569
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100011111101
+Difference bits 1..16 = 1110100100010000
+Payload frame number: 570
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000101100101101
+Difference bits 1..16 = 0101101011000000
+Payload frame number: 571
+Ordered decoder output valid: corrected_count=414, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010100111010100
+Difference bits 1..16 = 0111100000111001
+Payload frame number: 572
+Ordered decoder output valid: corrected_count=404, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000011000001010
+Difference bits 1..16 = 1101011111100111
+Payload frame number: 573
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011111111000100
+Difference bits 1..16 = 0110111000101001
+Payload frame number: 574
+Ordered decoder output valid: corrected_count=412, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001110100001010
+Difference bits 1..16 = 0100110011100111
+Payload frame number: 575
+Ordered decoder output valid: corrected_count=410, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000000100110100
+Difference bits 1..16 = 0101000011011001
+Payload frame number: 576
+Ordered decoder output valid: corrected_count=418, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000011011101110
+Difference bits 1..16 = 0101011100000011
+Payload frame number: 577
+Ordered decoder output valid: corrected_count=410, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010101111111000
+Difference bits 1..16 = 1111101000010101
+Payload frame number: 578
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010110010100010
+Difference bits 1..16 = 1111110101001111
+Payload frame number: 579
+Ordered decoder output valid: corrected_count=444, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000011011011000
+Difference bits 1..16 = 1101011100110101
+Payload frame number: 580
+Ordered decoder output valid: corrected_count=414, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011100011111100
+Difference bits 1..16 = 1110100100010001
+Payload frame number: 581
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011110000111100
+Difference bits 1..16 = 1110110111010001
+Payload frame number: 582
+Ordered decoder output valid: corrected_count=444, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001111101011010
+Difference bits 1..16 = 1100111010110111
+Payload frame number: 583
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001110010011010
+Difference bits 1..16 = 1100110101110111
+Payload frame number: 584
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010010011011110
+Difference bits 1..16 = 1111010100110011
+Payload frame number: 585
+Ordered decoder output valid: corrected_count=430, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010001011001000
+Difference bits 1..16 = 0111001100100101
+Payload frame number: 586
+Ordered decoder output valid: corrected_count=444, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010111001111110
+Difference bits 1..16 = 0111111110010011
+Payload frame number: 587
+Ordered decoder output valid: corrected_count=428, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010001001000100
+Difference bits 1..16 = 0111001110101001
+Payload frame number: 588
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010010101001000
+Difference bits 1..16 = 0111010010100101
+Payload frame number: 589
+Ordered decoder output valid: corrected_count=434, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010000101000100
+Difference bits 1..16 = 0111000010101001
+Payload frame number: 590
+Ordered decoder output valid: corrected_count=428, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101101010010
+Difference bits 1..16 = 0000101010111111
+Payload frame number: 591
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100110011101000
+Difference bits 1..16 = 1001110100000101
+Payload frame number: 592
+Ordered decoder output valid: corrected_count=394, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100100101011011
+Difference bits 1..16 = 0001100010110110
+Payload frame number: 593
+Ordered decoder output valid: corrected_count=452, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100100101110
+Difference bits 1..16 = 1001100011000011
+Payload frame number: 594
+Ordered decoder output valid: corrected_count=418, corrected_position=8
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101000010010011
+Difference bits 1..16 = 0000000101111110
+Payload frame number: 595
+Ordered decoder output valid: corrected_count=424, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101011000011
+Difference bits 1..16 = 0000101100101110
+Payload frame number: 596
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101101111011
+Difference bits 1..16 = 1001101010010110
+Payload frame number: 597
+Ordered decoder output valid: corrected_count=402, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100000110010110
+Difference bits 1..16 = 0001000001111011
+Payload frame number: 598
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110110101001011
+Difference bits 1..16 = 0011110010100110
+Payload frame number: 599
+Ordered decoder output valid: corrected_count=438, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100111011011111
+Difference bits 1..16 = 0001111100110010
+Payload frame number: 600
+Ordered decoder output valid: corrected_count=420, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101011101111111
+Difference bits 1..16 = 0000011010010010
+Payload frame number: 601
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101111010000
+Difference bits 1..16 = 0011101000111101
+Payload frame number: 602
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001111100100
+Difference bits 1..16 = 1011001000001001
+Payload frame number: 603
+Ordered decoder output valid: corrected_count=424, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111000011101
+Difference bits 1..16 = 1011111111110000
+Payload frame number: 604
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101010001110010
+Difference bits 1..16 = 1000010110011111
+Payload frame number: 605
+Ordered decoder output valid: corrected_count=438, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001000000011
+Difference bits 1..16 = 0001001111101110
+Payload frame number: 606
+Ordered decoder output valid: corrected_count=420, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110101011101010
+Difference bits 1..16 = 0011101100000111
+Payload frame number: 607
+Ordered decoder output valid: corrected_count=430, corrected_position=5
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101101100011011
+Difference bits 1..16 = 0000101011110110
+Payload frame number: 608
+Ordered decoder output valid: corrected_count=424, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110001010100101
+Difference bits 1..16 = 0011001101001000
+Payload frame number: 609
+Ordered decoder output valid: corrected_count=434, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111000101111001
+Difference bits 1..16 = 0010000010010100
+Payload frame number: 610
+Ordered decoder output valid: corrected_count=450, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101010100100
+Difference bits 1..16 = 0010101101001001
+Payload frame number: 611
+Ordered decoder output valid: corrected_count=416, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110011111010000
+Difference bits 1..16 = 0011011000111101
+Payload frame number: 612
+Ordered decoder output valid: corrected_count=406, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000111000111
+Difference bits 1..16 = 0011000000101010
+Payload frame number: 613
+Ordered decoder output valid: corrected_count=396, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111000111010111
+Difference bits 1..16 = 1010000000111010
+Payload frame number: 614
+Ordered decoder output valid: corrected_count=454, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111010100000
+Difference bits 1..16 = 1001111101001101
+Payload frame number: 615
+Ordered decoder output valid: corrected_count=432, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100100001010010
+Difference bits 1..16 = 1001100110111111
+Payload frame number: 616
+Ordered decoder output valid: corrected_count=398, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111110100001
+Difference bits 1..16 = 1000111001001100
+Payload frame number: 617
+Ordered decoder output valid: corrected_count=456, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111100100110110
+Difference bits 1..16 = 1010100011011011
+Payload frame number: 618
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101110000100001
+Difference bits 1..16 = 1000110111001100
+Payload frame number: 619
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101011011011011
+Difference bits 1..16 = 1000011100110110
+Payload frame number: 620
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100010110111111
+Difference bits 1..16 = 1001010001010010
+Payload frame number: 621
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110001110111000
+Difference bits 1..16 = 1011001001010101
+Payload frame number: 622
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111011111100101
+Difference bits 1..16 = 1010011000001000
+Payload frame number: 623
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010110111100
+Difference bits 1..16 = 1010010001010001
+Payload frame number: 624
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111110110110
+Difference bits 1..16 = 1000111001011011
+Payload frame number: 625
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111111111001001
+Difference bits 1..16 = 1010111000100100
+Payload frame number: 626
+Ordered decoder output valid: corrected_count=446, corrected_position=6
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1101010110101110
+Difference bits 1..16 = 0000010001000011
+Payload frame number: 627
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100111111100100
+Difference bits 1..16 = 1001111000001001
+Payload frame number: 628
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001000001100110
+Difference bits 1..16 = 0100000110001011
+Payload frame number: 629
+Ordered decoder output valid: corrected_count=438, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101100110110
+Difference bits 1..16 = 0010101011011011
+Payload frame number: 630
+Ordered decoder output valid: corrected_count=430, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010010111000010
+Difference bits 1..16 = 0111010000101111
+Payload frame number: 631
+Ordered decoder output valid: corrected_count=402, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100011101100010
+Difference bits 1..16 = 0001011010001111
+Payload frame number: 632
+Ordered decoder output valid: corrected_count=428, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100000000110110
+Difference bits 1..16 = 0001000111011011
+Payload frame number: 633
+Ordered decoder output valid: corrected_count=446, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111101001010110
+Difference bits 1..16 = 0010101110111011
+Payload frame number: 634
+Ordered decoder output valid: corrected_count=474, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001001011100010
+Difference bits 1..16 = 0100001100001111
+Payload frame number: 635
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101010101000100
+Difference bits 1..16 = 1000010010101001
+Payload frame number: 636
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000110011000011
+Difference bits 1..16 = 0101110100101110
+Payload frame number: 637
+Ordered decoder output valid: corrected_count=424, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111001111111001
+Difference bits 1..16 = 0010001000010100
+Payload frame number: 638
+Ordered decoder output valid: corrected_count=400, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111010011101000
+Difference bits 1..16 = 0010010100000101
+Payload frame number: 639
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010111100100011
+Difference bits 1..16 = 1111111011001110
+Payload frame number: 640
+Ordered decoder output valid: corrected_count=432, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111100001111100
+Difference bits 1..16 = 0010100110010001
+Payload frame number: 641
+Ordered decoder output valid: corrected_count=440, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000110111001100
+Difference bits 1..16 = 1101110000100001
+Payload frame number: 642
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100101101111100
+Difference bits 1..16 = 1001101010010001
+Payload frame number: 643
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110111011010110
+Difference bits 1..16 = 1011111100111011
+Payload frame number: 644
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001011100011100
+Difference bits 1..16 = 1100011011110001
+Payload frame number: 645
+Ordered decoder output valid: corrected_count=406, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000111110000100
+Difference bits 1..16 = 0101111001101001
+Payload frame number: 646
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110100000100100
+Difference bits 1..16 = 1011100111001001
+Payload frame number: 647
+Ordered decoder output valid: corrected_count=414, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010011101100100
+Difference bits 1..16 = 0111011010001001
+Payload frame number: 648
+Ordered decoder output valid: corrected_count=422, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001010111110000
+Difference bits 1..16 = 0100010000011101
+Payload frame number: 649
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0101111101011110
+Difference bits 1..16 = 1000111010110011
+Payload frame number: 650
+Ordered decoder output valid: corrected_count=432, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000011101111100
+Difference bits 1..16 = 0101011010010001
+Payload frame number: 651
+Ordered decoder output valid: corrected_count=412, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111010010011110
+Difference bits 1..16 = 0010010101110011
+Payload frame number: 652
+Ordered decoder output valid: corrected_count=406, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011010000111110
+Difference bits 1..16 = 0110010111010011
+Payload frame number: 653
+Ordered decoder output valid: corrected_count=440, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011000011000110
+Difference bits 1..16 = 0110000100101011
+Payload frame number: 654
+Ordered decoder output valid: corrected_count=406, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111110000111110
+Difference bits 1..16 = 0010110111010011
+Payload frame number: 655
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010000101001110
+Difference bits 1..16 = 1111000010100011
+Payload frame number: 656
+Ordered decoder output valid: corrected_count=434, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110110100010110
+Difference bits 1..16 = 1011110011111011
+Payload frame number: 657
+Ordered decoder output valid: corrected_count=418, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0111010001110100
+Difference bits 1..16 = 1010010110011001
+Payload frame number: 658
+Ordered decoder output valid: corrected_count=426, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000100110100
+Difference bits 1..16 = 0011000011011001
+Payload frame number: 659
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010011000011111
+Difference bits 1..16 = 1111011111110010
+Payload frame number: 660
+Ordered decoder output valid: corrected_count=428, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011000100111110
+Difference bits 1..16 = 0110000011010011
+Payload frame number: 661
+Ordered decoder output valid: corrected_count=438, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000001001011111
+Difference bits 1..16 = 1101001110110010
+Payload frame number: 662
+Ordered decoder output valid: corrected_count=414, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110100100101000
+Difference bits 1..16 = 0011100011000101
+Payload frame number: 663
+Ordered decoder output valid: corrected_count=444, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100110001001011
+Difference bits 1..16 = 0001110110100110
+Payload frame number: 664
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0100000010101100
+Difference bits 1..16 = 1001000101000001
+Payload frame number: 665
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110101011111010
+Difference bits 1..16 = 1011101100010111
+Payload frame number: 666
+Ordered decoder output valid: corrected_count=430, corrected_position=4
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1100001011111000
+Difference bits 1..16 = 0001001100010101
+Payload frame number: 667
+Ordered decoder output valid: corrected_count=406, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000001011100011
+Difference bits 1..16 = 0101001100001110
+Payload frame number: 668
+Ordered decoder output valid: corrected_count=426, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011010111010111
+Difference bits 1..16 = 1110010000111010
+Payload frame number: 669
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000000100110100
+Difference bits 1..16 = 1101000011011001
+Payload frame number: 670
+Ordered decoder output valid: corrected_count=414, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010001100101000
+Difference bits 1..16 = 0111001011000101
+Payload frame number: 671
+Ordered decoder output valid: corrected_count=430, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010011000010101
+Difference bits 1..16 = 1111011111111000
+Payload frame number: 672
+Ordered decoder output valid: corrected_count=418, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011011010101100
+Difference bits 1..16 = 0110011101000001
+Payload frame number: 673
+Ordered decoder output valid: corrected_count=436, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001001010000110
+Difference bits 1..16 = 1100001101101011
+Payload frame number: 674
+Ordered decoder output valid: corrected_count=416, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000011101100100
+Difference bits 1..16 = 1101011010001001
+Payload frame number: 675
+Ordered decoder output valid: corrected_count=404, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001100110101001
+Difference bits 1..16 = 0100100001000100
+Payload frame number: 676
+Ordered decoder output valid: corrected_count=392, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000001010110111
+Difference bits 1..16 = 1101001101011010
+Payload frame number: 677
+Ordered decoder output valid: corrected_count=424, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011101101010001
+Difference bits 1..16 = 0110101010111100
+Payload frame number: 678
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0010000000001001
+Difference bits 1..16 = 1111000111100100
+Payload frame number: 679
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001001001111101
+Difference bits 1..16 = 0100001110010000
+Payload frame number: 680
+Ordered decoder output valid: corrected_count=420, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000001100101011
+Difference bits 1..16 = 0101001011000110
+Payload frame number: 681
+Ordered decoder output valid: corrected_count=412, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011000101110001
+Difference bits 1..16 = 0110000010011100
+Payload frame number: 682
+Ordered decoder output valid: corrected_count=412, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001001101000111
+Difference bits 1..16 = 1100001010101010
+Payload frame number: 683
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0001100110110110
+Difference bits 1..16 = 1100100001011011
+Payload frame number: 684
+Ordered decoder output valid: corrected_count=408, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1110000000100111
+Difference bits 1..16 = 0011000111001010
+Payload frame number: 685
+Ordered decoder output valid: corrected_count=416, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000100111111000
+Difference bits 1..16 = 0101100000010101
+Payload frame number: 686
+Ordered decoder output valid: corrected_count=434, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001010100111001
+Difference bits 1..16 = 0100010011010100
+Payload frame number: 687
+Ordered decoder output valid: corrected_count=420, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0110011010010100
+Difference bits 1..16 = 1011011101111001
+Payload frame number: 688
+Ordered decoder output valid: corrected_count=410, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1010110001110111
+Difference bits 1..16 = 0111110110011010
+Payload frame number: 689
+Ordered decoder output valid: corrected_count=426, corrected_position=3
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1111011000001101
+Difference bits 1..16 = 0010011111100000
+Payload frame number: 690
+Ordered decoder output valid: corrected_count=422, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1011010001110101
+Difference bits 1..16 = 0110010110011000
+Payload frame number: 691
+Ordered decoder output valid: corrected_count=428, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011110010111110
+Difference bits 1..16 = 1110110101010011
+Payload frame number: 692
+Ordered decoder output valid: corrected_count=408, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000010111110100
+Difference bits 1..16 = 1101010000011001
+Payload frame number: 693
+Ordered decoder output valid: corrected_count=436, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001001010100010
+Difference bits 1..16 = 0100001101001111
+Payload frame number: 694
+Ordered decoder output valid: corrected_count=424, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1001110000111000
+Difference bits 1..16 = 0100110111010101
+Payload frame number: 695
+Ordered decoder output valid: corrected_count=432, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011101100001011
+Difference bits 1..16 = 1110101011100110
+Payload frame number: 696
+Ordered decoder output valid: corrected_count=422, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0011110101111100
+Difference bits 1..16 = 1110110010010001
+Internal pipeline flush: 1
+Ordered decoder output valid: corrected_count=442, corrected_position=1
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 0000101011010111
+Difference bits 1..16 = 1101101100111010
+Internal pipeline flush: 2
+Ordered decoder output valid: corrected_count=424, corrected_position=2
+Input bits 1..16      = 1101000111101101
+Output bits 1..16     = 1000001100100011
+Difference bits 1..16 = 0101001011001110
+$finish called at time : 1960988 ms : File "C:/Users/HOANG AN/Downloads/ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/fix/Decoder_tb.v" Line 353
+INFO: xsimkernel Simulation Memory Usage: 55900 KB (Peak: 55900 KB), Simulation CPU Usage: 532437 ms

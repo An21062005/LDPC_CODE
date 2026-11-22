@@ -3,11 +3,14 @@
 Actions
   check              validate config, filelists, generated RTL, H/LUT, Vivado
   list               architectures, tests, wave profiles
-  data               generate the datasets that are not stored in code/data
+  data               generate the test datasets into code/data/<name>
   model --test T     bit-accurate Python model on the test data (no Vivado)
   sim --arch A --test T [--frames F] [--waves P] [--gui]
   wave [--run DIR]   open a saved waveform (WDB + WCFG) in the Vivado GUI
   project --arch A [--gui] / build --arch A / open --arch A
+  synth --arch A     synthesis only (utilization reports, no implementation)
+  flow [--arch A,B] [--steps sim,synth,impl] [--test T]
+                     run the enabled steps for each architecture (defaults: 'flow' in config.yaml)
   package --arch A   re-check latest build vs. latest tests; copy board package if ready
   report             comparison table of the latest results
 
@@ -162,7 +165,7 @@ def dataset_files(cfg, name):
     ds = cfg["datasets"][name]
     if "generate" not in ds:
         return local(ds["input"]), local(ds["expected"])
-    folder = OUT / "data" / name
+    folder = ROOT / "code/data" / name
     inp, exp = folder / "input.txt", folder / "expected_codeword.txt"
     meta = folder / "metadata.json"
     want = dict(snr_db=float(ds["generate"]["snr"]), seed=int(ds["generate"]["seed"]))
@@ -509,7 +512,7 @@ def cmd_hw(cfg, args):
     log = (run / "vivado.log").read_text(errors="replace") if (run / "vivado.log").is_file() else ""
     status = dict(desc, run_directory=run.relative_to(ROOT).as_posix(), tool_returncode=rc,
                   project=(run / "p.xpr").relative_to(ROOT).as_posix() if (run / "p.xpr").is_file() else None)
-    if args.action == "build":
+    if args.action in ("build", "synth"):
         status.update(parse_build(run, log, cfg["architectures"][arch]["core_instance"]))
         evaluate_package(status, run)
     (run / "status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
@@ -539,6 +542,51 @@ def evaluate_package(status, run):
     rep = OUT / "reports"
     rep.mkdir(parents=True, exist_ok=True)
     (rep / f"latest_build_{status['arch']}.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
+
+
+FLOW_STEPS = ("sim", "synth", "impl")
+
+
+def cmd_flow(cfg, args):
+    """For each selected architecture run the enabled steps in the order
+    sim (functional check with the flow test), synth (as 'synth'), impl
+    (synth + implementation + bitstream, as 'build'). impl includes synth, so
+    synth is not run separately when both are enabled. A failing step does not
+    stop the following ones; the summary lists every step."""
+    flow = cfg.get("flow") or {}
+    archs = args.arch.split(",") if args.arch else flow.get("architectures") or [cfg["defaults"]["architecture"]]
+    steps = args.steps.split(",") if args.steps else flow.get("steps") or ["sim"]
+    test = args.test or flow.get("test") or cfg["defaults"]["test"]
+    for a in archs:
+        if a not in cfg["architectures"]:
+            raise ValueError(f"flow: unknown architecture {a}")
+    for s in steps:
+        if s not in FLOW_STEPS:
+            raise ValueError(f"flow: step must be one of {FLOW_STEPS}")
+    if test not in cfg["tests"]:
+        raise ValueError(f"flow: unknown test {test}")
+    steps = [s for s in FLOW_STEPS if s in steps and not (s == "synth" and "impl" in steps)]
+    summary = []
+    for arch in archs:
+        for step in steps:
+            action = {"sim": "sim", "synth": "synth", "impl": "build"}[step]
+            sub = argparse.Namespace(**{**vars(args), "action": action, "arch": arch, "test": test, "gui": False})
+            print(f"FLOW_STEP arch={arch} step={step}", flush=True)
+            try:
+                rc = cmd_sim(cfg, sub) if step == "sim" else cmd_hw(cfg, sub)
+            except ValueError as exc:
+                print(f"FLOW_STEP_ERROR arch={arch} step={step}: {exc}", flush=True)
+                rc = 1
+            result = "FAIL" if rc else ("DRY_RUN" if args.dry_run else "PASS")
+            if step != "sim" and result == "PASS":
+                b = json.loads((OUT / "reports" / f"latest_build_{arch}.json").read_text())
+                if b.get("stage_failed"):
+                    result = f"FAIL ({b['stage_failed']})"
+                elif step == "impl":
+                    result = "PASS, timing met" if b.get("timing_met") else "PASS, timing NOT met"
+            summary.append(dict(arch=arch, step=step, test=test if step == "sim" else None, result=result))
+    print("FLOW_SUMMARY " + json.dumps(summary, indent=2))
+    return 0 if all(s["result"] in ("PASS", "PASS, timing met", "DRY_RUN") for s in summary) else 1
 
 
 def cmd_package(cfg, args):
@@ -707,10 +755,11 @@ def main(argv=None):
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("action", choices=("check", "list", "data", "model", "sim", "wave", "project", "build", "open",
-                                      "package", "report"))
+    p.add_argument("action", choices=("check", "list", "data", "model", "sim", "wave", "project", "synth", "build",
+                                      "open", "flow", "package", "report"))
     p.add_argument("--config", type=Path, default=ROOT / "script/config.yaml")
-    p.add_argument("--arch")
+    p.add_argument("--arch", help="architecture; flow accepts a comma list")
+    p.add_argument("--steps", help="flow: comma list of sim, synth, impl")
     p.add_argument("--test")
     p.add_argument("--frames", type=int)
     p.add_argument("--waves", help="none, overview, axi, core or all")
@@ -745,8 +794,10 @@ def main(argv=None):
             run = select_run(kind, a)
             print("SAVED_RUN=" + str(run))
             return 0 if a.dry_run else open_gui(cfg, a, kind, run, a.check)
-        if a.action in ("project", "build"):
+        if a.action in ("project", "synth", "build"):
             return cmd_hw(cfg, a)
+        if a.action == "flow":
+            return cmd_flow(cfg, a)
         if a.action == "package":
             return cmd_package(cfg, a)
         return cmd_report(cfg, a)

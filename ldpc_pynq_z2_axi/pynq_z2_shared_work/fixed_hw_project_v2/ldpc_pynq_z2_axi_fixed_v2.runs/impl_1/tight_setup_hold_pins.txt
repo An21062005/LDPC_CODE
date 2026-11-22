@@ -1,0 +1,17 @@
++====================+====================+==========================================================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                                                      |
++====================+====================+==========================================================+
+| decoder_clk_raw    | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/relay_sync_axi_0_reg[3]/D |
+| decoder_clk_raw    | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/relay_sync_axi_0_reg[2]/D |
+| decoder_clk_raw    | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/relay_sync_axi_0_reg[0]/D |
+| decoder_clk_raw    | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/relay_sync_axi_0_reg[1]/D |
+| decoder_clk_df_raw | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[0]/D        |
+| decoder_clk_raw    | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/relay_sync_axi_0_reg[4]/D |
+| decoder_clk_df_raw | clk_fpga_0         | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[21]/D       |
+| decoder_clk_df_raw | clk_fpga_0         | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[29]/D       |
+| decoder_clk_df_raw | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[13]/D       |
+| decoder_clk_df_raw | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[11]/D       |
+| decoder_clk_df_raw | clk_fpga_0         | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[23]/D       |
+| decoder_clk_df_raw | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[15]/D       |
+| decoder_clk_df_raw | decoder_clk_df_raw | ldpc_system_i/decoder_axi/inst/rdata_reg_reg[12]/D       |
++--------------------+--------------------+----------------------------------------------------------+

@@ -1,0 +1,35 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 01-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct  7 10:38:38 2026
+# Process ID         : 20776
+# Current directory  : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order
+# Command line       : vivado.exe -mode batch -source check_synthesis.tcl -log synthesis.log -journal synthesis.jou
+# Log file           : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order/synthesis.log
+# Journal file       : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order\synthesis.jou
+# Running On         : LAPTOP-CK605TTQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 16873 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 30295 MB
+# Available Virtual  : 11820 MB
+#-----------------------------------------------------------
+source check_synthesis.tcl
+# set run_dir [file dirname [file normalize [info script]]]
+# set work_dir [file normalize [file join $run_dir .. ..]]
+# set rtl_dir [file join $work_dir fixed_rtl_source]
+# create_project -in_memory -part xc7z020clg400-1
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 613.855 ; gain = 268.246
+# set_property include_dirs [list $rtl_dir] [current_fileset]
+# set_property XPM_LIBRARIES {XPM_MEMORY} [current_project]
+# read_verilog -sv [file join $rtl_dir Decoder.v]
+ERROR: [Common 17-69] Command failed: File 'C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order/AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Decoder.v' does not exist
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 10:38:52 2026...

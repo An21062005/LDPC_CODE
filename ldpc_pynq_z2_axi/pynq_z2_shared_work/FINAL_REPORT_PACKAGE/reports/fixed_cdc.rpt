@@ -1,0 +1,22 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Sep 27 15:02:53 2026
+| Host         : LAPTOP-CK605TTQ running 64-bit major release  (build 9200)
+| Command      : report_cdc -file {C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_cdc.rpt}
+| Design       : ldpc_system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock        Destination Clock   CDC Type      Exceptions  Endpoints   Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ------------------  ------------------  ------------  ----------  ---------  -----  ------  -------  ------------  
+Info      decoder_clk_df_raw  clk_fpga_0          Safely Timed  None               37     37       0        0             0  
+Info      decoder_clk_raw     clk_fpga_0          Safely Timed  None                9      9       0        0             0  
+Info      decoder_clk_raw     decoder_clk_df_raw  Safely Timed  None            25793  25793       0        0             0  
+Info      clk_fpga_0          decoder_clk_raw     Safely Timed  None                1      1       0        0             0  
+Info      decoder_clk_df_raw  decoder_clk_raw     Safely Timed  None            10842  10842       0        0             0  
+

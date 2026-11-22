@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LDPC 802.11n – chạy và số liệu</title>
+<style>
+.viz-root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --accent: #2a78d6; --accent-wash: rgba(42,120,214,0.10); --deemph: #c3c2b7;
+  --good: #0ca30c; --good-text: #006300; --warning: #fab219; --critical: #d03b3b;
+  --term: #1a1a19; --term-ink: #f0efec; --term-muted: #898781;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --accent: #3987e5; --accent-wash: rgba(57,135,229,0.14); --deemph: #4f4e4a;
+    --good-text: #0ca30c; --term: #111110;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+.viz-root { background: var(--page); color: var(--ink); min-height: 100vh;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 20px 20px 48px; }
+header { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+h1 { font-size: 20px; margin: 0; font-weight: 600; }
+h2 { font-size: 16px; margin: 0 0 12px; font-weight: 600; }
+h3 { font-size: 13px; margin: 0 0 8px; font-weight: 600; color: var(--ink2); }
+.sub { color: var(--ink2); }
+.muted { color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+
+/* controls */
+.archs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+.arch { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; cursor: pointer; background: var(--surface); text-align: left; color: inherit; font: inherit; }
+.arch:hover { background: var(--accent-wash); }
+.arch[aria-checked="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-wash); }
+.arch b { display: block; font-size: 15px; }
+.arch code { font-size: 12px; color: var(--muted); }
+.arch .desc { display: block; font-size: 12px; color: var(--ink2); margin-top: 4px; }
+.arch .warn { display: block; font-size: 12px; margin-top: 6px; }
+.row { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field > span { font-size: 12px; color: var(--ink2); }
+select, button { font: inherit; color: inherit; }
+select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); }
+.steps { display: flex; gap: 14px; flex-wrap: wrap; }
+.steps label { display: flex; gap: 6px; align-items: flex-start; cursor: pointer; }
+.steps small { display: block; color: var(--muted); font-size: 11px; }
+.btn { padding: 8px 18px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-weight: 600; }
+.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.actions { margin-left: auto; display: flex; gap: 8px; }
+.testdesc { font-size: 12px; color: var(--ink2); margin-top: 8px; }
+
+/* status pill: label inside a status fill is white, except near-black on warning */
+.pill { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #fff; white-space: nowrap; }
+.pill.good { background: var(--good); }
+.pill.critical { background: var(--critical); }
+.pill.warning { background: var(--warning); color: #0b0b0b; }
+.pill.neutral { background: transparent; color: var(--ink2); box-shadow: inset 0 0 0 1px var(--axis); }
+.pill.run { background: var(--accent); }
+
+/* live */
+.livehead { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+.progress { flex: 1 1 240px; display: flex; align-items: center; gap: 8px; min-width: 200px; }
+.track { flex: 1; height: 8px; border-radius: 4px; background: var(--accent-wash); overflow: hidden; }
+.track > div { height: 100%; background: var(--accent); border-radius: 4px; width: 0; transition: width .3s; }
+.log { background: var(--term); color: var(--term-ink); border-radius: 8px; height: 340px; overflow: auto; padding: 10px 12px;
+  font: 12px/1.45 ui-monospace, Consolas, "Cascadia Mono", monospace; white-space: pre-wrap; word-break: break-all; }
+.log .src { color: var(--term-muted); margin-right: 6px; }
+.log .key { color: #86b6ef; }
+.log .err { color: #f09a9a; }
+.log .ok { color: #7fd17f; }
+.summary { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.logopts { display: flex; gap: 12px; align-items: center; font-size: 12px; color: var(--ink2); margin-left: auto; }
+
+/* stat tiles */
+.groups { display: grid; gap: 16px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
+.tile { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.tile .label { font-size: 12px; color: var(--ink2); }
+.tile .value { font-size: 22px; font-weight: 600; margin-top: 2px; }
+.tile .value .unit { font-size: 13px; font-weight: 400; color: var(--ink2); margin-left: 3px; }
+.tile .note { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.meta { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+
+/* bar charts */
+.charts { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 18px; }
+.chart figcaption { font-weight: 600; font-size: 13px; margin-bottom: 2px; }
+.chart .cap2 { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.plot { position: relative; padding-top: 18px; }
+.barrow { display: grid; grid-template-columns: 96px 1fr; align-items: center; height: 34px; outline: none; border-radius: 4px; }
+.barrow:hover, .barrow:focus-visible { background: var(--accent-wash); }
+.barrow .name { font-size: 12px; color: var(--ink2); padding-right: 8px; text-align: right; }
+.bartrack { position: relative; height: 20px; border-left: 1px solid var(--axis); }
+.bar { position: absolute; left: 0; top: 0; height: 20px; border-radius: 0 4px 4px 0; background: var(--deemph); min-width: 1px; }
+.bar.sel { background: var(--accent); }
+.barval { position: absolute; top: 1px; font-size: 12px; color: var(--ink); white-space: nowrap; }
+.barval.none { color: var(--muted); left: 6px; }
+.refline { position: absolute; top: 0; bottom: 0; border-left: 1px solid var(--muted); pointer-events: none; }
+.reflabel { position: absolute; top: 0; font-size: 11px; color: var(--muted); white-space: nowrap; transform: translateX(-50%); }
+.tip { position: fixed; z-index: 10; pointer-events: none; background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  padding: 6px 9px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.12); display: none; }
+.tip strong { font-size: 14px; display: block; }
+.tip span { color: var(--ink2); }
+
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { font-weight: 600; color: var(--ink2); font-size: 12px; }
+td { font-variant-numeric: tabular-nums; }
+tr.sel td { background: var(--accent-wash); }
+.tablewrap { overflow-x: auto; }
+.err-box { font-size: 12px; color: var(--ink2); border-left: 3px solid var(--critical); padding: 4px 8px; margin-top: 8px; word-break: break-word; }
+@media (max-width: 860px) { .archs, .charts { grid-template-columns: 1fr; } .actions { margin-left: 0; } }
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap">
+  <header>
+    <h1>LDPC decoder IEEE 802.11n</h1>
+    <span class="sub" id="codeinfo"></span>
+  </header>
+
+  <section class="card" aria-label="Chọn và chạy">
+    <h2>1. Chọn kiến trúc và chạy</h2>
+    <div class="archs" id="archs" role="radiogroup" aria-label="Kiến trúc"></div>
+    <div class="row">
+      <label class="field"><span>Test cho bước sim</span><select id="test"></select></label>
+      <div class="field"><span>Bước chạy</span><div class="steps" id="steps"></div></div>
+      <div class="actions">
+        <button class="btn primary" id="runBtn">▶ Run</button>
+        <button class="btn" id="stopBtn" disabled>■ Dừng</button>
+      </div>
+    </div>
+    <div class="testdesc" id="testdesc"></div>
+  </section>
+
+  <section class="card" aria-label="Chạy thời gian thực">
+    <div class="livehead">
+      <h2 style="margin:0">2. Đang chạy</h2>
+      <span id="jobpill"></span>
+      <span id="jobwhat" class="sub"></span>
+      <span id="elapsed" class="muted"></span>
+      <div class="progress" id="progress" hidden>
+        <div class="track"><div id="progbar"></div></div>
+        <span id="progtext" class="sub"></span>
+      </div>
+      <div class="logopts">
+        <label><input type="checkbox" id="autoscroll" checked> Tự cuộn</label>
+        <label><input type="checkbox" id="keyonly"> Chỉ dòng quan trọng</label>
+      </div>
+    </div>
+    <div class="log" id="log" aria-live="off"></div>
+    <div class="summary" id="summary"></div>
+  </section>
+
+  <section class="card" aria-label="Số liệu kiến trúc đang chọn">
+    <div class="row" style="margin-bottom:12px">
+      <h2 style="margin:0" id="restitle">3. Số liệu</h2>
+      <button class="btn" id="refreshBtn" style="margin-left:auto;padding:4px 12px;font-weight:400">Làm mới</button>
+    </div>
+    <div class="groups" id="groups"></div>
+  </section>
+
+  <section class="card" aria-label="So sánh ba kiến trúc">
+    <h2>4. So sánh 3 kiến trúc (kết quả mới nhất)</h2>
+    <div class="charts" id="charts"></div>
+    <div class="tablewrap"><table id="cmp"></table></div>
+    <p class="muted" style="font-size:12px;margin:10px 0 0">Throughput/latency tính từ số chu kỳ giải mã đo trong mô phỏng ở clock lõi, không gồm thời gian AXI/Python.
+      Công suất là ước tính vectorless của Vivado, không phải đo trên board. “RTL cũ” = kết quả của phiên bản RTL khác bản hiện tại.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+</div>
+
+<script>
+"use strict";
+const NAMES = { fully_parallel: "Song song", partly_parallel: "Bán song song", serial: "Nối tiếp" };
+const STEP_TEXT = {
+  sim: ["Sim", "kiểm tra chức năng"],
+  synth: ["Synth", "chỉ tổng hợp, ra tài nguyên"],
+  impl: ["Impl", "synth + implement + bitstream"],
+};
+const STATE_TEXT = { idle: ["neutral", "Chưa chạy"], running: ["run", "● Đang chạy"], done: ["good", "✓ Xong"],
+                     failed: ["critical", "✗ Có bước lỗi"], stopped: ["warning", "■ Đã dừng"] };
+let CFG = null, RES = null, JOB = null;
+const sel = { arch: null, test: null, steps: new Set(["sim"]) };
+let since = 0, wasRunning = false, pollTimer = null;
+
+const $ = (id) => document.getElementById(id);
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) if (c != null && c !== false) e.append(c instanceof Node ? c : document.createTextNode(String(c)));
+  return e;
+}
+const name = (a) => NAMES[a] || a;
+const nf = (v, d = 0) => v == null || Number.isNaN(v) ? "—" : Number(v).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+function dur(s) {
+  if (s == null) return null;
+  s = Math.round(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60;
+  return h ? `${h} giờ ${m} phút` : m ? `${m} phút ${x} giây` : `${x} giây`;
+}
+const clock = (s) => { s = Math.max(0, Math.floor(s)); return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`; };
+function pill(kind, text) { return el("span", { class: "pill " + kind, text }); }
+function rtlPill(cur) { return cur == null ? null : cur ? pill("neutral", "RTL hiện tại") : pill("warning", "⚠ RTL cũ"); }
+
+async function api(path, body) {
+  const opt = body === undefined ? {} : { method: "POST", headers: { "Content-Type": "application/json", "X-LDPC": "1" }, body: JSON.stringify(body) };
+  const r = await fetch(path, opt);
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || r.status);
+  return j;
+}
+
+/* ------------------------------------------------------------ controls */
+function renderControls() {
+  const c = CFG.code;
+  $("codeinfo").textContent = `QC-LDPC (${c.n},${c.k}) · ${CFG.part} (PYNQ-Z2) · clock lõi ${c.clock_mhz} MHz`;
+  const box = $("archs"); box.replaceChildren();
+  for (const a of CFG.order) {
+    const b = RES && RES.archs[a] && RES.archs[a].build;
+    const warn = b && b.current && b.stage_failed
+      ? el("span", { class: "warn" }, pill("critical", `✗ build trước lỗi ở ${b.stage_failed}`)) : null;
+    box.append(el("button", { class: "arch", role: "radio", "aria-checked": String(sel.arch === a), onclick: () => { sel.arch = a; renderControls(); renderResults(); } },
+      el("b", { text: name(a) }), el("code", { text: a }), el("span", { class: "desc", text: CFG.architectures[a].description }), warn));
+  }
+  const t = $("test");
+  if (!t.options.length) {
+    for (const [k, v] of Object.entries(CFG.tests)) t.append(el("option", { value: k, text: `${k}${v.frames ? ` (${v.frames} transaction)` : ""}` }));
+    t.onchange = () => { sel.test = t.value; renderControls(); renderResults(); };
+  }
+  t.value = sel.test;
+  $("testdesc").textContent = CFG.tests[sel.test].description;
+  const st = $("steps"); st.replaceChildren();
+  const r = RES && RES.archs[sel.arch];
+  for (const s of CFG.steps) {
+    let hint = null;
+    if (r && s === "sim") { const x = r.sims.find((y) => y.test === sel.test); if (x && x.duration_s != null) hint = `lần trước ~${dur(x.duration_s)}`; }
+    if (r && r.build && r.build.duration_s != null && ((s === "impl" && r.build.action === "build") || (s === "synth" && r.build.action === "synth")))
+      hint = `lần trước ~${dur(r.build.duration_s)}`;
+    const cb = el("input", { type: "checkbox", checked: sel.steps.has(s), onchange: (e) => { e.target.checked ? sel.steps.add(s) : sel.steps.delete(s); } });
+    st.append(el("label", {}, cb, el("span", {}, el("b", { text: STEP_TEXT[s][0] }), ` – ${STEP_TEXT[s][1]}`, hint && el("small", { text: hint }))));
+  }
+}
+
+$("runBtn").onclick = async () => {
+  if (!sel.steps.size) { alert("Chọn ít nhất một bước."); return; }
+  const steps = CFG.steps.filter((s) => sel.steps.has(s));
+  if (steps.some((s) => s !== "sim") && !confirm(`Chạy ${steps.join(" + ")} cho ${name(sel.arch)}? Synth/impl bằng Vivado có thể mất nhiều phút.`)) return;
+  try {
+    await api("/api/run", { arch: sel.arch, test: sel.test, steps });
+    since = 0; $("log").replaceChildren(); $("summary").replaceChildren();
+    poll();
+  } catch (e) { alert("Không chạy được: " + e.message); }
+};
+$("stopBtn").onclick = async () => {
+  if (!confirm("Dừng lần chạy hiện tại? Bước đang chạy sẽ bị hủy, không có kết quả.")) return;
+  try { await api("/api/stop", {}); } catch (e) { alert(e.message); }
+};
+$("refreshBtn").onclick = () => loadResults();
+
+/* ------------------------------------------------------------ live job */
+function logClass(src, t) {
+  if (/\b(ERROR|FAIL|Fatal|FATAL)\b|BUILD_STAGE_FAILED|FLOW_STEP_ERROR/.test(t) && !/^\s*"/.test(t)) return "err";
+  if (/^PASS|PASS_|"result": "PASS|timing met"|^TIMING_RESULT|^SYNTH_DONE|^BITSTREAM=/.test(t)) return "ok";
+  if (/^FLOW_STEP|^FLOW_SUMMARY|^RUN_DIRECTORY=|^\$ |FRAME_COMPARE|CORE_CYCLES|CORE_DECODE_CYCLES|^Starting |^Finished |^Phase \d|PROJECT_CREATED|CLOCK_SLACK|POWER_ESTIMATE|Running|launch_runs|wait_on_run/.test(t)) return "key";
+  return "";
+}
+function appendLines(lines) {
+  const log = $("log"), frag = document.createDocumentFragment(), keyOnly = $("keyonly").checked;
+  for (const [src, t] of lines) {
+    const cls = logClass(src, t);
+    const d = el("div", { class: cls || null, "data-plain": cls ? null : "1", hidden: keyOnly && !cls && src !== "web" },
+      src !== "run" ? el("span", { class: "src", text: `[${src}]` }) : null, t);
+    frag.append(d);
+  }
+  log.append(frag);
+  while (log.childElementCount > 6000) log.firstElementChild.remove();
+  if ($("autoscroll").checked) log.scrollTop = log.scrollHeight;
+}
+$("keyonly").onchange = () => {
+  const k = $("keyonly").checked;
+  for (const d of $("log").querySelectorAll("div[data-plain]")) d.hidden = k;
+  if ($("autoscroll").checked) $("log").scrollTop = $("log").scrollHeight;
+};
+
+function renderJob() {
+  const j = JOB, [kind, text] = STATE_TEXT[j.state] || STATE_TEXT.idle;
+  $("jobpill").replaceChildren(pill(kind, text));
+  const running = j.state === "running";
+  $("runBtn").disabled = running; $("stopBtn").disabled = !running;
+  const p = j.params || {};
+  let what = p.arch ? `${name(p.arch)} · ${(p.steps || []).join(" + ")}${(p.steps || []).includes("sim") ? ` · test ${p.test}` : ""}` : "";
+  if (running && j.current) what += ` — đang ở: ${name(j.current.arch)} / ${j.current.step}`;
+  $("jobwhat").textContent = what;
+  $("elapsed").textContent = j.started ? `⏱ ${clock((j.ended || j.now) - j.started)}` : "";
+  const prog = $("progress");
+  const total = p.test && CFG.tests[p.test] && CFG.tests[p.test].frames ? CFG.tests[p.test].frames - 2 : null;
+  if (j.current && j.current.step === "sim" && total && (running || j.frames.length)) {
+    prog.hidden = false;
+    const done = j.frames.length, errs = j.frames.reduce((a, f) => a + f[1], 0);
+    $("progbar").style.width = `${Math.min(100, 100 * done / total)}%`;
+    $("progtext").textContent = `codeword ${done}/${total} · bit lỗi ${errs}`;
+  } else if (running && j.current) {
+    prog.hidden = true;
+  }
+  const sum = $("summary"); sum.replaceChildren();
+  if (j.summary) for (const s of j.summary) {
+    const r = s.result;
+    const k = r === "PASS" || r === "PASS, timing met" ? "good" : r.startsWith("PASS") ? "warning" : r === "DRY_RUN" ? "neutral" : "critical";
+    const icon = k === "good" ? "✓" : k === "warning" ? "⚠" : k === "critical" ? "✗" : "";
+    sum.append(pill(k, `${icon} ${name(s.arch)} · ${s.step}${s.test ? " (" + s.test + ")" : ""}: ${r}`));
+  }
+}
+
+async function poll() {
+  clearTimeout(pollTimer);
+  try {
+    JOB = await api(`/api/job?since=${since}`);
+    if (JOB.lines.length) appendLines(JOB.lines);
+    since = JOB.next;
+    renderJob();
+    const running = JOB.state === "running";
+    if (wasRunning && !running) await loadResults();
+    if (running && JOB.current && JOB.params.arch !== sel.arch) { /* keep the user's selection */ }
+    wasRunning = running;
+    pollTimer = setTimeout(poll, running ? 700 : 3000);
+  } catch (e) {
+    $("jobwhat").textContent = "Mất kết nối tới server (python web/server.py còn chạy không?)";
+    pollTimer = setTimeout(poll, 3000);
+  }
+}
+
+/* ------------------------------------------------------------ results */
+function tile(label, value, unit, note) {
+  const v = value instanceof Node ? value : el("span", {}, value == null ? "—" : String(value), unit ? el("span", { class: "unit", text: unit }) : null);
+  return el("div", { class: "tile" }, el("div", { class: "label", text: label }), el("div", { class: "value" }, v), note ? el("div", { class: "note", text: note }) : null);
+}
+function group(title, tiles, meta) {
+  return el("div", {}, el("h3", { text: title }), el("div", { class: "tiles" }, tiles), meta ? el("div", { class: "meta" }, meta.filter((m) => m != null).map((m) => m instanceof Node ? m : el("span", { text: m }))) : null);
+}
+function passPill(r) { return r === "PASS" ? pill("good", "✓ PASS") : r ? pill("critical", "✗ " + r) : null; }
+
+function renderResults() {
+  if (!RES) return;
+  const a = sel.arch, r = RES.archs[a], clk = CFG.code.clock_mhz;
+  $("restitle").textContent = `3. Số liệu – ${name(a)} (${a})`;
+  const out = [];
+  const s = r.sims.find((x) => x.test === sel.test);
+  if (s) {
+    out.push(group(`Chức năng – test ${s.test}`, [
+      tile("Kết quả", passPill(s.result)),
+      tile("Bit lỗi sau giải mã", nf(s.bit_errors), null, `trên ${nf(s.compared_frames)} codeword so sánh`),
+      tile("Codeword có lỗi", nf(s.frames_with_errors)),
+      tile("Khớp mô hình Python", s.model_match == null ? "—" : s.model_match ? "Có" : "Không", null, s.model_match == null ? "test này không so mô hình" : "so từng bit"),
+      tile("Trình mô phỏng", s.simulator, null, s.duration_s != null ? `chạy ${dur(s.duration_s)}` : null),
+    ], [s.finished ? `Xong lúc ${s.finished}` : null, s.run_directory, rtlPill(s.current)]));
+  } else {
+    out.push(group(`Chức năng – test ${sel.test}`, [tile("Kết quả", "Chưa chạy", null, "bấm Run với bước Sim")]));
+  }
+  const p = r.perf;
+  out.push(group("Hiệu năng lõi", p ? [
+    tile("Chu kỳ giải mã / codeword", nf(p.cycles), "chu kỳ", p.txn_cycles ? `1 transaction trong wrapper: ${nf(p.txn_cycles)}` : null),
+    tile("Latency lõi", nf(p.latency_us, 2), "µs", `= chu kỳ / ${clk} MHz`),
+    tile("Throughput lõi", nf(p.throughput_mbps, 3), "Mb/s", `${CFG.code.n} bit codeword / latency`),
+    tile("Throughput thông tin", nf(p.info_mbps, 3), "Mb/s", `${CFG.code.k} bit thông tin / latency`),
+  ] : [tile("Throughput lõi", "—", null, "chưa có mô phỏng với RTL hiện tại")],
+  p ? [`Đo trong mô phỏng test ${p.from_test}, clock lõi ${clk} MHz, không gồm AXI/Python`] : null));
+  const b = r.build;
+  if (b) {
+    const u = b.util, ut = (k) => u[k] ? [nf(u[k].used, u[k].used % 1 ? 1 : 0), `${u[k].percent}% của ${nf(u[k].available)}`] : [null, null];
+    const [lut, lutN] = ut("lut"), [ff, ffN] = ut("ff"), [bram, bramN] = ut("bram_tile");
+    const timing = b.stage_failed ? pill("critical", `✗ lỗi ở ${b.stage_failed}`)
+      : b.wns_ns == null ? pill("neutral", "chưa implement") : b.timing_met ? pill("good", "✓ Đạt") : pill("warning", "⚠ Không đạt");
+    out.push(group(`Phần cứng – Vivado (${b.action === "synth" ? "chỉ synth" : "synth + impl"}, tài nguyên sau ${b.source || "—"})`, [
+      tile("LUT (toàn hệ thống)", lut, null, lutN),
+      tile("FF", ff, null, ffN),
+      tile("BRAM tile", bram, null, bramN),
+      tile("LUT / FF của lõi", b.core_luts != null ? `${nf(b.core_luts)} / ${nf(b.core_ffs)}` : "—", null, "instance decoder"),
+      tile("Timing", timing, null, b.wns_ns != null ? `WNS ${b.wns_ns} ns · WHS ${b.whs_ns} ns` : null),
+      tile("Fmax lõi ước tính", b.fmax_decoder_mhz != null ? nf(b.fmax_decoder_mhz, 1) : null, b.fmax_decoder_mhz != null ? "MHz" : null, `đang chạy ở ${clk} MHz`),
+      tile("Công suất ước tính", b.power_w != null ? nf(b.power_w, 3) : null, b.power_w != null ? "W" : null, "vectorless, không đo trên board"),
+      tile("Bitstream", b.bitstream ? "Có" : "Không", null, b.ready_for_board ? "đủ điều kiện nạp board" : "chưa đủ điều kiện nạp board"),
+    ], [b.finished ? `Xong lúc ${b.finished}` : null, b.duration_s != null ? `chạy ${dur(b.duration_s)}` : null, b.run_directory, rtlPill(b.current)]));
+    if (b.stage_failed && b.errors.length) out.push(el("div", { class: "err-box" }, el("b", { text: "Lỗi Vivado: " }), b.errors[0]));
+  } else {
+    out.push(group("Phần cứng – Vivado", [tile("Build", "Chưa chạy", null, "bấm Run với bước Synth hoặc Impl")]));
+  }
+  const rows = r.sims.filter((x) => x.kind !== "units");
+  if (rows.length) {
+    const tb = el("table", {}, el("thead", {}, el("tr", {}, ["Test", "Kết quả", "Codeword", "Bit lỗi", "Khớp mô hình", "Chu kỳ/codeword", "Mô phỏng", "Thời gian chạy", "Xong lúc", "RTL"].map((h) => el("th", { text: h })))),
+      el("tbody", {}, rows.map((x) => el("tr", { class: x.test === sel.test ? "sel" : null }, [
+        x.test, x.result, nf(x.compared_frames), nf(x.bit_errors), x.model_match == null ? "—" : x.model_match ? "Có" : "Không",
+        nf(x.cycles), x.simulator, dur(x.duration_s) || "—", x.finished || "—", x.current ? "hiện tại" : "cũ"].map((v) => el("td", { text: v }))))));
+    out.push(el("div", {}, el("h3", { text: "Tất cả test mô phỏng đã chạy của kiến trúc này" }), el("div", { class: "tablewrap" }, tb)));
+  }
+  $("groups").replaceChildren(...out);
+  renderCompare();
+}
+
+/* horizontal bars: one series, the selected architecture in the accent, others de-emphasised */
+function barChart(title, caption, items, ref) {
+  const vals = items.map((i) => i.value).filter((v) => v != null);
+  const max = Math.max(...vals, ref ? ref.value : 0, 1e-9) * 1.32;   // headroom for the tip label
+  const plot = el("div", { class: "plot" });
+  if (ref) {
+    const x = 100 * ref.value / max;
+    const layer = el("div", { style: "position:absolute;left:96px;right:0;top:0;bottom:0;pointer-events:none" },
+      el("div", { class: "refline", style: `left:${x}%` }), el("div", { class: "reflabel", style: `left:${x}%`, text: ref.label }));
+    plot.append(layer);
+  }
+  for (const it of items) {
+    const track = el("div", { class: "bartrack" });
+    if (it.value != null) {
+      const w = 100 * it.value / max;
+      track.append(el("div", { class: "bar" + (it.arch === sel.arch ? " sel" : ""), style: `width:${w}%` }),
+                   el("span", { class: "barval", style: `left:calc(${w}% + 6px)`, text: it.label }));
+    } else track.append(el("span", { class: "barval none", text: "chưa có" }));
+    const row = el("div", { class: "barrow", tabindex: "0", "aria-label": `${name(it.arch)}: ${it.value != null ? it.label : "chưa có"}` },
+      el("span", { class: "name", text: name(it.arch) }), track);
+    const show = (e) => showTip(e, it.value != null ? it.label : "chưa có", `${name(it.arch)}${it.extra ? " · " + it.extra : ""}`, row);
+    row.addEventListener("pointermove", show); row.addEventListener("focus", show);
+    row.addEventListener("pointerleave", hideTip); row.addEventListener("blur", hideTip);
+    row.addEventListener("click", () => { sel.arch = it.arch; renderControls(); renderResults(); });
+    plot.append(row);
+  }
+  return el("figure", { class: "chart", style: "margin:0" }, el("figcaption", { text: title }), el("div", { class: "cap2", text: caption }), plot);
+}
+function showTip(e, value, label, row) {
+  const t = $("tip");
+  t.replaceChildren(el("strong", { text: value }), el("span", { text: label }));
+  t.style.display = "block";
+  const r = row.getBoundingClientRect();
+  const x = e.clientX != null && e.type === "pointermove" ? e.clientX + 14 : r.left + 110;
+  const y = e.clientY != null && e.type === "pointermove" ? e.clientY + 14 : r.bottom + 4;
+  t.style.left = Math.min(x, innerWidth - t.offsetWidth - 8) + "px"; t.style.top = y + "px";
+}
+function hideTip() { $("tip").style.display = "none"; }
+
+function renderCompare() {
+  const order = RES.order, A = RES.archs;
+  const tput = order.map((a) => { const p = A[a].perf; return { arch: a, value: p ? p.throughput_mbps : null, label: p ? `${nf(p.throughput_mbps, p.throughput_mbps < 1 ? 3 : 1)} Mb/s` : "", extra: p ? `${nf(p.cycles)} chu kỳ/codeword` : null }; });
+  const lutAvail = order.map((a) => A[a].build && A[a].build.util.lut && A[a].build.util.lut.available).find((v) => v);
+  const lut = order.map((a) => { const b = A[a].build, u = b && b.util.lut; return { arch: a, value: u ? u.used : null, label: u ? `${nf(u.used)} (${u.percent}%)` : "", extra: b ? `sau ${b.source}${b.stage_failed ? ", lỗi ở " + b.stage_failed : ""}` : null }; });
+  $("charts").replaceChildren(
+    barChart("Throughput lõi (Mb/s)", `Cao hơn là nhanh hơn · clock lõi ${CFG.code.clock_mhz} MHz`, tput),
+    barChart("LUT toàn hệ thống", "Thấp hơn là nhỏ hơn · vạch dọc = số LUT của chip", lut, lutAvail ? { value: lutAvail, label: `xc7z020: ${nf(lutAvail)}` } : null));
+  const head = ["Kiến trúc", "Chu kỳ/codeword", "Latency (µs)", "Throughput (Mb/s)", "TP thông tin (Mb/s)", "LUT", "FF", "BRAM", "WNS (ns)", "Timing", "Fmax lõi (MHz)", "P ước tính (W)", "Bitstream"];
+  const rows = order.map((a) => {
+    const p = A[a].perf, b = A[a].build, u = (k) => b && b.util[k] ? `${nf(b.util[k].used, b.util[k].used % 1 ? 1 : 0)} (${b.util[k].percent}%)` : "—";
+    const timing = !b ? "—" : b.stage_failed ? `lỗi ở ${b.stage_failed}` : b.wns_ns == null ? "—" : b.timing_met ? "đạt" : "không đạt";
+    return el("tr", { class: a === sel.arch ? "sel" : null }, [name(a), p ? nf(p.cycles) : "—", p ? nf(p.latency_us, 2) : "—", p ? nf(p.throughput_mbps, 3) : "—", p ? nf(p.info_mbps, 3) : "—",
+      u("lut"), u("ff"), u("bram_tile"), b && b.wns_ns != null ? b.wns_ns : "—", timing, b && b.fmax_decoder_mhz != null ? nf(b.fmax_decoder_mhz, 1) : "—",
+      b && b.power_w != null ? nf(b.power_w, 3) : "—", b ? (b.bitstream ? "có" : "không") : "—"].map((v) => el("td", { text: v })));
+  });
+  $("cmp").replaceChildren(el("thead", {}, el("tr", {}, head.map((h) => el("th", { text: h })))), el("tbody", {}, rows));
+}
+
+async function loadResults() {
+  try { RES = await api("/api/results"); renderControls(); renderResults(); }
+  catch (e) { $("groups").replaceChildren(el("div", { class: "err-box", text: "Không đọc được số liệu: " + e.message })); }
+}
+
+(async function init() {
+  CFG = await api("/api/config");
+  sel.arch = CFG.order.includes(CFG.default_arch) ? CFG.default_arch : CFG.order[0];
+  sel.test = CFG.default_test;
+  renderControls();
+  await loadResults();
+  poll();
+})();
+</script>
+</body>
+</html>

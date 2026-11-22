@@ -1,0 +1,1 @@
+vopt -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xilinx_vip -L xpm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.LDPC_Decoder_PYNQ_Z2_top xil_defaultlib.glbl -o LDPC_Decoder_PYNQ_Z2_top_opt

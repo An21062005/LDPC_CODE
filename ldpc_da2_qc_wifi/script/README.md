@@ -62,17 +62,23 @@ cộng 0, φ = 0, dấu 0, parity 0.
 
 ## 4. Lệnh (chạy trong `ldpc_da2_qc_wifi`)
 
-```powershell
-python script/run.py check
-python script/run.py data
-python script/run.py sim --test units
-python script/run.py sim --arch partly_parallel --test regression
-python script/run.py sim --arch serial --test noisy --waves core --gui
-python script/run.py build --arch partly_parallel
-python script/run.py package --arch partly_parallel
-python script/run.py report
-python script/gen_data.py --code 1296_12 --snr 3 --out outfeed/data/wifi1296_snr3   # chỉ dữ liệu
-```
+| Mục đích | Command |
+|---|---|
+| Kiểm tra config, filelist, RTL sinh từ H, tìm Vivado | `python script/run.py check` |
+| Sinh dữ liệu test vào `code/data/` | `python script/run.py data` |
+| Test số học `VNU_G`/`CNU_G` so với da2 | `python script/run.py sim --test units` |
+| Test chức năng partly-parallel (3 codeword) | `python script/run.py sim --arch partly_parallel --test regression` |
+| Test serial với dữ liệu nhiễu, ghi sóng lõi, mở GUI xem sóng | `python script/run.py sim --arch serial --test noisy --waves core --gui` |
+| Synth fully-parallel (chỉ tổng hợp + report tài nguyên) | `python script/run.py synth --arch fully_parallel` |
+| Mở Vivado GUI xem kết quả synth fully-parallel | `python script/run.py open --arch fully_parallel` |
+| Impl partly-parallel (synth + implement + bitstream) | `python script/run.py build --arch partly_parallel` |
+| Mở Vivado GUI xem kết quả synth/impl partly-parallel | `python script/run.py open --arch partly_parallel` |
+| Mở Vivado GUI xem kết quả synth/impl serial | `python script/run.py open --arch serial` |
+| Chạy theo mục `flow` trong `config.yaml` | `python script/run.py flow` |
+| Chạy sim + impl cho serial và partly-parallel | `python script/run.py flow --arch serial,partly_parallel --steps sim,impl` |
+| Kiểm tra build mới nhất, đủ điều kiện thì chép gói nạp board | `python script/run.py package --arch partly_parallel` |
+| Tạo bảng so sánh 3 kiến trúc (`outfeed/reports/comparison.md`) | `python script/run.py report` |
+| Chỉ sinh dữ liệu cho mã (1296,648), SNR 3 dB | `python script/gen_data.py --code 1296_12 --snr 3 --out code/data/wifi1296_snr3` |
 
 Test: `units`, `smoke`, `regression`, `noisy` (SNR 3 dB, 20 codeword, so cả
 codeword sạch và mô hình bit-accurate), `full` (1245 codeword), `core` (lõi,

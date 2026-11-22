@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "expected_frames": 1,
+  "actual_frames": 1,
+  "compared_frames": 1,
+  "missing_frames": 0,
+  "extra_frames": 0,
+  "reference_bits": 1152,
+  "bit_errors": 0,
+  "unknown_bits": 0,
+  "bit_error_rate": 0.0,
+  "frames": [
+    {
+      "frame": 1,
+      "bit_errors": 0,
+      "unknown_bits": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "input_frames": 698,
+  "output_frames": 696,
+  "codeword_bits": 801792,
+  "total_seconds": 18.09444092700005,
+  "frames_per_second": 38.464852426661444,
+  "codeword_mbps": 0.04431150999551398,
+  "mean_load_ms": 18.908969050137674,
+  "mean_start_to_done_observed_ms": 0.3335177306583926,
+  "mean_output_read_ms": 6.671275978452539,
+  "mean_transaction_ms": 25.89467793122991,
+  "scope": "Python/AXI end-to-end including 2 warm-up/flush transactions; excludes file I/O and reference comparison",
+  "start_to_done_scope": "Host-observed wait including MMIO/status polling and 100 us sleep; not pure FPGA latency",
+  "throughput_scope": "1152 codeword bits/frame; not information-bit throughput",
+  "bit_errors": null,
+  "bad_frames": null,
+  "ber": null
+}

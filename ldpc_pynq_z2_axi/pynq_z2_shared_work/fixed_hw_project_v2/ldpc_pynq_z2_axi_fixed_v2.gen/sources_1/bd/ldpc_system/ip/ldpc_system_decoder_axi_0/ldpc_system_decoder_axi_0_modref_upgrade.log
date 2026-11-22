@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Oct  7 11:01:24 2026
+| Host         : LAPTOP-CK605TTQ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ldpc_system_decoder_axi_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ldpc_system_decoder_axi_0 (xilinx.com:module_ref:LDPC_Decoder_PYNQ_Z2_top:1.0 (Rev. 1)) to current project options.
+

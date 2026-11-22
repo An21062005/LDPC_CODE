@@ -1,0 +1,22 @@
+sv xilinx_vip -i "D:/vivado/2026.1/Vivado/data/rsb/busdef" --include "D:/vivado/2026.1/Vivado/data/xilinx_vip/include" --include "../../../../fixed_rtl_source/permutations" --include "../../../../fixed_rtl_source/Utilities" --include "../../../../fixed_rtl_source/CNU" --include "../../../../fixed_rtl_source/VNU" --include "../../../../fixed_rtl_source/PE_block" --include "../../../../fixed_rtl_source/memory" --include "../../../../fixed_rtl_source/address_generator" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/ec67/hdl" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/df05/hdl" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/f0b6/hdl/verilog" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/00fe/hdl/verilog" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"D:/vivado/2026.1/Vivado/data/xilinx_vip/hdl/rst_vip_if.sv" \
+
+sv xpm -i "D:/vivado/2026.1/Vivado/data/rsb/busdef" --include "D:/vivado/2026.1/Vivado/data/xilinx_vip/include" --include "../../../../fixed_rtl_source/permutations" --include "../../../../fixed_rtl_source/Utilities" --include "../../../../fixed_rtl_source/CNU" --include "../../../../fixed_rtl_source/VNU" --include "../../../../fixed_rtl_source/PE_block" --include "../../../../fixed_rtl_source/memory" --include "../../../../fixed_rtl_source/address_generator" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/ec67/hdl" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/df05/hdl" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/f0b6/hdl/verilog" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/00fe/hdl/verilog" \
+"D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+sv xil_defaultlib -i "D:/vivado/2026.1/Vivado/data/rsb/busdef" --include "D:/vivado/2026.1/Vivado/data/xilinx_vip/include" --include "../../../../fixed_rtl_source/permutations" --include "../../../../fixed_rtl_source/Utilities" --include "../../../../fixed_rtl_source/CNU" --include "../../../../fixed_rtl_source/VNU" --include "../../../../fixed_rtl_source/PE_block" --include "../../../../fixed_rtl_source/memory" --include "../../../../fixed_rtl_source/address_generator" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/ec67/hdl" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/df05/hdl" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/f0b6/hdl/verilog" --include "../../../ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/00fe/hdl/verilog" \
+"../../../../fixed_rtl_source/Decoder.v" \
+"../../../../fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

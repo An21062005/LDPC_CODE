@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1791345876">
+  <File Type="PLACE-CTRL" Name="ldpc_system_wrapper_control_sets_placed.rpt"/>
+  <File Type="PA-TCL" Name="ldpc_system_wrapper.tcl"/>
+  <File Type="PLACE-SIMILARITY" Name="ldpc_system_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="REPORTS-TCL" Name="ldpc_system_wrapper_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="ldpc_system_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="ldpc_system_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ldpc_system_wrapper_drc_opted.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ldpc_system_wrapper_routed_bb.dcp"/>
+  <File Type="OPT-UTIL" Name="ldpc_system_wrapper_utilization_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ldpc_system_wrapper_timing_summary_routed.pb"/>
+  <File Type="OPT-UTIL-PB" Name="ldpc_system_wrapper_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ldpc_system_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ldpc_system_wrapper.hwdef"/>
+  <File Type="OPT-TIMING" Name="ldpc_system_wrapper_timing_summary_opted.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ldpc_system_wrapper_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="ldpc_system_wrapper_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="ldpc_system_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ldpc_system_wrapper_drc_pwropted.rpt"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="ldpc_system_wrapper.nts"/>
+  <File Type="PWROPT-TIMING" Name="ldpc_system_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ldpc_system_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ldpc_system_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ldpc_system_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ldpc_system_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ldpc_system_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ldpc_system_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="NOC_SOLUTION_FILE" Name="ldpc_system_wrapper.ncr"/>
+  <File Type="PLACE-TIMING" Name="ldpc_system_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ldpc_system_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="ldpc_system_wrapper_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ldpc_system_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ldpc_system_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ldpc_system_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ldpc_system_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ldpc_system_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-UTIL" Name="ldpc_system_wrapper_utilization_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ldpc_system_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ldpc_system_wrapper_routed.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ldpc_system_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="ldpc_system_wrapper_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="ldpc_system_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ldpc_system_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ldpc_system_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ldpc_system_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ldpc_system_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ldpc_system_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ldpc_system_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-RQS-PB" Name="ldpc_system_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="ldpc_system_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ldpc_system_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ldpc_system_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ldpc_system_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ldpc_system_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ldpc_system_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ldpc_system_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ldpc_system_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ldpc_system_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ldpc_system_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ldpc_system_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ldpc_system_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ldpc_system_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ldpc_system_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ldpc_system_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ldpc_system_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="ldpc_system_wrapper.bit"/>
+  <File Type="BG-XML" Name="ldpc_system_wrapper.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="ldpc_system_wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="ldpc_system_wrapper.msk"/>
+  <File Type="BITSTR-RBT" Name="ldpc_system_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="ldpc_system_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="ldpc_system_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ldpc_system_wrapper.mmi"/>
+  <File Type="PDI-FILE" Name="ldpc_system_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="ldpc_system_wrapper_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="ldpc_system_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="ldpc_system_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="ldpc_system_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="ldpc_system_wrapper.rnpi"/>
+  <File Type="RCDO-FILE" Name="ldpc_system_wrapper.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="ldpc_system_wrapper_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="ldpc_system_wrapper_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="ldpc_system_wrapper_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="ldpc_system_wrapper_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="ldpc_system_wrapper_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="ldpc_system_wrapper_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="ldpc_system_wrapper_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="ldpc_system_wrapper_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="ldpc_system_wrapper_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="ldpc_system_wrapper_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="ldpc_system_wrapper_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="ldpc_system_wrapper_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="ldpc_system_wrapper_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="ldpc_system_wrapper_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="ldpc_system_wrapper_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="ldpc_system_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="ldpc_system_wrapper.rbd"/>
+  <File Type="MMI-FILE" Name="ldpc_system_wrapper.mmi"/>
+  <File Type="BIF-FILE" Name="ldpc_system_wrapper.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="ldpc_system_wrapper_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="ldpc_system_wrapper_pld.bif"/>
+  <File Type="LTX-FILE" Name="ldpc_system_wrapper.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="ldpc_system_wrapper_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="ldpc_system_wrapper_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ldpc_system_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ldpc_system_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="ldpc_system_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="ldpc_system_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="ldpc_system_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="ldpc_system_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ldpc_system_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../fixed_rtl_source/permutations/PI_1_shuffle.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/permutations/PI_1_unshuffle.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/permutations/PI_2_shuffle.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/permutations/PI_2_unshuffle.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/permutations/PI_3_shuffle.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/permutations/PI_3_unshuffle.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/Utilities/6-bit-ripple_carry_adder.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/Utilities/full_adder.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/Utilities/LUT.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/Utilities/S_to_T.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/Utilities/T_to_S.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/CNU/CNU.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/VNU/VNU.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/PE_block/PE_block.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/memory/INT_RAM.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/memory/EXT_RAM.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/memory/DEC_RAM.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/memory/RAM_SP_SR_RW.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/Decoder.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ldpc_system/ldpc_system.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/ldpc_system/hdl/ldpc_system_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/address_generator/AG.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_rtl_source/address_generator/UP_COUNTER.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ldpc_system_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

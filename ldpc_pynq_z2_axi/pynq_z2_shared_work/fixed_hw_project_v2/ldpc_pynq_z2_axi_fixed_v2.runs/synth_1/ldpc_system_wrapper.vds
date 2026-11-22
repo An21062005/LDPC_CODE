@@ -1,0 +1,1767 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 01-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct  7 11:04:45 2026
+# Process ID         : 20860
+# Current directory  : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1
+# Command line       : vivado.exe -log ldpc_system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ldpc_system_wrapper.tcl
+# Log file           : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1/ldpc_system_wrapper.vds
+# Journal file       : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-CK605TTQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 16873 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 30295 MB
+# Available Virtual  : 9479 MB
+#-----------------------------------------------------------
+source ldpc_system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/2026.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.srcs/sources_1/bd/ldpc_system/ldpc_system.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ ldpc_system_clocks_locked_0
+Command: synth_design -top ldpc_system_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14876
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.426 ; gain = 576.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ldpc_system_wrapper' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/hdl/ldpc_system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ldpc_system' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ldpc_system_axi_smc_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/synth/ldpc_system_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7183' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/synth/bd_7183.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_7183_sc_ul_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/ip/ip_0/synth/bd_7183_sc_ul_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7183_sc_ul_0' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/ip/ip_0/synth/bd_7183_sc_ul_0.sv:53]
+WARNING: [Synth 8-7071] port 'aresetn_out' of module 'bd_7183_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/synth/bd_7183.v:191]
+WARNING: [Synth 8-7071] port 'pc_asserted' of module 'bd_7183_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/synth/bd_7183.v:191]
+WARNING: [Synth 8-7071] port 'pc_status' of module 'bd_7183_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/synth/bd_7183.v:191]
+WARNING: [Synth 8-7023] instance 'sc_ul' of module 'bd_7183_sc_ul_0' has 62 connections declared, but only 59 given [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/synth/bd_7183.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7183' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/synth/bd_7183.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ldpc_system_axi_smc_0' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/synth/ldpc_system_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ldpc_system_clocks_locked_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_clocks_locked_0/synth/ldpc_system_clocks_locked_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_11_xlconstant' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/ff42/hdl/xlconstant_v1_1_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_11_xlconstant' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/ff42/hdl/xlconstant_v1_1_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'ldpc_system_clocks_locked_0' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_clocks_locked_0/synth/ldpc_system_clocks_locked_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ldpc_system_decoder_axi_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_decoder_axi_0/synth/ldpc_system_decoder_axi_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'LDPC_Decoder_PYNQ_Z2_top' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:24]
+	Parameter L bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter MESSAGE_WIDTH bound to: 5 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter CNU_DATA_IN_WIDTH bound to: 6 - type: integer 
+	Parameter CNU_DATA_OUT_WIDTH bound to: 5 - type: integer 
+	Parameter INTRINSIC_DATA_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95844]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.000000e+00 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 1.000000e+01 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 3.000000e+01 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 9.000000e+01 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 15 - type: integer 
+	Parameter CLKOUT1_PHASE bound to: 0.000000e+00 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95844]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'decoder_clock_mmcm' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+WARNING: [Synth 8-7023] instance 'decoder_clock_mmcm' of module 'MMCME2_BASE' has 18 connections declared, but only 8 given [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:293]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9011]
+	Parameter MEMORY_SIZE bound to: 5760 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter CLOCKING_MODE bound to: independent_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 5 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 5 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 11 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 5 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: read_first - type: string 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9011]
+INFO: [Synth 8-6157] synthesizing module 'LDPC_Decoder' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Decoder.v:31]
+	Parameter L bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter MESSAGE_WIDTH bound to: 5 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter CNU_DATA_IN_WIDTH bound to: 6 - type: integer 
+	Parameter CNU_DATA_OUT_WIDTH bound to: 5 - type: integer 
+	Parameter INTRINSIC_DATA_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CNU' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/CNU/CNU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ripple_adder' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/6-bit-ripple_carry_adder.v:2]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/full_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/full_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_adder' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/6-bit-ripple_carry_adder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LUT' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/LUT.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'LUT' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/LUT.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'CNU' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/CNU/CNU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 1 - type: integer 
+	Parameter Y bound to: 1 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'EXT_RAM' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/EXT_RAM.v:7]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RAM_SP_SR_RW' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/RAM_SP_SR_RW.v:6]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM_SP_SR_RW' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/RAM_SP_SR_RW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'EXT_RAM' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/EXT_RAM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'INT_RAM' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/INT_RAM.v:8]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RAM_SP_SR_RW__parameterized0' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/RAM_SP_SR_RW.v:6]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM_SP_SR_RW__parameterized0' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/RAM_SP_SR_RW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'INT_RAM' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/INT_RAM.v:8]
+INFO: [Synth 8-6157] synthesizing module 'DEC_RAM' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/DEC_RAM.v:7]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RAM_SP_SR_RW__parameterized1' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/RAM_SP_SR_RW.v:6]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM_SP_SR_RW__parameterized1' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/RAM_SP_SR_RW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DEC_RAM' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/memory/DEC_RAM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized0' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized0' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VNU' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/VNU/VNU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'S_to_T' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/S_to_T.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'S_to_T' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/S_to_T.v:9]
+INFO: [Synth 8-6157] synthesizing module 'T_to_S' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/T_to_S.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'T_to_S' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Utilities/T_to_S.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VNU' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/VNU/VNU.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized0' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 1 - type: integer 
+	Parameter Y bound to: 2 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized1' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized1' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized0' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized1' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 1 - type: integer 
+	Parameter Y bound to: 3 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized2' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized2' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized1' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized2' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 1 - type: integer 
+	Parameter Y bound to: 4 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized3' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized3' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized2' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized3' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 1 - type: integer 
+	Parameter Y bound to: 5 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized4' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized4' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized3' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized4' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 1 - type: integer 
+	Parameter Y bound to: 6 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized5' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized5' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized4' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized5' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 2 - type: integer 
+	Parameter Y bound to: 1 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 1 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized6' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized6' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized5' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized6' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 2 - type: integer 
+	Parameter Y bound to: 2 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 2 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized6' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized7' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 2 - type: integer 
+	Parameter Y bound to: 3 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 3 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized7' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized7' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized7' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized8' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 2 - type: integer 
+	Parameter Y bound to: 4 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 4 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized8' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized8' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized8' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized9' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 2 - type: integer 
+	Parameter Y bound to: 5 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 5 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized9' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized9' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized9' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized10' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 2 - type: integer 
+	Parameter Y bound to: 6 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 6 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized10' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized10' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized10' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized11' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 3 - type: integer 
+	Parameter Y bound to: 1 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 2 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized11' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized12' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 3 - type: integer 
+	Parameter Y bound to: 2 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 4 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized11' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized11' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized12' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized13' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 3 - type: integer 
+	Parameter Y bound to: 3 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 6 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 12 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized13' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized14' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 3 - type: integer 
+	Parameter Y bound to: 4 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 8 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized12' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized12' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized14' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized15' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 3 - type: integer 
+	Parameter Y bound to: 5 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 10 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized13' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized13' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized15' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized16' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 3 - type: integer 
+	Parameter Y bound to: 6 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 12 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized14' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized14' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized16' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized17' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 4 - type: integer 
+	Parameter Y bound to: 1 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 3 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized17' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized18' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 4 - type: integer 
+	Parameter Y bound to: 2 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 6 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 12 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized18' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized19' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 4 - type: integer 
+	Parameter Y bound to: 3 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 9 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized15' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized15' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized19' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized20' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 4 - type: integer 
+	Parameter Y bound to: 4 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 12 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized16' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized16' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized20' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized21' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 4 - type: integer 
+	Parameter Y bound to: 5 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 15 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized17' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized17' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized21' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized22' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 4 - type: integer 
+	Parameter Y bound to: 6 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 18 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 28 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized18' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized18' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized22' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized23' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 5 - type: integer 
+	Parameter Y bound to: 1 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 4 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized23' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized24' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 5 - type: integer 
+	Parameter Y bound to: 2 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 8 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized24' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized25' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 5 - type: integer 
+	Parameter Y bound to: 3 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 12 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 20 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized25' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized26' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 5 - type: integer 
+	Parameter Y bound to: 4 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 16 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 25 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized19' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized19' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized26' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized27' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 5 - type: integer 
+	Parameter Y bound to: 5 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 20 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADDRESS_GENERATOR__parameterized20' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter COUNT_FROM bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADDRESS_GENERATOR__parameterized20' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/address_generator/ADDRESS_GENERATOR.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized27' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized28' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 5 - type: integer 
+	Parameter Y bound to: 6 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 24 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized28' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized29' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 6 - type: integer 
+	Parameter Y bound to: 1 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 5 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 12 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized29' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized30' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 6 - type: integer 
+	Parameter Y bound to: 2 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 10 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized30' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized31' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 6 - type: integer 
+	Parameter Y bound to: 3 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 15 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 24 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized31' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized32' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 6 - type: integer 
+	Parameter Y bound to: 4 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 20 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 30 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized32' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized33' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 6 - type: integer 
+	Parameter Y bound to: 5 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 25 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized33' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PE_BLOCK__parameterized34' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+	Parameter L bound to: 32 - type: integer 
+	Parameter K bound to: 6 - type: integer 
+	Parameter X bound to: 6 - type: integer 
+	Parameter Y bound to: 6 - type: integer 
+	Parameter COUNT_FROM_1 bound to: 0 - type: integer 
+	Parameter COUNT_FROM_2 bound to: 30 - type: integer 
+	Parameter COUNT_FROM_3 bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'PE_BLOCK__parameterized34' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/PE_block/PE_block.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_1_shuffle' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_1_shuffle.v:7]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_1_shuffle' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_1_shuffle.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_1_unshuffle' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_1_unshuffle.v:7]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_1_unshuffle' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_1_unshuffle.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_2_shuffle' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_2_shuffle.v:7]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_2_shuffle' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_2_shuffle.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_2_unshuffle' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_2_unshuffle.v:7]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_2_unshuffle' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_2_unshuffle.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_3_shuffle' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_3_shuffle.v:7]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter START_STATE bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_3_shuffle' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_3_shuffle.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_3_shuffle__parameterized0' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_3_shuffle.v:7]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter START_STATE bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_3_shuffle__parameterized0' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_3_shuffle.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PI_3_unshuffle' [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_3_unshuffle.v:7]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+	Parameter START_STATE bound to: 26 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PI_3_unshuffle' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/permutations/PI_3_unshuffle.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LDPC_Decoder' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/Decoder.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'LDPC_Decoder_PYNQ_Z2_top' (0#1) [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/LDPC_Decoder_PYNQ_Z2_top.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'ldpc_system_decoder_axi_0' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_decoder_axi_0/synth/ldpc_system_decoder_axi_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'ldpc_system_processing_system7_0_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:145709]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:145709]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:330]
+INFO: [Synth 8-6155] done synthesizing module 'ldpc_system_processing_system7_0_0' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/synth/ldpc_system_processing_system7_0_0.v:53]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'ldpc_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:226]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'ldpc_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:226]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'ldpc_system_processing_system7_0_0' has 65 connections declared, but only 63 given [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:226]
+INFO: [Synth 8-638] synthesizing module 'ldpc_system_rst_ps7_0_100M_0' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_rst_ps7_0_100M_0/synth/ldpc_system_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_rst_ps7_0_100M_0/synth/ldpc_system_rst_ps7_0_100M_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [D:/vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:968]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'ldpc_system_rst_ps7_0_100M_0' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_rst_ps7_0_100M_0/synth/ldpc_system_rst_ps7_0_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ldpc_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:290]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ldpc_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:290]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ldpc_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:290]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'ldpc_system_rst_ps7_0_100M_0' has 10 connections declared, but only 7 given [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'ldpc_system' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/synth/ldpc_system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ldpc_system_wrapper' (0#1) [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/hdl/ldpc_system_wrapper.v:13]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_VALID in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[5] in module PE_BLOCK__parameterized34 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[4] in module PE_BLOCK__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[3] in module PE_BLOCK__parameterized32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[2] in module PE_BLOCK__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[1] in module PE_BLOCK__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[0] in module PE_BLOCK__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[5] in module PE_BLOCK__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[4] in module PE_BLOCK__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[3] in module PE_BLOCK__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[2] in module PE_BLOCK__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[1] in module PE_BLOCK__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[0] in module PE_BLOCK__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[5] in module PE_BLOCK__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[4] in module PE_BLOCK__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[3] in module PE_BLOCK__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[2] in module PE_BLOCK__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[1] in module PE_BLOCK__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[0] in module PE_BLOCK__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[5] in module PE_BLOCK__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_in[4] in module PE_BLOCK__parameterized15 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1941.449 ; gain = 1063.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1941.449 ; gain = 1063.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1941.449 ; gain = 1063.234
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1944.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/ldpc_system_processing_system7_0_0.xdc] for cell 'ldpc_system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/ldpc_system_processing_system7_0_0.xdc] for cell 'ldpc_system_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_processing_system7_0_0/ldpc_system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ldpc_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ldpc_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/ip/ip_0/bd_7183_sc_ul_0_cdc.xdc] for cell 'ldpc_system_i/axi_smc/inst/sc_ul/inst'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter REF_PIN_NAME=~*CLR -of_objects [get_cells -hierarchical -filter {NAME =~ *si_checker_inst/*}]'. [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/ip/ip_0/bd_7183_sc_ul_0_cdc.xdc:21]
+Finished Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/ip/ip_0/bd_7183_sc_ul_0_cdc.xdc] for cell 'ldpc_system_i/axi_smc/inst/sc_ul/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/bd_0/ip/ip_0/bd_7183_sc_ul_0_cdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ldpc_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ldpc_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/smartconnect.xdc] for cell 'ldpc_system_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_axi_smc_0/smartconnect.xdc] for cell 'ldpc_system_i/axi_smc/inst'
+Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_rst_ps7_0_100M_0/ldpc_system_rst_ps7_0_100M_0_board.xdc] for cell 'ldpc_system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.gen/sources_1/bd/ldpc_system/ip/ldpc_system_rst_ps7_0_100M_0/ldpc_system_rst_ps7_0_100M_0_board.xdc] for cell 'ldpc_system_i/rst_ps7_0_100M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ldpc_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ldpc_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ldpc_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ldpc_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/2026.1/Vivado/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ldpc_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ldpc_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 4 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 2093.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2093.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 2093.680 ; gain = 1215.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 2093.680 ; gain = 1215.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 2093.680 ; gain = 1215.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_write.w_state_reg' in module 'sc_ultralite_v1_0_1_sasd_lite'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read.r_state_reg' in module 'sc_ultralite_v1_0_1_sasd_lite'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized8'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized9'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized10'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized11'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized12'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized13'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized14'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized15'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized16'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized17'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized18'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized19'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized20'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized21'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized22'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized23'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized24'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized25'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized26'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized27'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized28'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized29'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized30'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized31'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized32'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized33'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'PE_BLOCK__parameterized34'
+INFO: [Synth 8-802] inferred FSM for state register 'controller_state_reg' in module 'LDPC_Decoder_PYNQ_Z2_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                              000 | 00000000000000000000000000000000
+                   R_ARB |                              001 | 00000000000000000000000000000001
+                R_TARGET |                              010 | 00000000000000000000000000000010
+                 R_WIDTH |                              011 | 00000000000000000000000000000011
+                    R_RX |                              100 | 00000000000000000000000000000100
+                    R_TX |                              101 | 00000000000000000000000000000101
+                R_DECERR |                              110 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read.r_state_reg' using encoding 'sequential' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                   W_ARB |                              001 | 00000000000000000000000000000001
+                W_TARGET |                              010 | 00000000000000000000000000000010
+                    W_RX |                              011 | 00000000000000000000000000000011
+                    W_TX |                              100 | 00000000000000000000000000000100
+                  W_NULL |                              101 | 00000000000000000000000000000101
+              W_COMPLETE |                              110 | 00000000000000000000000000000111
+               W_RECOVER |                              111 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_write.w_state_reg' using encoding 'sequential' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized16'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized17'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized18'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized19'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized20'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized21'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized22'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized23'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized24'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized25'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized26'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized27'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized28'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized29'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized30'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized31'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized33'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                               00
+                CTRL_RUN |                             0010 |                               01
+              CTRL_FLUSH |                             0100 |                               10
+              CTRL_RESET |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'PE_BLOCK__parameterized34'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                             0001 |                              000
+        CTRL_FRAME_RESET |                             0010 |                              001
+           CTRL_PREFETCH |                             0100 |                              010
+                CTRL_RUN |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'controller_state_reg' using encoding 'one-hot' in module 'LDPC_Decoder_PYNQ_Z2_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2093.680 ; gain = 1215.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[0].pe_block/ag1' (ADDRESS_GENERATOR) to 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[0].pe_block/ag2'
+INFO: [Synth 8-223] decloning instance 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[1].pe_block/ag1' (ADDRESS_GENERATOR) to 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[1].pe_block/ag2'
+INFO: [Synth 8-223] decloning instance 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[2].pe_block/ag1' (ADDRESS_GENERATOR) to 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[2].pe_block/ag2'
+INFO: [Synth 8-223] decloning instance 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[3].pe_block/ag1' (ADDRESS_GENERATOR) to 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[3].pe_block/ag2'
+INFO: [Synth 8-223] decloning instance 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[4].pe_block/ag1' (ADDRESS_GENERATOR) to 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[4].pe_block/ag2'
+INFO: [Synth 8-223] decloning instance 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[5].pe_block/ag1' (ADDRESS_GENERATOR) to 'ldpc_system_i/decoder_axi/inst/decoder_core/genblk7[0].genblk1[5].pe_block/ag2'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'genblk5[5].cnu/sum_regs_reg[4][6]' (FDE) to 'genblk5[5].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[5].cnu/sum_regs_reg[3][6]' (FDE) to 'genblk5[5].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[5].cnu/sum_regs_reg[3][5]' (FDE) to 'genblk5[5].cnu/sum_regs_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'genblk5[4].cnu/sum_regs_reg[4][6]' (FDE) to 'genblk5[4].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[4].cnu/sum_regs_reg[3][6]' (FDE) to 'genblk5[4].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[4].cnu/sum_regs_reg[3][5]' (FDE) to 'genblk5[4].cnu/sum_regs_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'genblk5[3].cnu/sum_regs_reg[4][6]' (FDE) to 'genblk5[3].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[3].cnu/sum_regs_reg[3][6]' (FDE) to 'genblk5[3].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[3].cnu/sum_regs_reg[3][5]' (FDE) to 'genblk5[3].cnu/sum_regs_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'genblk5[2].cnu/sum_regs_reg[4][6]' (FDE) to 'genblk5[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[2].cnu/sum_regs_reg[3][6]' (FDE) to 'genblk5[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk5[2].cnu/sum_regs_reg[3][5]' (FDE) to 'genblk5[2].cnu/sum_regs_reg[5][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[2].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[1].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[0].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[2].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[1].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[0].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[1].genblk1[2].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[1].genblk1[2].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[2].genblk1[2].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[2].genblk1[2].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[1].genblk1[1].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[1].genblk1[1].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[2].genblk1[1].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[2].genblk1[1].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[1].genblk1[0].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[1].genblk1[0].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[2].genblk1[0].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[2].genblk1[0].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/vnu/Y_reg[1][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/mem_reg_extout_reg[1][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk4[2].cnu/sum_regs_reg[6][6]' (FDE) to 'genblk4[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[2].cnu/sum_regs_reg[5][6]' (FDE) to 'genblk4[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[2].cnu/sum_regs_reg[6][5]' (FDE) to 'genblk4[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[1].cnu/sum_regs_reg[6][6]' (FDE) to 'genblk4[1].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[1].cnu/sum_regs_reg[5][6]' (FDE) to 'genblk4[1].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[1].cnu/sum_regs_reg[6][5]' (FDE) to 'genblk4[1].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[2].cnu/sum_regs_reg[4][6]' (FDE) to 'genblk4[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[2].cnu/sum_regs_reg[3][6]' (FDE) to 'genblk4[2].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk4[2].cnu /\sum_regs_reg[3][5] )
+INFO: [Synth 8-3886] merging instance 'genblk4[1].cnu/sum_regs_reg[4][6]' (FDE) to 'genblk4[1].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk4[1].cnu/sum_regs_reg[3][6]' (FDE) to 'genblk4[1].cnu/sum_regs_reg[3][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk4[1].cnu /\sum_regs_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[3].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[3].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[0].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[2].genblk1[2].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[2].genblk1[2].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[2].genblk1[1].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[2].genblk1[1].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[2].genblk1[0].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[2].genblk1[0].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[1].genblk1[2].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[1].genblk1[2].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[1].genblk1[1].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[1].genblk1[1].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[1].genblk1[0].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[1].genblk1[0].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/vnu/hard_decision_reg' (FDE) to 'genblk7[2].genblk1[0].pe_block/vnu/Y_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/mem_reg_dec_reg[0]' (FDE) to 'genblk7[2].genblk1[0].pe_block/mem_reg_extout_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[2].genblk1[3].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/vnu/hard_decision_reg' (FDE) to 'genblk7[1].genblk1[0].pe_block/vnu/Y_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/mem_reg_dec_reg[0]' (FDE) to 'genblk7[1].genblk1[0].pe_block/mem_reg_extout_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[1].genblk1[3].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/vnu/sum_regs_reg[0][4]' (FDE) to 'genblk7[0].genblk1[0].pe_block/vnu/sum_regs_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/vnu/sum_regs_reg[0][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/vnu/sum_regs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[2].genblk1[2].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[2].genblk1[2].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[1].genblk1[2].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[1].genblk1[2].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[2].genblk1[1].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[2].genblk1[1].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[1].genblk1[1].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[1].genblk1[1].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[2].genblk1[0].pe_block/vnu/Y_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[2].genblk1[0].pe_block/mem_reg_extout_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[1].genblk1[0].pe_block/vnu/Y_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[1].genblk1[0].pe_block/mem_reg_extout_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/vnu/Y_reg[0][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/mem_reg_extout_reg[0][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/vnu/hard_decision_reg' (FDE) to 'genblk7[2].genblk1[1].pe_block/vnu/Y_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[1].pe_block/mem_reg_dec_reg[0]' (FDE) to 'genblk7[2].genblk1[1].pe_block/mem_reg_extout_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/vnu/hard_decision_reg' (FDE) to 'genblk7[1].genblk1[1].pe_block/vnu/Y_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[1].pe_block/mem_reg_dec_reg[0]' (FDE) to 'genblk7[1].genblk1[1].pe_block/mem_reg_extout_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/vnu/Y_reg[2][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[3].pe_block/mem_reg_extout_reg[2][5]' (FDE) to 'genblk7[2].genblk1[3].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/vnu/hard_decision_reg' (FDE) to 'genblk7[2].genblk1[2].pe_block/vnu/Y_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[2].pe_block/mem_reg_dec_reg[0]' (FDE) to 'genblk7[2].genblk1[2].pe_block/mem_reg_extout_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/vnu/Y_reg[2][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[3].pe_block/mem_reg_extout_reg[2][5]' (FDE) to 'genblk7[1].genblk1[3].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/vnu/hard_decision_reg' (FDE) to 'genblk7[1].genblk1[2].pe_block/vnu/Y_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[2].pe_block/mem_reg_dec_reg[0]' (FDE) to 'genblk7[1].genblk1[2].pe_block/mem_reg_extout_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/vnu/Y_reg[2][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/vnu/hard_decision_reg'
+INFO: [Synth 8-3886] merging instance 'genblk7[0].genblk1[0].pe_block/mem_reg_extout_reg[2][5]' (FDE) to 'genblk7[0].genblk1[0].pe_block/mem_reg_dec_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk5[3].cnu/sum_regs_reg[6][6]' (FDE) to 'genblk5[3].cnu/sum_regs_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'genblk5[3].cnu/sum_regs_reg[5][6]' (FDE) to 'genblk5[3].cnu/sum_regs_reg[6][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk5[3].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3886] merging instance 'genblk5[4].cnu/sum_regs_reg[6][6]' (FDE) to 'genblk5[4].cnu/sum_regs_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'genblk5[4].cnu/sum_regs_reg[5][6]' (FDE) to 'genblk5[4].cnu/sum_regs_reg[6][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk5[4].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[3].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3886] merging instance 'genblk7[2].genblk1[0].pe_block/dec_out_reg[4]' (FDE) to 'genblk7[2].genblk1[0].pe_block/dec_out_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[0].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[2].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[1].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[0].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[3].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3886] merging instance 'genblk7[1].genblk1[0].pe_block/dec_out_reg[4]' (FDE) to 'genblk7[1].genblk1[0].pe_block/dec_out_reg[5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[0].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[2].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[1].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[0].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[0].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[0].genblk1[0].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[1].genblk1[0].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[2].genblk1[0].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[1].genblk1[1].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[2].genblk1[1].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[1].genblk1[2].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[2].genblk1[2].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[1].genblk1[3].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[2].genblk1[3].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk5[5].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk5[2].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk5[1].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk5[0].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk4[0].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[0].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[1].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[1].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[2].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[2].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[2].genblk1[3].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[1].genblk1[3].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[1].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[2].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[3].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[2].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[1].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[2].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[0].genblk1[3].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[2].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[0].genblk1[3].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[3].genblk1[2].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[0].genblk1[2].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[0].genblk1[1].pe_block /ag_en_reg)
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_1/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_2/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_3/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_4/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_5/Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lut_6/Y" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[0].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[0].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[1].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[0].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[1].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[0].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[0].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[0].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[1].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[1].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[3].genblk1[0].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[4].genblk1[0].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[5].genblk1[0].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[3].genblk1[1].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[4].genblk1[1].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk6[1].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk6[2].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk6[0].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk6[3].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk6[5].cnu /\sum_regs_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk6[4].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[0].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[0].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[0].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk4[5].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk4[4].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk4[3].cnu /\sum_regs_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[1].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[1].pe_block /\dec_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[1].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[2].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[2].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[2].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[1].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[2].pe_block /ext_read_we_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[5].genblk1[1].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[4].genblk1[2].pe_block /ag_en_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk7[5].genblk1[2].pe_block /ag_en_reg)
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[3].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[3].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[4].genblk1[4].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[5].genblk1[4].pe_block /int_decode_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk7[3].genblk1[3].pe_block /int_decode_we_reg)
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:51 ; elapsed = 00:06:06 . Memory (MB): peak = 2093.680 ; gain = 1215.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:06 ; elapsed = 00:06:21 . Memory (MB): peak = 2285.125 ; gain = 1406.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:32 ; elapsed = 00:06:49 . Memory (MB): peak = 2393.117 ; gain = 1514.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ldpc_system_i/decoder_axi/insti_6/input_frame_buffer/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:52 ; elapsed = 00:07:22 . Memory (MB): peak = 2408.305 ; gain = 1530.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ldpc_system_i/decoder_axi/inst/input_frame_buffer/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:08 ; elapsed = 00:07:39 . Memory (MB): peak = 2546.445 ; gain = 1668.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:09 ; elapsed = 00:07:39 . Memory (MB): peak = 2546.445 ; gain = 1668.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:23 ; elapsed = 00:07:54 . Memory (MB): peak = 2573.688 ; gain = 1695.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:24 ; elapsed = 00:07:55 . Memory (MB): peak = 2573.688 ; gain = 1695.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:27 ; elapsed = 00:07:58 . Memory (MB): peak = 2590.215 ; gain = 1712.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:27 ; elapsed = 00:07:58 . Memory (MB): peak = 2590.215 ; gain = 1712.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BIBUF       |   130|
+|2     |BUFG        |     4|
+|3     |CARRY4      |   623|
+|4     |LUT1        |   255|
+|5     |LUT2        |  3570|
+|6     |LUT3        |  4464|
+|7     |LUT4        |  1420|
+|8     |LUT5        |  9144|
+|9     |LUT6        | 10497|
+|10    |MMCME2_BASE |     1|
+|11    |MUXF7       |   606|
+|12    |MUXF8       |    45|
+|13    |PS7         |     1|
+|14    |RAM32X1S    |  1080|
+|15    |RAMB18E1    |     1|
+|16    |SRL16       |     1|
+|17    |SRL16E      |   906|
+|18    |FDCE        |  9217|
+|19    |FDPE        |     4|
+|20    |FDRE        | 18526|
+|21    |FDR         |     2|
+|22    |FDSE        |   188|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:27 ; elapsed = 00:07:59 . Memory (MB): peak = 2590.215 ; gain = 1712.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:03 ; elapsed = 00:07:23 . Memory (MB): peak = 2590.215 ; gain = 1559.770
+Synthesis Optimization Complete : Time (s): cpu = 00:06:28 ; elapsed = 00:08:00 . Memory (MB): peak = 2590.215 ; gain = 1712.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.516 . Memory (MB): peak = 2596.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2359 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2606.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1084 instances were transformed.
+  FDR_1 => FDRE (inverted pins: C): 2 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM32X1S => RAM32X1S (RAMS32): 1080 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: f751115f
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+689 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:01 ; elapsed = 00:08:39 . Memory (MB): peak = 2606.598 ; gain = 1957.352
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 2606.598 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_hw_project_v2/ldpc_pynq_z2_axi_fixed_v2.runs/synth_1/ldpc_system_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ldpc_system_wrapper_utilization_synth.rpt -pb ldpc_system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 11:13:46 2026...

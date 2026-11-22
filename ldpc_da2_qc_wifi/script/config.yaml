@@ -42,6 +42,14 @@ datasets:
     generate: {snr: 20.0, seed: 42}
   noisy_snr3:                   # same image and flow, SNR 3 dB, seed 42
     generate: {snr: 3.0, seed: 42}
+  snr1p0:                       # BER/FER curve points (ber_fer/eval_ber_fer.*), seed 42
+    generate: {snr: 1.0, seed: 42}
+  snr1p5:
+    generate: {snr: 1.5, seed: 42}
+  snr2p0:
+    generate: {snr: 2.0, seed: 42}
+  snr2p5:
+    generate: {snr: 2.5, seed: 42}
 
 tests:
   units:
@@ -76,11 +84,51 @@ tests:
     dataset: noisy_snr3
     frames: 22
     model_check: true
+  # BER/FER curve: all 1245 codewords per SNR. Residual errors at low SNR make
+  # tb_axi report FAIL_DA2 (output file is still complete); model_match is the
+  # RTL correctness check there. Run with --waves none.
+  ber_snr1p0:
+    description: "BER curve: 1247 transactions, 1245 codewords, SNR 1.0 dB, bit-exact vs model"
+    kind: axi
+    dataset: snr1p0
+    frames: 1247
+    model_check: true
+  ber_snr1p5:
+    description: "BER curve: 1247 transactions, 1245 codewords, SNR 1.5 dB, bit-exact vs model"
+    kind: axi
+    dataset: snr1p5
+    frames: 1247
+    model_check: true
+  ber_snr2p0:
+    description: "BER curve: 1247 transactions, 1245 codewords, SNR 2.0 dB, bit-exact vs model"
+    kind: axi
+    dataset: snr2p0
+    frames: 1247
+    model_check: true
+  ber_snr2p5:
+    description: "BER curve: 1247 transactions, 1245 codewords, SNR 2.5 dB, bit-exact vs model"
+    kind: axi
+    dataset: snr2p5
+    frames: 1247
+    model_check: true
+  ber_snr3p0:
+    description: "BER curve: 1247 transactions, 1245 codewords, SNR 3.0 dB, bit-exact vs model"
+    kind: axi
+    dataset: noisy_snr3
+    frames: 1247
+    model_check: true
 
 defaults:
   architecture: partly_parallel
   test: regression
   waves: overview
+
+# 'python script/run.py flow': every enabled step for every listed architecture.
+# Command line overrides: --arch serial,fully_parallel  --steps sim,synth  --test noisy
+flow:
+  architectures: [fully_parallel, partly_parallel, serial]   # song song, bán song song, nối tiếp
+  steps: [sim, synth, impl]   # sim = kiểm tra chức năng; synth = chỉ tổng hợp; impl = synth + implement + bitstream (có impl thì không chạy synth riêng)
+  test: regression            # test dùng cho bước sim
 
 # Wave groups. {top} is the testbench top; {core} is dut/core (AXI test) or
 # core (core test). A group with 'architectures' is recorded only for those.
@@ -98,6 +146,16 @@ waveforms:
     - name: Sequencer
       radix: unsigned
       signals: ["/{top}/dut/qstate", "/{top}/dut/k", "/{top}/dut/busy_reg", "/{top}/dut/core_busy", "/{top}/{core}/state", "/{top}/{core}/iter", "/{top}/{core}/frozen", "/{top}/{core}/rs", "/{top}/busy", "/{top}/start", "/{top}/swap"]
+    # Core ports (same for all 3 architectures): start/busy/swap, LLR in (load_*), decoded bit out (dec_*)
+    - name: Core_IO_Control
+      radix: binary
+      signals: ["/{top}/dut/decoder_clk", "/{top}/dut/core_start", "/{top}/dut/core_busy", "/{top}/dut/core_swap", "/{top}/dut/v_d", "/{top}/dut/dec_bit"]
+    - name: Core_IO_Addr
+      radix: unsigned
+      signals: ["/{top}/dut/k_d", "/{top}/dut/k"]
+    - name: Core_IO_LLR
+      radix: signed
+      signals: ["/{top}/dut/input_sample"]
   axi:
     - name: AXI_Write
       radix: hex

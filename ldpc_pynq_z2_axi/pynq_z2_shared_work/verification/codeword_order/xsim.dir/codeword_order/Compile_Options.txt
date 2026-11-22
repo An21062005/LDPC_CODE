@@ -1,0 +1,1 @@
+"work.tb_pynq_codeword_order" "work.glbl" -L "unisims_ver" -L "xpm" --debug "typical" --relax --snapshot "codeword_order" 

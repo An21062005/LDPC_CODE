@@ -1,0 +1,19 @@
+{
+  "code": "1296_12",
+  "z": 54,
+  "image": "code/data/eye.png",
+  "image_shape": [
+    225,
+    224
+  ],
+  "image_bits": 403200,
+  "n": 1296,
+  "k": 648,
+  "payload_frames": 623,
+  "flush_frames": 2,
+  "snr_db": 3.0,
+  "seed": 42,
+  "encoder": "systematic 802.11n: c = [s, Hp^-1 Hs s]",
+  "input_sha256": "12d6d1858024e821ad88d539f0313a97128ebb7d22546994c435e036645c53d2",
+  "expected_sha256": "3d24469db323af7671f061eee15c24c161f213d54ec69c8164aae22889574a91"
+}

@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L xil_defaultlib -L xilinx_vip -L xpm -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip --snapshot LDPC_Decoder_PYNQ_Z2_top xil_defaultlib.LDPC_Decoder_PYNQ_Z2_top xil_defaultlib.glbl -log elaborate.log

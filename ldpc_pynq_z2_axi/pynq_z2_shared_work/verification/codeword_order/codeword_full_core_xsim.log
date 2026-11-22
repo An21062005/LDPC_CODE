@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct  7 10:37:27 2026
+# Process ID         : 6460
+# Current directory  : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order
+# Command line       : xsim.exe -log codeword_full_core_xsim.log -mode tcl -source {xsim.dir/codeword_full_core/xsim_script.tcl}
+# Log file           : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order/codeword_full_core_xsim.log
+# Journal file       : C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/verification/codeword_order\xsim.jou
+# Running On         : LAPTOP-CK605TTQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 16873 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 30295 MB
+# Available Virtual  : 11748 MB
+#-----------------------------------------------------------
+source xsim.dir/codeword_full_core/xsim_script.tcl
+# xsim {codeword_full_core} -testplusarg INPUT_FILE=../../board_uploads/input.txt -testplusarg EXPECTED_FILE=../../FINAL_REPORT_PACKAGE/results/expected_codeword.txt -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+AXI frame 1 completed, status=0001000a
+AXI frame 2 completed, status=00020002
+AXI frame 3 completed, status=0003000e
+PASS: AXI wrapper loaded 3 frames and matched all 1152 output bits
+$finish called at time : 284935 ns : File "C:/Users/HOANG AN/Downloads/ldpc_pynq_z2_axi/pynq_z2_shared_work/fixed_rtl_source/tests/tb_pynq_axi_wrapper.sv" Line 173
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct  7 10:37:33 2026...

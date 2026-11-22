@@ -1,0 +1,16 @@
+{
+  "status": "WARN",
+  "input_file": "C:/Users/HOANG AN/Downloads/ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/input.txt",
+  "payload_frames": 696,
+  "values_per_frame": 1152,
+  "existing_trailing_flush_frames": 2,
+  "internal_flush_frames": 2,
+  "defaults_updated_in": "C:/Users/HOANG AN/Downloads/ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/fix/Decoder_tb.v",
+  "output_file": "C:/Users/HOANG AN/Downloads/ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/rtl_work/full_input_output.txt",
+  "ordered_output_file": "C:/Users/HOANG AN/Downloads/ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/rtl_work/full_input_output_ordered.txt",
+  "input_format_valid": true,
+  "compilation_and_elaboration": "PASS",
+  "full_simulation": "NOT RUN: XSim could not obtain a Simulator license",
+  "evidence": "Could not obtain the necessary license for Simulator.",
+  "active_project_source_verified": true
+}

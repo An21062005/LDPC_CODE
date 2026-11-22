@@ -1,0 +1,6 @@
+work/
+rtl_work/
+*.jou
+*.log
+*.pb
+*.wdb

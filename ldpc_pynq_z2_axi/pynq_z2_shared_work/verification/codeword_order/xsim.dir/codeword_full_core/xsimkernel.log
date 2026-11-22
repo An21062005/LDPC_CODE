@@ -1,0 +1,7 @@
+Running: xsim.dir/codeword_full_core/xsimk.exe -runall -simmode gui -testplusarg INPUT_FILE=../../board_uploads/input.txt -testplusarg EXPECTED_FILE=../../FINAL_REPORT_PACKAGE/results/expected_codeword.txt -wdb codeword_full_core.wdb -simrunnum 0 -socket 51370
+Design successfully loaded
+Design Loading Memory Usage: 32748 KB (Peak: 32748 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 37228 KB (Peak: 37228 KB)
+Simulation CPU Usage: 3671 ms

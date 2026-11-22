@@ -1,7 +1,8 @@
 # PYNQ-Z2 project/build for one architecture (block design as in ldpc_da2:
 # PS7 M_AXI_GP0 -> SmartConnect -> LDPC_Decoder_PYNQ_Z2_top at 0x43C00000,
-# FCLK0 = 100 MHz). Invoked by: python script/run.py project|build --arch A
-#   argv: project|build  <run directory>  <build_config.tcl>
+# FCLK0 = 100 MHz). Invoked by: python script/run.py project|synth|build --arch A
+#   argv: project|synth|build  <run directory>  <build_config.tcl>
+# synth stops after synthesis and its utilization reports.
 # Never programs the FPGA. Timing failure does not stop the reports.
 
 set mode [lindex $argv 0]
@@ -64,7 +65,7 @@ set_property top ldpc_system_wrapper [get_filesets sources_1]
 update_compile_order -fileset sources_1
 set_property board_part {} [current_project]
 puts "PROJECT_CREATED=[file join $project_dir p.xpr]"
-if {$mode ne "build"} {return}
+if {$mode eq "project"} {return}
 
 set rpt [file join $project_dir reports]
 file mkdir $rpt
@@ -83,6 +84,7 @@ open_run synth_1
 report_utilization -file [file join $rpt utilization_synth.rpt]
 report_utilization -hierarchical -hierarchical_depth 4 -file [file join $rpt utilization_synth_hier.rpt]
 close_design
+if {$mode eq "synth"} {puts "SYNTH_DONE"; return}
 
 if {[catch {launch_runs impl_1 -to_step write_bitstream -jobs $cfg_jobs; wait_on_run impl_1} msg]} {
   puts "IMPL_LAUNCH_MESSAGE=$msg"

@@ -9,7 +9,7 @@ encoder changes: the image bits are encoded with THIS Wi-Fi H.
 Two all-zero flush frames are appended (two-transaction interface latency).
 Every clean codeword is checked against H before it is written.
 
-  python script/gen_data.py --snr 20 --seed 42 --out outfeed/data/reference
+  python script/gen_data.py --snr 20 --seed 42 --out code/data/reference
 """
 import argparse
 import hashlib
@@ -94,11 +94,11 @@ def main(argv=None):
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--code", default=DEFAULT_CODE, choices=sorted(CODES))
     p.add_argument("--image", type=Path, default=ROOT / "code/data/eye.png")
-    p.add_argument("--out", type=Path, required=True, help="output directory below outfeed/")
+    p.add_argument("--out", type=Path, required=True, help="output directory below code/data/")
     a = p.parse_args(argv)
     out = a.out.resolve()
-    if not out.is_relative_to(ROOT / "outfeed"):
-        p.error("generated data must be written below outfeed/")
+    if not out.is_relative_to(ROOT / "code/data"):
+        p.error("generated data must be written below code/data/")
     out.mkdir(parents=True, exist_ok=True)
     inp, exp, meta = generate(a.snr, a.seed, a.image.resolve(), a.code)
     (out / "input.txt").write_text(inp, encoding="ascii")

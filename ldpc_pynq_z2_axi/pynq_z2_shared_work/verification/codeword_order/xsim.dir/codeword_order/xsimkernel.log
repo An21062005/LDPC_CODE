@@ -1,0 +1,7 @@
+Running: xsim.dir/codeword_order/xsimk.exe -runall -simmode gui -testplusarg RAW_FILE=../../FINAL_REPORT_PACKAGE/results/output_fixed_full_board.txt -testplusarg EXPECTED_FILE=../../FINAL_REPORT_PACKAGE/results/expected_codeword.txt -testplusarg ORDERED_FILE=output_codeword.txt -wdb codeword_order.wdb -simrunnum 0 -socket 51364
+Design successfully loaded
+Design Loading Memory Usage: 32872 KB (Peak: 32872 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 36620 KB (Peak: 36620 KB)
+Simulation CPU Usage: 12467 ms

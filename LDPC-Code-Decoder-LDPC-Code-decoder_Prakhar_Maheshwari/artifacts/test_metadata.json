@@ -1,0 +1,15 @@
+{
+  "image": "C:\\Users\\HOANG AN\\Downloads\\ldpc_code\\LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari\\data\\eye.png",
+  "image_width": 224,
+  "image_height": 225,
+  "image_bits": 403200,
+  "codeword_bits": 1152,
+  "message_bits_per_frame": 580,
+  "payload_frames": 696,
+  "flush_frames": 2,
+  "rtl_frames": 698,
+  "snr_db": 20.0,
+  "seed": 42,
+  "input_file": "C:\\Users\\HOANG AN\\Downloads\\ldpc_code\\LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari\\input.txt",
+  "expected_codeword_file": "C:\\Users\\HOANG AN\\Downloads\\ldpc_code\\LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari\\expected_codeword.txt"
+}

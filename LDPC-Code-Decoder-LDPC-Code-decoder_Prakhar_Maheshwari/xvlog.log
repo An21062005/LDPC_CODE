@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HOANG AN/Downloads/ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/fix/Decoder_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module PI_1_shuffle
+INFO: [VRFC 10-311] analyzing module PI_1_unshuffle
+INFO: [VRFC 10-311] analyzing module PI_2_shuffle
+INFO: [VRFC 10-311] analyzing module PI_2_unshuffle
+INFO: [VRFC 10-311] analyzing module PI_3_shuffle
+INFO: [VRFC 10-311] analyzing module PI_3_unshuffle
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-311] analyzing module LUT
+INFO: [VRFC 10-311] analyzing module S_to_T
+INFO: [VRFC 10-311] analyzing module T_to_S
+INFO: [VRFC 10-311] analyzing module CNU
+INFO: [VRFC 10-311] analyzing module VNU
+INFO: [VRFC 10-311] analyzing module PE_BLOCK
+INFO: [VRFC 10-311] analyzing module INT_RAM
+INFO: [VRFC 10-311] analyzing module EXT_RAM
+INFO: [VRFC 10-311] analyzing module DEC_RAM
+INFO: [VRFC 10-311] analyzing module RAM_SP_SR_RW
+INFO: [VRFC 10-311] analyzing module ADDRESS_GENERATOR
+INFO: [VRFC 10-311] analyzing module LDPC_Decoder
+INFO: [VRFC 10-311] analyzing module Decoder_tb

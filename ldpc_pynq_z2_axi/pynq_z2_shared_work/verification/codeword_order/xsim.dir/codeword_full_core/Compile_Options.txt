@@ -1,0 +1,1 @@
+"work.tb_pynq_axi_wrapper" "work.glbl" -L "unisims_ver" -L "xpm" --debug "typical" --relax --snapshot "codeword_full_core" 

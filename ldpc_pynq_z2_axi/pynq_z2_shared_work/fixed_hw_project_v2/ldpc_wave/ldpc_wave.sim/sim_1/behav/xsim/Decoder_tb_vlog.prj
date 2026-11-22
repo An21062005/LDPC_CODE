@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "D:/vivado/2026.1/Vivado/data/rsb/busdef" \
+"../../../../../../../../ldpc_code/LDPC-Code-Decoder-LDPC-Code-decoder_Prakhar_Maheshwari/fix/Decoder_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

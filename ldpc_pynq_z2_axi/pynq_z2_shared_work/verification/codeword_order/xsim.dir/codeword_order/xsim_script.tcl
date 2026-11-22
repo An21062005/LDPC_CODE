@@ -1,0 +1,1 @@
+xsim {codeword_order} -testplusarg RAW_FILE=../../FINAL_REPORT_PACKAGE/results/output_fixed_full_board.txt -testplusarg EXPECTED_FILE=../../FINAL_REPORT_PACKAGE/results/expected_codeword.txt -testplusarg ORDERED_FILE=output_codeword.txt -autoloadwcfg -runall
