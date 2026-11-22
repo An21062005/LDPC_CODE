@@ -17,9 +17,13 @@
 //   load_*: write the other intrinsic bank (~rs) while decoding
 //   dec_* : read decisions of the other decision bank (~rs), 1-cycle latency
 //   swap  : toggle rs when the transaction is complete (core idle)
+// arch_study: LW samples are written and LW decisions read per clock;
+// load_addr / dec_addr index groups of LW consecutive VNs. LW = 1 is the
+// original interface. LW > 1 writes LW entries of int_mem per clock (W-sweep
+// cycle measurement in simulation only; not a resource-realistic memory).
 `default_nettype none
 
-module ldpc_core import ldpc_code_pkg::*; #(
+module ldpc_core import ldpc_code_pkg::*, ldpc_load_pkg::*; #(
   parameter integer N = LDPC_N,
   parameter integer M = LDPC_M,
   parameter integer E = LDPC_E,
@@ -28,7 +32,8 @@ module ldpc_core import ldpc_code_pkg::*; #(
   parameter integer ITER = 18,
   parameter integer AW = $clog2(N),
   parameter integer EW = $clog2(E),
-  parameter integer SW = 4            // slot index width
+  parameter integer SW = 4,           // slot index width
+  parameter integer LW = LOAD_W
 )(
   input  wire          clk,
   input  wire          rst,
@@ -37,9 +42,9 @@ module ldpc_core import ldpc_code_pkg::*; #(
   output wire          busy,
   input  wire          load_we,
   input  wire [AW-1:0] load_addr,
-  input  wire [4:0]    load_data,
+  input  wire [LW*5-1:0] load_data,
   input  wire [AW-1:0] dec_addr,
-  output reg           dec_bit,
+  output reg  [LW-1:0] dec_bit,
   output wire [5:0]    debug
 );
   localparam integer FD = 4;          // result FIFO depth (nodes)
@@ -62,8 +67,15 @@ module ldpc_core import ldpc_code_pkg::*; #(
     for (k = 0; k < (2<<AW); k = k + 1) begin int_mem[k] = 5'd0; dec_mem[k] = 1'b0; end
   end
 
-  always @(posedge clk) if (load_we) int_mem[{~rs, load_addr}] <= load_data;
-  always @(posedge clk) dec_bit <= dec_mem[{~rs, dec_addr}];
+  integer lw;
+  reg [AW-1:0] lw_load, lw_dec;
+  always @(posedge clk)
+    for (lw = 0; lw < LW; lw = lw + 1) begin
+      lw_load = load_addr*LW + lw;
+      lw_dec  = dec_addr*LW + lw;
+      if (load_we) int_mem[{~rs, lw_load}] <= load_data[lw*5 +: 5];
+      dec_bit[lw] <= dec_mem[{~rs, lw_dec}];
+    end
 
   // ---------------- read (gather) pipeline ----------------
   // R0: order index -> ROM ; R1: edge address -> memories ; R2: data

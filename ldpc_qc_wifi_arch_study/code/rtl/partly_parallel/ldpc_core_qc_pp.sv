@@ -19,12 +19,17 @@
 //     permutation network (da2 PI_3) is needed;
 //   * counters wrap at ZB (27, not a power of two); one clock, no clk_df.
 // Transaction interface identical to ldpc_core_serial.sv / ldpc_core_fp.sv.
+// arch_study: LW samples are written and LW decisions read per clock;
+// load_addr / dec_addr index groups of LW consecutive VNs. LW = 1 is the
+// original interface. LW > 1 may write several entries of one PE's int_mem per
+// clock (W-sweep cycle measurement in simulation only; not resource-realistic).
 `default_nettype none
 
-module ldpc_core import ldpc_code_pkg::*; #(
+module ldpc_core import ldpc_code_pkg::*, ldpc_load_pkg::*; #(
   parameter integer N = LDPC_N,
   parameter integer ITER = 18,
-  parameter integer AW = $clog2(N)
+  parameter integer AW = $clog2(N),
+  parameter integer LW = LOAD_W
 )(
   input  wire          clk,
   input  wire          rst,
@@ -33,9 +38,9 @@ module ldpc_core import ldpc_code_pkg::*; #(
   output wire          busy,
   input  wire          load_we,
   input  wire [AW-1:0] load_addr,
-  input  wire [4:0]    load_data,
+  input  wire [LW*5-1:0] load_data,
   input  wire [AW-1:0] dec_addr,
-  output reg           dec_bit,
+  output reg  [LW-1:0] dec_bit,
   output wire [5:0]    debug
 );
   localparam integer ZW = $clog2(ZB);
@@ -61,21 +66,30 @@ module ldpc_core import ldpc_code_pkg::*; #(
   wire v_write = v_valid[2];
   wire c_write = c_valid[1];
 
-  // ---- load / decision address split: n = c*ZB + j ----
-  wire [AW-1:0] load_c = load_addr / ZB;
-  wire [ZW-1:0] load_j = load_addr - load_c * ZB;
-  wire [AW-1:0] rd_c   = dec_addr / ZB;
-  wire [ZW-1:0] rd_j   = dec_addr - rd_c * ZB;
+  // ---- load / decision address split per lane: n = c*ZB + j ----
+  wire [AW-1:0] load_c [0:LW-1];
+  wire [ZW-1:0] load_j [0:LW-1];
+  wire [AW-1:0] rd_c   [0:LW-1];
+  wire [ZW-1:0] rd_j   [0:LW-1];
 
   wire [5:0]          rdq   [0:NBLK-1];          // message read per block
   wire [DVMAX*6-1:0]  vy    [0:NB-1];
   wire [NB-1:0]       vhd;
   wire [DCMAX*5-1:0]  cy    [0:MB-1];
   wire [MB-1:0]       cpar;
-  wire [NB-1:0]       dec_rd;
+  wire [NB-1:0]       dec_rd [0:LW-1];
 
-  genvar b, c, r, k;
+  genvar b, c, r, k, l;
   generate
+    for (l = 0; l < LW; l = l + 1) begin : g_lane
+      wire [AW-1:0] ln = load_addr*LW + l;
+      wire [AW-1:0] dn = dec_addr*LW + l;
+      assign load_c[l] = ln / ZB;
+      assign load_j[l] = ln - load_c[l] * ZB;
+      assign rd_c[l]   = dn / ZB;
+      assign rd_j[l]   = dn - rd_c[l] * ZB;
+    end
+
     // ---------------- message RAM per non-zero block ----------------
     for (b = 0; b < NBLK; b = b + 1) begin : g_blk
       localparam integer SH = BLK_SHIFT[b*8 +: 8];
@@ -117,12 +131,16 @@ module ldpc_core import ldpc_code_pkg::*; #(
       end
       vn_unit #(.DV(D)) u (.clk(clk), .en(1'b1), .z(zq), .x(x), .y(y), .hd(vhd[c]));
       assign vy[c] = {{((DVMAX-D)*6){1'b0}}, y};
+      integer lw;
       always @(posedge clk) begin
         if (v_issue) zq <= int_mem[{rs, t[ZW-1:0]}];
-        if (load_we && load_c == c) int_mem[{~rs, load_j}] <= load_data;
+        for (lw = 0; lw < LW; lw = lw + 1)
+          if (load_we && load_c[lw] == c) int_mem[{~rs, load_j[lw]}] <= load_data[lw*5 +: 5];
         if (v_write && !frozen) dec_mem[{rs, v_a3}] <= vhd[c];
       end
-      assign dec_rd[c] = dec_mem[{~rs, rd_j}];
+      for (l = 0; l < LW; l = l + 1) begin : g_rd
+        assign dec_rd[l][c] = dec_mem[{~rs, rd_j[l]}];
+      end
     end
 
     // ---------------- CN unit per block row ----------------
@@ -139,7 +157,9 @@ module ldpc_core import ldpc_code_pkg::*; #(
     end
   endgenerate
 
-  always @(posedge clk) dec_bit <= dec_rd[rd_c];
+  integer lr;
+  always @(posedge clk)
+    for (lr = 0; lr < LW; lr = lr + 1) dec_bit[lr] <= dec_rd[lr][rd_c[lr]];
 
   // ---------------- control ----------------
   always @(posedge clk) begin

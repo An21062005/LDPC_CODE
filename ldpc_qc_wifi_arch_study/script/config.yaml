@@ -45,6 +45,99 @@ architectures:
     filelist: script/filelists/fully_parallel_w6.f
     core_instance: core
     txn_cycles_max: {"648_12": 500, "1296_12": 1000, "648_34": 500}
+  # W-sweep (arch_study): same cores, wrapper loads W samples / reads W decisions per clock.
+  # partly/serial W > 1: multi-write load memory, for cycle measurement in simulation only.
+  # txn_cycles_max = W = 1 hang guard (cycles do not grow with W).
+  fully_parallel_w2:
+    description: "arch_study W-sweep: fully_parallel, 2 samples / 2 decisions per clock"
+    filelist: script/filelists/fully_parallel_w2.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 651, "1296_12": 1500, "648_34": 1000}
+  fully_parallel_w3:
+    description: "arch_study W-sweep: fully_parallel, 3 samples / 3 decisions per clock"
+    filelist: script/filelists/fully_parallel_w3.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 651, "1296_12": 1500, "648_34": 1000}
+  fully_parallel_w9:
+    description: "arch_study W-sweep: fully_parallel, 9 samples / 9 decisions per clock"
+    filelist: script/filelists/fully_parallel_w9.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 651, "1296_12": 1500, "648_34": 1000}
+  fully_parallel_w12:
+    description: "arch_study W-sweep: fully_parallel, 12 samples / 12 decisions per clock"
+    filelist: script/filelists/fully_parallel_w12.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 651, "1296_12": 1500, "648_34": 1000}
+  fully_parallel_w18:
+    description: "arch_study W-sweep: fully_parallel, 18 samples / 18 decisions per clock"
+    filelist: script/filelists/fully_parallel_w18.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 651, "1296_12": 1500, "648_34": 1000}
+  fully_parallel_w24:
+    description: "arch_study W-sweep: fully_parallel, 24 samples / 24 decisions per clock"
+    filelist: script/filelists/fully_parallel_w24.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 651, "1296_12": 1500, "648_34": 1000}
+  partly_parallel_w2:
+    description: "arch_study W-sweep: partly_parallel, 2 samples / 2 decisions per clock"
+    filelist: script/filelists/partly_parallel_w2.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 1082, "1296_12": 3000, "648_34": 1500}
+  partly_parallel_w3:
+    description: "arch_study W-sweep: partly_parallel, 3 samples / 3 decisions per clock"
+    filelist: script/filelists/partly_parallel_w3.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 1082, "1296_12": 3000, "648_34": 1500}
+  partly_parallel_w6:
+    description: "arch_study W-sweep: partly_parallel, 6 samples / 6 decisions per clock"
+    filelist: script/filelists/partly_parallel_w6.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 1082, "1296_12": 3000, "648_34": 1500}
+  partly_parallel_w9:
+    description: "arch_study W-sweep: partly_parallel, 9 samples / 9 decisions per clock"
+    filelist: script/filelists/partly_parallel_w9.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 1082, "1296_12": 3000, "648_34": 1500}
+  partly_parallel_w12:
+    description: "arch_study W-sweep: partly_parallel, 12 samples / 12 decisions per clock"
+    filelist: script/filelists/partly_parallel_w12.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 1082, "1296_12": 3000, "648_34": 1500}
+  partly_parallel_w24:
+    description: "arch_study W-sweep: partly_parallel, 24 samples / 24 decisions per clock"
+    filelist: script/filelists/partly_parallel_w24.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 1082, "1296_12": 3000, "648_34": 1500}
+  serial_w2:
+    description: "arch_study W-sweep: serial, 2 samples / 2 decisions per clock"
+    filelist: script/filelists/serial_w2.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 86348, "1296_12": 200000, "648_34": 100000}
+  serial_w3:
+    description: "arch_study W-sweep: serial, 3 samples / 3 decisions per clock"
+    filelist: script/filelists/serial_w3.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 86348, "1296_12": 200000, "648_34": 100000}
+  serial_w6:
+    description: "arch_study W-sweep: serial, 6 samples / 6 decisions per clock"
+    filelist: script/filelists/serial_w6.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 86348, "1296_12": 200000, "648_34": 100000}
+  serial_w9:
+    description: "arch_study W-sweep: serial, 9 samples / 9 decisions per clock"
+    filelist: script/filelists/serial_w9.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 86348, "1296_12": 200000, "648_34": 100000}
+  serial_w12:
+    description: "arch_study W-sweep: serial, 12 samples / 12 decisions per clock"
+    filelist: script/filelists/serial_w12.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 86348, "1296_12": 200000, "648_34": 100000}
+  serial_w24:
+    description: "arch_study W-sweep: serial, 24 samples / 24 decisions per clock"
+    filelist: script/filelists/serial_w24.f
+    core_instance: core
+    txn_cycles_max: {"648_12": 86348, "1296_12": 200000, "648_34": 100000}
 
 datasets:
   reference:                    # eye.png, Wi-Fi encoding, SNR 20 dB, seed 42 (as ldpc_da2)
